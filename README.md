@@ -2,7 +2,7 @@
 
 ## A web app that helps people with ideas find the right people for their project. It's built using React, Node.js, Express, MySQL and Vite 
 
-###Introduction
+### Introduction
 
 This project helps people get matched, chat and manage projects in one place:
 
@@ -11,7 +11,7 @@ This project helps people get matched, chat and manage projects in one place:
 * Exchange your thoughts and choose the right people;
 * Assign tasks and track them.
 
-###Quick Start
+### Quick Start
 
 ```
 # Clone the repository
