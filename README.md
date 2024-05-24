@@ -15,7 +15,7 @@ This project helps people get matched, chat and manage projects in one place:
 
 ```
 # Clone the repository
-git clone https://github.com/crsandeep/simple-react-full-stack](https://github.com/theQuasarians/dogather.git
+git clone https://github.com/theQuasarians/dogather.git
 
 # Go inside the directory
 cd dogather
