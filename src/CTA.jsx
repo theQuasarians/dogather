@@ -1,9 +1,8 @@
 
 import image from '/public/CTA Illustration.png'
-import './App.css'
+import './CTA.css'
 
 function CTA() {
-
   return (
     <>
       <div id='cointainer'>
