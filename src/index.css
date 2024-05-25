@@ -1,27 +1,13 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  font-family: "Helvetica Neue", sans-serif, Inter ;
+  background-color: #ffffff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 0;
+  font-weight: 0;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -29,40 +15,74 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
-
+#text-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 136px;
+  width: 500px;
+}
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  line-height: 68.4px;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  font-size: 57px;
+  color: #050505;
+  align-self: center;
 }
-button:hover {
-  border-color: #646cff;
+#container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 598px;
+  width: 540px;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+#cta-image{
+  margin-bottom: 64px;
+  width: 412px;
+  height: 300px;
 }
+#email-form{
+  margin-top: 64px;
+  width: 540px;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#input-email{
+  height: 34px;
+  width: 365px;
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  border-radius: 5px;
+  outline: none;
+  outline-width: 0px;
+  color: #999999;
+  padding: 8px 8px 8px 16px;
+}
+#sign-up-button {
+  margin-left: 8px;
+  padding: 6px 52px 7.5px;
+  width: 167px;
+  box-sizing: border-box;
+  height: 34px;
+  background: #EA4E43;
+  outline: none;
+  outline-width: 0px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25.56px;
+  text-align: center;
+  color: #FFFFFF;
+} 
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
