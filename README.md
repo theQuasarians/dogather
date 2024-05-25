@@ -1,15 +1,15 @@
 # Dogather
 
-## A web app that helps people with ideas find the right people for their project. It's built using React, Node.js, Express, MySQL and Vite 
+## A web app that helps people with ideas find the right people for their project. It's built using React, Node.js, Express, MySQL and Vite
 
 ### Introduction
 
 This project helps people get matched, chat and manage projects in one place:
 
-* Get matched with people with the right interests and skills to help you with implementing your idea;
-* Get matched with exciting projects to sharpen your skills and learn new ones;
-* Exchange your thoughts and choose the right people;
-* Assign tasks and track them.
+- Get matched with people with the right interests and skills to help you with implementing your idea;
+- Get matched with exciting projects to sharpen your skills and learn new ones;
+- Exchange your thoughts and choose the right people;
+- Assign tasks and track them.
 
 ### Quick Start
 
@@ -31,5 +31,4 @@ yarn build (or npm run build)
 
 # Start production server
 yarn start (or npm start)
-``` 
-
+```
