@@ -128,7 +128,7 @@ document.getElementById("demo").innerHTML =
 
 - **Extensions**: Use .tsx extension for React components
 - **Filename**: Use PascalCase for filenames. For example, ReservationCard.tsx
-- **Reference naming**: Use PascalCase for React components and camelCase for their instances. eslint: react/jsx-pascal-case:
+- **Reference naming**: Use PascalCase for React components and camelCase for their instances
 
 ```
 // component
@@ -143,7 +143,7 @@ const foobar = <FooBar />;
 export const UseFoo = () => { ... }
 ```
 
-- **Props Naming**: Avoid using DOM component prop names for different purposes.
+- **Props Naming**: Avoid using DOM component prop names for different purposes
 
 ```
 <Foo variant="fancy" />
@@ -160,7 +160,7 @@ export const UseFoo = () => { ... }
 
 ## Props
 
-- Always use camelCase for prop names, or PascalCase if the prop value is a React component.
+- Always use camelCase for prop names, or PascalCase if the prop value is a React component
 ```
 <Foo
   userName="hello"
@@ -177,7 +177,7 @@ export const UseFoo = () => { ... }
 
 ## JSX
 
-- Wrap JSX tags in parentheses when they span more than one line. eslint: react/jsx-wrap-multilines
+- Wrap JSX tags in parentheses when they span more than one line
 
 ```
   export const Foo = () => {
@@ -188,12 +188,12 @@ export const UseFoo = () => { ... }
   );
 };
 ```
-- Always self-close tags that have no children. eslint: react/self-closing-comp
+- Always self-close tags that have no children
 
 ```
 <Foo variant="stuff" />
 ```
-- If your component has multiline properties, close its tag on a new line. eslint: react/jsx-closing-bracket-location
+- If your component has multiline properties, close its tag on a new line
 
 ```
 <Foo
