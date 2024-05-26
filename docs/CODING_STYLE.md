@@ -177,9 +177,9 @@ export const UseFoo = () => { ... }
 
   ## JSX
 
-  - Wrap JSX tags in parentheses when they span more than one line. eslint: react/jsx-wrap-multilines
+- Wrap JSX tags in parentheses when they span more than one line. eslint: react/jsx-wrap-multilines
 
-  ```
+```
   export const Foo = () => {
   return (
     <Bar>
