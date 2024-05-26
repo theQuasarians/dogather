@@ -12,7 +12,7 @@ This project helps people get matched, chat and manage projects in one place:
 * Assign tasks and track them.
 
 
-## Contribute to Open Source GitHub as a Beginner
+## Contribute to project as a Beginner
 
 ### Forking and Setting Up the Repository
 
@@ -65,7 +65,7 @@ git commit -m "Fix typo in contributing doc"
 
 ### Push Changes
 
-Push your branch to your fork on GitHub using:
+Push your branch to your fork on GitHub:
 
 ```
 git push -u origin your-branch-name
@@ -73,8 +73,8 @@ git push -u origin your-branch-name
 
 ###  Create a Pull Request (PR)
 
-* Go to your fork on GitHub and you should see a prompt to create a PR for your recently pushed branch;
-* Click on "Compare & pull request" to open a new PR;
+* Go to your fork on GitHub and you should see a prompt to create a PR for your recently pushed branch
+* Click on "Compare & pull request" to open a new PR
 * Provide a title and description for your PR, and click on "Create pull request".
 
 
