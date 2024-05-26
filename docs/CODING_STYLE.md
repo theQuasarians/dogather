@@ -1,5 +1,12 @@
-# Coding Style
 
+# HTML and CSS Style Guides
+
+- HTML5 attributes can start with data- (data-quantity, data-price)
+
+- CSS uses hyphens in property-names (font-size)
+
+
+# JavaScript Style Guides
 
 ## Variable Names
 
@@ -18,7 +25,6 @@ tax = 0.20;
 fullPrice = price + (price * tax);
 ```
 
-
 ## Spaces Around Operators
 
 - Please, always put spaces around operators ( = + - * / ), and after commas
@@ -28,11 +34,9 @@ let x = y + z;
 const myArray = ["Volvo", "Saab", "Fiat"];
 ```
 
-
 ## Code Indentation
 
 - Please, Always use 2 spaces for indentation of code blocks
-
 
 ## Statement Rules:
 
@@ -78,7 +82,6 @@ if (time < 20) {
 }
 ```
 
-
 ## Object Rules
 
 - Place the opening bracket on the same line as the object name
@@ -103,7 +106,6 @@ Short objects can be written compressed, on one line, using spaces only between 
 const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 ```
 
-
 ## Line Length < 80
 - For readability, avoid lines longer than 80 characters
 - If a JavaScript statement does not fit on one line, the best place to break it, is after an operator or a comma
@@ -113,8 +115,95 @@ document.getElementById("demo").innerHTML =
 "Hello Dolly.";
 ```
 
-## Hyphens in HTML and CSS
 
-- HTML5 attributes can start with data- (data-quantity, data-price)
+# React style guide
 
-- CSS uses hyphens in property-names (font-size)
+## Basic rules
+
+- Only include one React component per file
+ - However, multiple Stateless or Pure Components are allowed per file
+- Always use JSX syntax
+
+## Naming
+
+- **Extensions**: Use .tsx extension for React components
+- **Filename**: Use PascalCase for filenames. For example, ReservationCard.tsx
+- **Reference naming**: Use PascalCase for React components and camelCase for their instances. eslint: react/jsx-pascal-case:
+
+```
+// component
+import FooBar from './FooBar';
+
+// instance
+const foobar = <FooBar />;
+```
+- **Hooks**: Use camelCase for React hooks
+  
+```
+export const UseFoo = () => { ... }
+```
+
+- **Props Naming**: Avoid using DOM component prop names for different purposes.
+
+```
+<Foo variant="fancy" />
+```
+
+## Quotes
+
+- Always use double quotes (") for JSX attributes, but single quotes (') for all other JS. eslint: jsx-quotes
+
+```
+<Foo bar="bar" />
+<Foo style={{ left: '20px' }} />
+```
+
+## Props
+
+- Always use camelCase for prop names, or PascalCase if the prop value is a React component.
+```
+<Foo
+  userName="hello"
+  phoneNumber={12345678}
+  Component={SomeComponent}
+/>
+```
+
+- Avoid using an array index as key prop, prefer a stable id
+
+  ```
+  todos.map((todo) => <Todo {...todo} key={todo.id} />);
+  ```
+
+  ## JSX
+
+  - Wrap JSX tags in parentheses when they span more than one line. eslint: react/jsx-wrap-multilines
+
+  ```
+  export const Foo = () => {
+  return (
+    <Bar>
+      <Baz />
+    </Bar>
+  );
+};
+```
+- Always self-close tags that have no children. eslint: react/self-closing-comp
+
+```
+<Foo variant="stuff" />
+```
+- If your component has multiline properties, close its tag on a new line. eslint: react/jsx-closing-bracket-location
+
+```
+<Foo
+  bar="bar"
+  baz="baz"
+/>
+```
+
+
+
+
+
+
