@@ -29,13 +29,13 @@ Navigate to the cloned repository:
 cd repository-name
 ```
 
-* Add the upstream repository as a remote to sync changes:
+Add the upstream repository as a remote to sync changes:
   
 ```
 git remote add upstream https://github.com/original-owner-username/repository-name.git
 ```
 
-* Create a new branch to isolate your changes:
+Create a new branch to isolate your changes:
 ```
 git checkout -b your-branch-name
 ```
