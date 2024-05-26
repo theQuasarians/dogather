@@ -116,7 +116,7 @@ document.getElementById("demo").innerHTML =
 ```
 
 
-# React style guide
+# React Style Guides
 
 ## Basic rules
 
