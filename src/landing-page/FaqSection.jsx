@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './faq-section.css'
 
 import AccordionItem from './AccordionItem'
 
 const FaqSection = () => {
+  const [headingText, setHeadingText] = useState('Questions & answers'); // Initial heading text
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isMobile = window.innerWidth <= 768;
+      setHeadingText(isMobile ? 'FAQs' : 'Questions & answers');
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const faqData = [
     {
       id: 1,
@@ -35,13 +48,11 @@ const FaqSection = () => {
   ]
   return (
     <section className='faq-section'>
-      <h3 className='faq-section__heading'>Questions & answers</h3>
+      <h3 className='faq-section__heading'>{headingText}</h3>
       <div className='faq-section__accordion-wrapper'>
         {faqData.map(data => (
           <AccordionItem key={data.id} data={data}></AccordionItem>
         ))}
-
-
       </div>
 
     </section >

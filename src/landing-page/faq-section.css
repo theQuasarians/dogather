@@ -1,7 +1,6 @@
 .faq-section {
   display: flex;
   flex-direction: column;
-  max-width: 852px;
   margin-inline: auto;
 }
 
@@ -53,7 +52,38 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .fag-section {
+  .faq-section {
     margin-inline: 16px;
+  }
+
+  .faq-section__heading {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .faq-section {
+    margin-inline: 16px;
+  }
+
+  .faq-section__heading {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .faq-section {
+    width: 702px;
+    margin-inline: auto;
+  }
+
+  .faq-section__heading {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .faq-section {
+    width: 852px;
   }
 }
