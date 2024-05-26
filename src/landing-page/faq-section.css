@@ -23,6 +23,7 @@
   padding-top: 24px;
   padding-bottom: 32px;
   border-bottom: 1px solid #EAECF0;
+  max-width: 768px;
 }
 
 .accordion-item__title {
@@ -33,13 +34,18 @@
 .accordion-item__title-group {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .accordion-item__content {
   margin-top: 8px;
   font-size: 16px;
   color: #323232CC;
-  max-width: 768px;
+}
+
+.accordion-item__content,
+.accordion-item__title {
+  max-width: 90%;
 }
 
 .hidden {
