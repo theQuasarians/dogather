@@ -23,19 +23,19 @@ This project helps people get matched, chat and manage projects in one place:
 git clone https://github.com/YOUR-USERNAME/repository-name.git
 ```
 
-Navigate to the cloned repository:
+* Navigate to the cloned repository:
 
 ```
 cd repository-name
 ```
 
-Add the upstream repository as a remote to sync changes:
+* Add the upstream repository as a remote to sync changes:
   
 ```
 git remote add upstream https://github.com/original-owner-username/repository-name.git
 ```
 
-Create a new branch to isolate your changes:
+* Create a new branch to isolate your changes:
 ```
 git checkout -b your-branch-name
 ```
@@ -50,13 +50,13 @@ Branching allows you to safely experiment and collaborate within the same projec
 
 ### Committing 
 
-Stage your changes:
+* Stage your changes:
 
 ```
 git add .
 ```
 
-Commit changes frequently with clear messages:
+* Commit changes frequently with clear messages:
 
 ```
 git add .
@@ -65,7 +65,7 @@ git commit -m "Fix typo in contributing doc"
 
 ### Push Changes
 
-Push your branch to your fork on GitHub:
+* Push your branch to your fork on GitHub:
 
 ```
 git push -u origin your-branch-name
