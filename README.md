@@ -30,7 +30,7 @@ cd repository-name
 ```
 
 * Add the upstream repository as a remote to sync changes:
-* 
+  
 ```
 git remote add upstream https://github.com/original-owner-username/repository-name.git
 ```
