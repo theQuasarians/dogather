@@ -5,32 +5,31 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 0;
-  font-weight: 0;
+  line-height: 0%;
+  font-weight: 500;
+  font-size: 18px;
 }
 body {
-  margin: 0;
+  margin: 0em;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
-#text-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 136px;
-  width: 500px;
-}
-h1 {
-  margin-block-start: 0px;
-  margin-block-end: 0px;
+
+h3 {
+  margin-left: 3.704%;
+  margin-right: 3.704%;
   line-height: 68.4px;
+  margin-top: 1.12624em;
+  margin-bottom: 1.12624em;
+  font-size: 3.157rem;
   font-weight: 500;
-  font-size: 57px;
   color: #050505;
   align-self: center;
+  width: 500px;
+  height: 136px;
+  
 }
 #container{
   display: flex;
@@ -42,13 +41,14 @@ h1 {
   width: 540px;
 }
 #cta-image{
-  margin-bottom: 64px;
-  width: 412px;
+  margin-left: 11.853%;
+  margin-right: 11.853%;
+  width: 76.299%;
   height: 300px;
 }
 #email-form{
-  margin-top: 64px;
-  width: 540px;
+  
+  width: 100%;
   height: 34px;
   display: flex;
   flex-direction: row;
@@ -56,32 +56,31 @@ h1 {
 }
 #input-email{
   height: 34px;
-  width: 365px;
-  padding: 0;
-  margin: 0px;
+  width: 70.1%;
+  padding: 0em;
+  margin: 0em;
   box-sizing: border-box;
   background: #FFFFFF;
   border: 1px solid #E7E7E7;
   border-radius: 5px;
   outline: none;
-  outline-width: 0px;
+  outline-width: 0em;
   color: #999999;
-  padding: 8px 8px 8px 16px;
+  padding: 0.4444444444444444em 0.4444444444444444em 0.4444444444444444em 0.8888888888888888em;
 }
 #sign-up-button {
-  margin-left: 8px;
-  padding: 6px 52px 7.5px;
-  width: 167px;
+  margin-left: 0.4444444444444444em;
+  padding: 0.3333333333333333em 2.888888888888889em 0.4166666666666667em;
+  width: 31.385%;
   box-sizing: border-box;
   height: 34px;
   background: #EA4E43;
   outline: none;
-  outline-width: 0px;
+  outline-width: 0em;
   border: none;
   border-radius: 5px;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 25.56px;
+  font-size: 1rem;
   text-align: center;
   color: #FFFFFF;
 } 
