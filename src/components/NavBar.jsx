@@ -1,36 +1,36 @@
 import "./navbar.css";
 
-function NavBar() {
+function NavBar() { 
 
   /* Array that has the page buttons */
   const pageButtonsText = ["about us", "features", "contact"];
 
  /* Function that returns the buttons */
-  function PageButtons(element) {
+  function PageButtons(element) { 
     return (
       <button>
-        <p>{element}</p>
+        <p>{ element }</p>
         <img src="../src/assets/Vector.svg" alt="" />
       </button>
     );
-  }
+   }
 
   return (
     <>
-    {/* External part of the navbar */}
+    { /* External part of the navbar */ }
       <div className="outer-navbar">
-        {/* Inner part of the navbar */}
+        { /* Inner part of the navbar */ }
         <div className="inner-navbar">
-          {/* Content of the navbar */}
+          { /* Content of the navbar */ }
           <div className="content">
             <div className="logo">
               <img src="../src/assets/SVG.svg" alt="" /> <p>dogather</p>
             </div>
-            {/* Buttons get created thanks to array prototype.map */}
+            { /* Buttons get created thanks to array prototype.map */ }
             <div className="page-buttons-style">
-              {pageButtonsText.map((element) => PageButtons(element))}
+              { pageButtonsText.map((element) => PageButtons(element)) }
             </div>
-            {/* Right content of the navbar (Login and Register buttons) */}
+            { /* Right content of the navbar (Login and Register buttons) */ }
             <div className="right-content">
               <div className="login">
                 <button>
@@ -45,6 +45,6 @@ function NavBar() {
       </div>
     </>
   );
-}
+ }
 
 export default NavBar;
