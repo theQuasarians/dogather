@@ -1,4 +1,4 @@
-import classes from "../styles/Hero.module.css"
+import classes from "./Hero.module.css"
 import potato_man_img from "../assets/potato_man.svg"
 const Hero = () => {
   return (
