@@ -4,3 +4,90 @@
   padding: 2rem;
   text-align: center;
 }
+
+:root {
+  font-family: "Helvetica Neue", sans-serif, Inter ;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 0%;
+  font-weight: 500;
+  font-size: 18px;
+}
+body {
+  margin: 0em;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h3 {
+  margin-left: 3.704%;
+  margin-right: 3.704%;
+  line-height: 68.4px;
+  margin-top: 1.12624em;
+  margin-bottom: 1.12624em;
+  font-size: 3.157rem;
+  font-weight: 500;
+  color: #050505;
+  align-self: center;
+  width: 500px;
+  height: 136px;
+  
+}
+#container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 598px;
+  width: 540px;
+}
+#cta-image{
+  margin-left: 11.853%;
+  margin-right: 11.853%;
+  width: 76.299%;
+  height: 300px;
+}
+#email-form{
+  
+  width: 100%;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#input-email{
+  height: 34px;
+  width: 70.1%;
+  padding: 0em;
+  margin: 0em;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  border-radius: 5px;
+  outline: none;
+  outline-width: 0em;
+  color: #999999;
+  padding: 0.4444444444444444em 0.4444444444444444em 0.4444444444444444em 0.8888888888888888em;
+}
+#sign-up-button {
+  margin-left: 0.4444444444444444em;
+  padding: 0.3333333333333333em 2.888888888888889em 0.4166666666666667em;
+  width: 31.385%;
+  box-sizing: border-box;
+  height: 34px;
+  background: #EA4E43;
+  outline: none;
+  outline-width: 0em;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  color: #FFFFFF;
+} 
