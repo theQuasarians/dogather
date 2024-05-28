@@ -1,50 +1,65 @@
 :root {
-  font-family: "Helvetica Neue", sans-serif, Inter ;
-  background-color: #ffffff;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 0%;
-  font-weight: 500;
-  font-size: 18px;
-}
-body {
-  margin: 0em;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+
+    /*colors*/
+    --clr-accent:#61C554;
+    --clr-white:#FFFFFF;
+    --clr-text:#000000;
+    --clr-blue:#47A6FF;
+    --clr-orange:#EA4E43;
+    --clr-grey:#F1F1F1;
+    --clr-dark-grey:#323232CC; 
+    --clr-dark-border:#0000001A;
+    --clr-border-input:#0F0F0F1A;
+
+    /*font family*/
+    --ff-base: "Inter", sans-serif;
+    --ff-title: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",Helvetica, Arial, "Lucida Grande", sans-serif;
+
+    /*font weight*/
+    --fw-thin: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-title: 900;
+
+    /*border-radius*/
+    --bradius-btn:0.313rem;
 }
 
-h3 {
-  margin-left: 3.704%;
-  margin-right: 3.704%;
-  line-height: 68.4px;
-  margin-top: 1.12624em;
-  margin-bottom: 1.12624em;
-  font-size: 3.157rem;
-  font-weight: 500;
-  color: #050505;
-  align-self: center;
-  width: 500px;
-  height: 136px;
-  
+*,*::after,*::before {
+    box-sizing: border-box;
+    margin:0; padding: 0;
 }
-#container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  height: 598px;
-  width: 540px;
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'],
+li {
+  list-style: none;
 }
-#cta-image{
-  margin-left: 11.853%;
-  margin-right: 11.853%;
-  width: 76.299%;
-  height: 300px;
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+}
+
+/* Remove text-decoration  */
+a {
+    text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
 }
 #email-form{
   
@@ -85,3 +100,11 @@ h3 {
   color: #FFFFFF;
 } 
 
+/*utility classes*/
+.bg-white {
+  background-color: var(--clr-white);
+}
+
+.bg-grey {
+  background-color: var(--clr-grey);
+}

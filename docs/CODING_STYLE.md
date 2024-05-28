@@ -1,120 +1,255 @@
-# Coding Style
+**Naming**
 
+- **Extensions**: Use `.jsx` extension for React components. eslint: [`react/jsx-filename-extension`](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)
+- **Filename**: Use PascalCase for filenames. E.g., `ReservationCard.jsx`.
+- **Reference Naming**: Use PascalCase for React components and camelCase for their instances. eslint: [`react/jsx-pascal-case`](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md)
 
-## Variable Names
+```jsx
+// bad
+import reservationCard from './ReservationCard';
 
-- Variable and function names written as camelCase
-- All names start with a letter
-- Global variables written in UPPERCASE (We don't, but it's quite common)
-- Constants (like PI) written in UPPERCASE
+// good
+import ReservationCard from './ReservationCard';
 
-```
-firstName = "John";
-lastName = "Doe";
+// bad
+const ReservationItem = <ReservationCard />;
 
-price = 19.90;
-tax = 0.20;
-
-fullPrice = price + (price * tax);
-```
-
-
-## Spaces Around Operators
-
-- Please, always put spaces around operators ( = + - * / ), and after commas
-
-```
-let x = y + z;
-const myArray = ["Volvo", "Saab", "Fiat"];
+// good
+const reservationItem = <ReservationCard />;
 ```
 
+**Props Naming**: Avoid using DOM component prop names for different purposes.
 
-## Code Indentation
+> 
+> 
 
-- Please, Always use 2 spaces for indentation of code blocks
+```jsx
+// bad
+<MyComponent style="fancy" />
 
+// bad
+<MyComponent className="fancy" />
 
-## Statement Rules:
-
-### General rules for simple statements
-
-- Always end a simple statement with a semicolon
-
-```
-const cars = ["Volvo", "Saab", "Fiat"];
-
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 50,
-  eyeColor: "blue"
-};
+// good
+<MyComponent variant="fancy" />
 ```
 
-### General rules for complex (compound) statements
-
-- Put the opening bracket at the end of the first line
-- Use one space before the opening bracket
-- Put the closing bracket on a new line, without leading spaces
-- Do not end a complex statement with a semicolon
+```jsx
+Do not use displayName for naming components. Instead, name the component by reference.
 
 ```
-function toCelsius(fahrenheit) {
-  return (5 / 9) * (fahrenheit - 32);
+
+```jsx
+// bad
+export default React.createClass({
+  displayName: 'ReservationCard',
+  // stuff goes here
+});
+
+// good
+export default class ReservationCard extends React.Component {
 }
 ```
 
+**Alignment**
+
+Follow these alignment styles for JSX syntax. eslint: 
+
+```jsx
+// bad
+<Foo superLongParam="bar"
+     anotherSuperLongParam="baz" />
+
+// good
+<Foo
+  superLongParam="bar"
+  anotherSuperLongParam="baz"
+/>
+
+// if props fit in one line then keep it on the same line
+<Foo bar="bar" />
+
+// children get indented normally
+<Foo
+  superLongParam="bar"
+  anotherSuperLongParam="baz"
+>
+  <Quux />
+</Foo>
+
+// bad
+{showButton &&
+  <Button />
+}
+
+// bad
+{
+  showButton &&
+    <Button />
+}
+
+// good
+{showButton && (
+  <Button />
+)}
+
+// good
+{showButton && <Button />}
+
+// good
+{someReallyLongConditional
+  && anotherLongConditional
+  && (
+    <Foo
+      superLongParam="bar"
+      anotherSuperLongParam="baz"
+    />
+  )
+}
+
+// good
+{someConditional ? (
+  <Foo />
+) : (
+  <Foo
+    superLongParam="bar"
+    anotherSuperLongParam="baz"
+  />
+)}
 ```
-for (let i = 0; i < 5; i++) {
-  x += i;
+
+Always use double quotes (`"`) for JSX attributes, but single quotes (`'`) for all other JS.
+
+```jsx
+// bad
+<Foo bar='bar' />
+
+// good
+<Foo bar="bar" />
+
+// bad
+<Foo style={{ left: "20px" }} />
+
+// good
+<Foo style={{ left: '20px' }} />
+```
+
+Always include a single space in your self-closing tag.
+
+```jsx
+// bad
+<Foo/>
+
+// very bad
+<Foo                 />
+
+// bad
+<Foo
+ />
+
+// good
+<Foo />
+```
+
+Do not pad JSX curly braces with spaces.
+
+```jsx
+// bad
+<Foo bar={ baz } />
+
+// good
+<Foo bar={baz} />
+```
+
+**Props**
+
+Always use camelCase for prop names, or PascalCase if the prop value is a React component.
+
+```jsx
+// bad
+<Foo
+  UserName="hello"
+  phone_number={12345678}
+/>
+
+// good
+<Foo
+  userName="hello"
+  phoneNumber={12345678}
+  Component={SomeComponent}
+/>
+```
+
+We don’t recommend using indexes for keys if the order of items may change.
+
+```jsx
+// bad
+{todos.map((todo, index) =>
+  <Todo
+    key={index}
+  />
+)}
+
+// good
+{todos.map(todo => (
+  <Todo
+    key={todo.id}
+  />
+))}
+```
+
+**Parentheses**
+
+Wrap JSX tags in parentheses when they span more than one line:
+
+```jsx
+// bad
+render() {
+  return <MyComponent variant="long body" foo="bar">
+           <MyChild />
+         </MyComponent>;
+}
+
+// good
+render() {
+  return (
+    <MyComponent variant="long body" foo="bar">
+      <MyChild />
+    </MyComponent>
+  );
+}
+
+// good, when single line
+render() {
+  const body = <div>hello</div>;
+  return <MyComponent>{body}</MyComponent>;
 }
 ```
 
-```
-if (time < 20) {
-  greeting = "Good day";
-} else {
-  greeting = "Good evening";
-}
-```
+**Tags**
 
+Always self-close tags that have no children.
 
-## Object Rules
+```jsx
+// bad
+<Foo variant="stuff"></Foo>
 
-- Place the opening bracket on the same line as the object name
-- Use colon plus one space between each property and its value
-- Use quotes around string values, not around numeric values
-- Do not add a comma after the last property-value pair
-- Place the closing bracket on a new line, without leading spaces
-- Always end an object definition with a semicolon
+// good
+<Foo variant="stuff" />
 
 ```
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 50,
-  eyeColor: "blue"
-};
+
+If your component has multiline properties, close its tag on a new line.
+
+```jsx
+// bad
+<Foo
+  bar="bar"
+  baz="baz" />
+
+// good
+<Foo
+  bar="bar"
+  baz="baz"
+/>
 ```
-
-Short objects can be written compressed, on one line, using spaces only between properties, like this:
-
-```
-const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
-```
-
-
-## Line Length < 80
-- For readability, avoid lines longer than 80 characters
-- If a JavaScript statement does not fit on one line, the best place to break it, is after an operator or a comma
-
-```
-document.getElementById("demo").innerHTML =
-"Hello Dolly.";
-```
-
-## Hyphens in HTML and CSS
-
-- HTML5 attributes can start with data- (data-quantity, data-price)
-
-- CSS uses hyphens in property-names (font-size)
