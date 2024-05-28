@@ -1,5 +1,5 @@
 import classes from "./Hero.module.css"
-import potato_man_img from "../assets/potato_man.svg"
+import potato_man_img from "../../assets/potato_man.svg"
 const Hero = () => {
   return (
     <div className={classes.hero__container}>
