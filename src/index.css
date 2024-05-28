@@ -1,44 +1,41 @@
 :root {
-  /*colors*/
-  --clr-accent: #61c554;
-  --clr-white: #ffffff;
-  --clr-text: #000000;
-  --clr-blue: #47a6ff;
-  --clr-orange: #ea4e43;
-  --clr-grey: #f1f1f1;
-  --clr-dark-grey: #323232cc;
-  --clr-dark-border: #0000001a;
-  --clr-border-input: #0f0f0f1a;
 
-  /*font family*/
-  --ff-base: "Inter", sans-serif;
-  --ff-title: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-    Helvetica, Arial, "Lucida Grande", sans-serif;
+    /*colors*/
+    --clr-accent:#61C554;
+    --clr-white:#FFFFFF;
+    --clr-text:#000000;
+    --clr-blue:#47A6FF;
+    --clr-orange:#EA4E43;
+    --clr-grey:#F1F1F1;
+    --clr-dark-grey:#323232CC; 
+    --clr-dark-border:#0000001A;
+    --clr-border-input:#0F0F0F1A;
 
-  /*font weight*/
-  --fw-thin: 200;
-  --fw-light: 300;
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-semibold: 600;
-  --fw-bold: 700;
-  --fw-title: 900;
+    /*font family*/
+    --ff-base: "Inter", sans-serif;
+    --ff-title: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",Helvetica, Arial, "Lucida Grande", sans-serif;
 
-  /*border-radius*/
-  --bradius-btn: 0.313rem;
+    /*font weight*/
+    --fw-thin: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-title: 900;
+
+    /*border-radius*/
+    --bradius-btn:0.313rem;
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*,*::after,*::before {
+    box-sizing: border-box;
+    margin:0; padding: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"],
+ul[role='list'],
+ol[role='list'],
 li {
   list-style: none;
 }
@@ -55,7 +52,7 @@ body {
 
 /* Remove text-decoration  */
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 /* Make images easier to work with */
