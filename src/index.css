@@ -61,44 +61,6 @@ picture,
 svg {
   max-width: 100%;
 }
-#email-form{
-  
-  width: 100%;
-  height: 34px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-#input-email{
-  height: 34px;
-  width: 70.1%;
-  padding: 0em;
-  margin: 0em;
-  box-sizing: border-box;
-  background: #FFFFFF;
-  border: 1px solid #E7E7E7;
-  border-radius: 5px;
-  outline: none;
-  outline-width: 0em;
-  color: #999999;
-  padding: 0.4444444444444444em 0.4444444444444444em 0.4444444444444444em 0.8888888888888888em;
-}
-#sign-up-button {
-  margin-left: 0.4444444444444444em;
-  padding: 0.3333333333333333em 2.888888888888889em 0.4166666666666667em;
-  width: 31.385%;
-  box-sizing: border-box;
-  height: 34px;
-  background: #EA4E43;
-  outline: none;
-  outline-width: 0em;
-  border: none;
-  border-radius: 5px;
-  font-weight: 500;
-  font-size: 1rem;
-  text-align: center;
-  color: #FFFFFF;
-} 
 
 /*utility classes*/
 .bg-white {
