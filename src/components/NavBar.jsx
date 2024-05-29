@@ -39,6 +39,9 @@ function NavBar() {
                 </button>
               </div>
               <button className="register-button">register</button>
+              <button className="hamburger-menu">
+                <img src="../src/assets/HamburgerMenu.svg" alt="" />
+              </button>
             </div>
           </div>
         </div>

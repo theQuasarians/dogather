@@ -15,8 +15,8 @@ button, p{
    position: absolute;
    width: 1280px;
    height: 100%;
-   @media (width <= 1000px){
-    width: 930px;
+   @media (width <= 300px){
+     width: 280px;
 }
 }
 
@@ -33,6 +33,9 @@ button, p{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
+    @media (width <= 300px){
+       display: none;
+   }
 }
 
 .page-buttons-style > button > img{
@@ -85,7 +88,9 @@ button, p{
     display: flex;
     flex-direction: row;
     width: 100px;
-
+    @media (width <= 300px){
+        display: none;
+    }
 }
 
 .login > button{
@@ -113,5 +118,14 @@ button, p{
     border-radius: 5px;
     color: white;
     border: none;
-
+    @media (width <= 300px){
+        display: none;
+    }
+}
+.hamburger-menu{
+    border: none;
+    background-color: transparent;
+    @media (width >= 300px){
+        display: none;
+    }
 }
