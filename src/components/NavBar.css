@@ -15,6 +15,9 @@ button, p{
    position: absolute;
    width: 1280px;
    height: 100%;
+   @media (width <= 1000px){
+    width: 930px;
+}
 }
 
 .content{
