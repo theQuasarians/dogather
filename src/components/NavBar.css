@@ -40,7 +40,8 @@ button, p{
 }
 
 .page-buttons-style > button > p{
-    font-size: 18px;
+    font-size: 1rem;
+    line-height: 1.35em;
 }
 
 .page-buttons-style > button{
@@ -63,7 +64,8 @@ button, p{
 .logo > p{
     margin-top: 4px;
     margin-left: 4px;
-    font-size: 18px;
+    font-size: 1rem;
+    line-height: 1.35em;
     font-weight: bold;
 }
 
@@ -84,7 +86,8 @@ button, p{
 }
 
 .login > button{
-    font-size: 18px;
+    font-size: 1rem;
+    line-height: 1.35em;
     display: flex;
     flex-direction: row;
     border: none;
@@ -100,7 +103,8 @@ button, p{
 }
 
 .register-button{
-    font-size: 18px;
+    font-size: 1rem;
+    line-height: 1.35em;
     background-color: #61C554;
     padding: 8px 32px 8px 32px;
     border-radius: 5px;
