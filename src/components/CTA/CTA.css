@@ -19,7 +19,7 @@ h3 {
   font-size: 3.157rem;
   font-weight: var(--fw-medium);
   color: var(--clr-text);
-  align-self: center;
+  text-align: center;
   width: 500px;
   height: 136px;
   font-family: var(--ff-title);
