@@ -6,6 +6,7 @@ const AccordionItem = ({ data }) => {
   const toggleOpen = () => {
     setIsOpen(!isOpen)
   }
+
   return (
     <div className='accordion-item'>
       <div className='accordion-item__title-group'>

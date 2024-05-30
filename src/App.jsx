@@ -1,11 +1,11 @@
-import FaqSection from './landing-page/FaqSection'
+import FaqSection from "./components/FaqSection/FaqSection"
 
 function App() {
 
   return (
-    <>
+    <div className="App">
       <FaqSection />
-    </>
+    </div>
   )
 }
 
