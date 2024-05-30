@@ -85,11 +85,18 @@
 
   .accordion-item__title {
     font-size: 0.778rem;
+    line-height: 1.089rem;
   }
 
   .accordion-item__content {
     font-size: 0.611rem;
   }
+
+  .accordion-item__icon {
+    width: 16px;
+    height: 16px;
+  }
+
 }
 
 
@@ -104,6 +111,11 @@
 
   .accordion-item__content {
     font-size: 0.778rem;
+  }
+
+  .accordion-item__icon {
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -124,10 +136,20 @@
   .accordion-item__content {
     font-size: 0.778rem;
   }
+
+  .accordion-item__icon {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .faq-section {
     width: 852px;
+  }
+
+  .accordion-item__icon {
+    width: 20px;
+    height: 20px;
   }
 }

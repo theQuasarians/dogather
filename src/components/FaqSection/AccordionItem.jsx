@@ -13,11 +13,11 @@ const AccordionItem = ({ data }) => {
         <h4 className='accordion-item__title'>{data.question}</h4>
         {isOpen ?
           <button onClick={toggleOpen} className='accordion-item__close'>
-            <img src='../../public/close-icon.svg' />
+            <img className='accordion-item__icon' src='../../public/accordionMinus.svg' />
           </button>
           :
           <button onClick={toggleOpen} className='accordion-item__open'>
-            <img src='../../public/open-icon.svg' />
+            <img className='accordion-item__icon' src='../../public/accordionPlus.svg' />
           </button>
         }
       </div>
