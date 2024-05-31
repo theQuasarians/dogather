@@ -3,6 +3,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-size: 18px;
 }
 
 #center-container{
@@ -11,17 +12,13 @@ body {
 }
 
 h3 {
-  margin-left: 3.704%;
-  margin-right: 3.704%;
   line-height: 68.4px;
-  margin-top: 1.12624em;
-  margin-bottom: 1.12624em;
-  font-size: 3.157rem;
-  font-weight: var(--fw-medium);
+  margin-top: 1.12280701754386em;
+  margin-bottom: 1.12280701754386em;
+  font-size: 3.5625rem;
+  font-weight: var(--fw-bold);
   color: var(--clr-text);
   text-align: center;
-  width: 500px;
-  height: 136px;
   font-family: var(--ff-title);
 }
 
@@ -45,12 +42,12 @@ h3 {
   border-radius: var(--bradius-btn);
   outline: none;
   color: #999999;
-  padding: 0.4444444444444444em 0.4444444444444444em 0.4444444444444444em 0.8888888888888888em;
+  padding: 0.4em 0.4em 0.4em 0.8em;
 }
 
 #sign-up-button {
-  margin-left: 0.4444444444444444em;
-  padding: 0.3333333333333333em 2.888888888888889em 0.4166666666666667em;
+  margin-left: 0.4em;
+  padding: 0.3em 2.89em 0.4167em;
   width: 167px;
   height: 34px;
   background: #EA4E43;
