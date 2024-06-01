@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import accordionMinus from '../../assets/accordionMinus.svg'
+import accordionPlus from '../../assets/accordionPlus.svg'
 
 const AccordionItem = ({ question, answer, index }) => {
   const [isOpen, setIsOpen] = useState(index === 0)
@@ -16,7 +18,7 @@ const AccordionItem = ({ question, answer, index }) => {
         </p>
       </div>
       <img onClick={toggleOpen} className='accordion-item__icon'
-        src={`${isOpen ? '/accordionMinus.svg' : '/accordionPlus.svg'}`} />
+        src={isOpen ? accordionMinus : accordionPlus} />
     </div>
   )
 }
