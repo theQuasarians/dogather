@@ -17,8 +17,11 @@ const AccordionItem = ({ question, answer, index }) => {
           {answer}
         </p>
       </div>
-      <img onClick={toggleOpen} className='accordion-item__icon'
-        src={isOpen ? accordionMinus : accordionPlus} />
+      <img
+        onClick={toggleOpen}
+        className='accordion-item__icon'
+        src={isOpen ? accordionMinus : accordionPlus}
+      />
     </div>
   )
 }
