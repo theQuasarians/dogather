@@ -5,7 +5,7 @@ src
 |
 +-- app               # application layer containing:
 |   |
-|   +-- pages        # application routes / can also be called pages
+|   +-- pages         # application pages / can also be called routes
     +-- app.jsx       # main application component
 +-- assets            # assets folder can contain all the static files such as images, fonts, etc.
 |
