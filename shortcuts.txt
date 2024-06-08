@@ -1,0 +1,8 @@
+Git Bash
+git status - checks the status of git repository
+git clone <URL> - clones the repositoryo from GH to local machine
+git branch -a       - checks all the branches of the git project(remote and local) 
+
+
+VSCode 
+CTR + ~     - opens terminal in vscode
