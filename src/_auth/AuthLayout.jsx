@@ -6,7 +6,6 @@ const AuthLayout = () => {
           <section >
             <Outlet />
           </section>
-
         </div>
       );
 }

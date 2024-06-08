@@ -2,9 +2,8 @@
 const SignInPage = () => {
   return (
     <div>
-  SIGN IN PAGE 
+      SIGN IN PAGE 
     </div>
-  
   )
 }
 

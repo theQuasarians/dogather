@@ -11,17 +11,12 @@ const App = () => {
   return (
     <main >
       <Routes>
-
-
         {/* public routes */}
         <Route element={<AuthLayout />}>
           <Route index element={<Landing />} />
           <Route path="/sign-in" element={<SignInPage />} />
           <Route path="/sign-up" element={<SignUpPage />} />
         </Route>
-
-
-
         {/* private routes */}
         {/* <Route element={<RootLayout />}>
           <Route index element={<Home />} />
