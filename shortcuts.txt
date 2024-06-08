@@ -5,4 +5,9 @@ git branch -a       - checks all the branches of the git project(remote and loca
 
 
 VSCode 
-CTR + ~     - opens terminal in vscode
+CTRL + ~     - opens terminal in vscode
+
+
+React
+CTRL + C - stops app
+
