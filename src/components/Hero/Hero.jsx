@@ -2,7 +2,7 @@ import classes from "./Hero.module.css"
 import potato_man_img from "../../assets/potato_man.svg"
 const Hero = () => {
   return (
-    <section className={classes.hero__container}>
+    <section className={classes.hero__section}>
       <div className={classes.hero__box_content}>
         <h1 className={classes.hero__title}>
           Let your idea find the right people
