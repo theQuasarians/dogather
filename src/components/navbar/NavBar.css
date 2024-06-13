@@ -1,131 +1,65 @@
-.outer-navbar{
+body{
+    font-size: 18px;
+}
+
+.wrapper, .register-button{
+    font-family: var(--ff-base);
+    font-size: 1em;
+}
+
+.wrapper{ 
     display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    height: 75px;
-}
-
-button, p{
-  font-family: 'Inter';
-}
-
-.inner-navbar{
-    position: sticky;
-   position: absolute;
-   width: 1280px;
-   height: 100%;
-   @media (width <= 300px){
-     width: 280px;
-}
-}
-
-.content{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 1.78rem 4.67rem 0 4.23rem;
 }
 
-.page-buttons-style{
-    position: absolute;
-    left:296px;
-    margin-top: 20px;
+
+.logo > a{
     display: flex;
     flex-direction: row;
-    @media (width <= 300px){
-       display: none;
-   }
-}
-
-.page-buttons-style > button > img{
-    width: 12.01px;
-    height: 12.02px;
-    margin-left: 4px;
-    margin-top: 5px;
-}
-
-.page-buttons-style > button > p{
-    font-size: 1rem;
-    line-height: 1.35em;
-}
-
-.page-buttons-style > button{
-    margin-right: 40px;
-    display: flex;
-    flex-direction: row;
-    border: none;
-    background-color: transparent;
-    cursor:pointer;
-}
-
-.logo{
-    position: absolute;
-    left:0px;
-    margin-top: 28px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.logo > p{
-    margin-top: 4px;
-    margin-left: 4px;
-    font-size: 1rem;
-    line-height: 1.35em;
+    align-items: center;
     font-weight: bold;
 }
 
-.right-content{
-    margin-top: 25px;
-    width: 100%;
+.logo > a > img{
+    margin-left: 0.23rem;
+    width: 1.34em;
+}
+
+.pages-links{
+    margin-left: 6.23rem;
+    width: 49.89rem;
+}
+
+.pages-links > a{
+    margin-right: 2.23rem;
+    
+}
+
+.pages-links > a > img{
+    margin-left: 0.23rem;
+}
+
+.pages-links > #login-link{
+    float: right;
+}
+
+.register-btn > button{
+    background-color: var(--clr-accent);
+    color: var(--clr-white);
+    border: none;
+    border-radius: 0.28rem;
+    padding: 0.67rem 1.78rem;
+}
+
+.register-btn{
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: end;
+    border: none; 
+    
 }
 
-.login{
-    margin-top: 5px;
-    display: flex;
-    flex-direction: row;
-    width: 100px;
-    @media (width <= 300px){
-        display: none;
-    }
-}
+ 
 
-.login > button{
-    font-size: 1rem;
-    line-height: 1.35em;
-    display: flex;
-    flex-direction: row;
-    border: none;
-    background-color: transparent;
-    cursor:pointer;
-}
-
-.login > button > img{
-    width: 12.01px;
-    height: 12.02px;
-    margin-left: 4px;
-    margin-top: 5px;
-}
-
-.register-button{
-    font-size: 1rem;
-    line-height: 1.35em;
-    background-color: #61C554;
-    padding: 8px 32px 8px 32px;
-    border-radius: 5px;
-    color: white;
-    border: none;
-    @media (width <= 300px){
-        display: none;
-    }
-}
-.hamburger-menu{
-    border: none;
-    background-color: transparent;
-    @media (width >= 300px){
-        display: none;
-    }
-}
