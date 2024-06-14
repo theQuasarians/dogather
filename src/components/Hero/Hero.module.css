@@ -1,5 +1,4 @@
 /* mobile first */
-
 .hero__section {
   margin-top: 5rem;
   font-family: var(--ff-base);
@@ -21,26 +20,27 @@
 .hero__title {
   text-align: center;
   font-size: 1.5rem; /* 24px */
-  line-height: 1.3em; /* in figma its 24px which is 1.5em ; but it doesn't look fit*/
-  margin-bottom: 1.125em;
+  line-height: 1.3em; /*2.4em in figma ; but it doesn't look fit*/
+
+  margin-bottom: 0.75em;
   color: var(--clr-text);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-regular);
   font-family: var(--ff-title);
 }
 
 /* mb-16px */
 .hero__description {
   text-align: center;
-  font-size: 0.688rem; /*11px*/
-  font-weight: 100;
-  line-height: 1.2em; /* in figma its 13.2px which is 0.825em ; but it doesn't look better*/
+  font-size: 0.875; /*14px*/
+  color: var(--clr-dark-grey);
+  font-weight: var(--fw-light);
+  line-height: 1.05em;
   margin-bottom: 1.2em;
 }
 
 .hero__btn {
   font-family: inherit; /*inter*/
-  font-size: 0.688rem; /*11px*/
-  /* max-width: 6.25em; 100px */
+  font-size: 0.875rem; /*old 0.688rem == 11px so small*/
   font-weight: var(--fw-bold);
   padding: 0.5em 1em; /*8px 16px*/
   color: var(--clr-white);
@@ -52,20 +52,70 @@
 }
 
 .hero__box_illustration {
+  display: none;
   margin: 3.375em auto 0; /*top :54px ; right-left:auto */
   width: 10.125em; /*162px*/
   height: 8.75em; /*140px*/
 }
 
 .hero__potato_man {
+  display: none;
   object-fit: cover;
   width: 100%;
+}
+/* only in mobile  */
+@media (max-width: 599px) {
+  .hero__title {
+    margin-bottom: 1.125em;
+  }
+  .hero__box_illustration,
+  .hero__potato_man {
+    display: block;
+  }
 }
 
 /* Tablet */
 @media (min-width: 600px) {
+  /*center everything inside this container*/
+  .hero__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__box_content {
+    max-width: 27.5em; /*440px*/
+  }
+  .hero__title {
+    font-size: 3.563rem; /*57px*/
+    font-weight: var(--fw-semibold);
+  }
+  .hero__description {
+    font-size: 1.125rem; /*18px*/
+    font-weight: var(--fw-light); /*300*/
+    line-height: 1.35em; /*21.6px*/
+  }
+  .hero__btn {
+    font-size: 1.125rem; /*18px*/
+    font-weight: var(--fw-thin);
+    letter-spacing: 0.5px;
+    padding: 0.75em 1.5em; /*12px 24px*/
+  }
 }
-
+/*524 - */
 /* Desktop */
 @media (min-width: 992px) {
+  .hero__box_content {
+    max-width: 37.5em; /*600px*/
+  }
+  .hero__title {
+    font-size: 4.75rem;
+  }
+  .hero__description {
+    font-size: 1.5rem; /*24px*/
+    line-height: 1.8em; /*28.8*/
+    /* margin-bottom: 3.25em;  */
+  }
+  .hero__btn {
+    padding: 1em 2em; /*16px 32px*/
+  }
 }
