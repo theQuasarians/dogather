@@ -1,15 +1,13 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"
 
-import AuthLayout from "./_auth/AuthLayout";
-import {
-  Landing,
-  SignInPage,
-  SignUpPage,
-} from "./_auth/pages";
+import AuthLayout from "./_auth/AuthLayout"
+import { Landing, SignInPage, SignUpPage } from "./_auth/pages"
+
+import "./index.css"
 
 const App = () => {
   return (
-    <main >
+    <main>
       <Routes>
         {/* public routes */}
         <Route element={<AuthLayout />}>
@@ -24,7 +22,7 @@ const App = () => {
         </Route> */}
       </Routes>
     </main>
-  );
-};
+  )
+}
 
-export default App;
+export default App
