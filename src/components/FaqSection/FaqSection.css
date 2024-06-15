@@ -6,12 +6,13 @@
 
 .faq-section__heading {
   font-family: var(--ff-title);
-  font-size: 1.778rem;
   font-weight: var(--fw-bold);
-  letter-spacing: -0.62px;
-  margin-bottom: 0.889em;
-  color: #050505;
+  font-size: 1.778rem;
+  letter-spacing: -0.019em;
+  line-height: 1.2em;
+  margin-bottom: 0.889rem;
   text-align: left;
+  color: var(--clr-text);
 }
 
 .faq-section__heading--small {
@@ -23,13 +24,13 @@
 }
 
 .accordion-item {
-  padding-top: 1.333em;
-  padding-bottom: 1.778em;
-  border-bottom: 1px solid #EAECF0;
-  max-width: 768px;
-  font-weight: var(--fw-regular);
   display: flex;
   justify-content: space-between;
+  padding-top: 1.333rem;
+  padding-bottom: 1.778rem;
+  border-bottom: 1px solid #EAECF0;
+  /* max-width: 768px; */
+  font-weight: var(--fw-regular);
 }
 
 .accordion-item:last-child {
@@ -38,8 +39,8 @@
 
 .accordion-item__title {
   font-size: 0.994rem;
-  line-height: 1.556rem;
-  color: #101828;
+  font-weight: var(--fw-regular);
+  color: var(--clr-text-300);
 }
 
 .accordion-item__text-group {
@@ -48,7 +49,7 @@
 
 .accordion-item__content {
   display: none;
-  margin-top: 0.444em;
+  margin-top: 0.444rem;
   font-size: 0.889rem;
   color: var(--clr-dark-grey)
 }
@@ -78,8 +79,9 @@
   .faq-section__heading--small {
     display: block;
     text-align: center;
-    margin-bottom: 0.444em;
+    margin-bottom: 0.444rem;
     font-size: 1.333rem;
+    line-height: 1.2em;
     font-family: var(--ff-title);
   }
 
@@ -89,11 +91,12 @@
 
   .accordion-item__title {
     font-size: 0.778rem;
-    line-height: 1.089rem;
+    line-height: 1.4em;
   }
 
   .accordion-item__content {
     font-size: 0.611rem;
+    line-height: 1.6em;
   }
 
   .accordion-item__icon {
@@ -110,10 +113,12 @@
 
   .accordion-item__title {
     font-size: 1rem;
+    line-height: 1.556em;
   }
 
   .accordion-item__content {
     font-size: 0.778rem;
+    line-height: 1.7em;
   }
 
   .accordion-item__icon {
@@ -124,7 +129,7 @@
 
 @media only screen and (min-width: 768px) {
   .faq-section {
-    width: 702px;
+    max-width: 702px;
     margin-inline: auto;
   }
 
@@ -146,13 +151,19 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .faq-section {
-    width: 852px;
-  }
-
+@media only screen and (min-width: 992px) {
   .accordion-item__icon {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .accordion-item__title {
+    line-height: 1.5em;
+  }
+
+  .accordion-item__content {
+    line-height: 1.5em;
   }
 }
