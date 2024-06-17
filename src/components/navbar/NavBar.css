@@ -2,47 +2,36 @@ body{
     font-size: 18px;
 }
 
-.wrapper, .register-button{
+.wrapper, .register-btn > button{
     font-family: var(--ff-base);
     font-size: 1em;
 }
 
 .wrapper{ 
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 1.78rem 4.67rem 0 4.23rem;
+    padding: 1.78em 4.44em 0 4.44em;
 }
-
-
-.logo > a{
+.logo a{
     display: flex;
     flex-direction: row;
     align-items: center;
     font-weight: bold;
 }
 
-.logo > a > img{
-    margin-left: 0.23rem;
+.logo  a  img{
+    margin-left: 0.23em;
     width: 1.34em;
 }
 
 .pages-links{
-    margin-left: 6.23rem;
-    width: 49.89rem;
+    margin-left: 10%;
+    display: flex;
+    gap: 2.22em;
 }
 
-.pages-links > a{
-    margin-right: 2.23rem;
-    
-}
-
-.pages-links > a > img{
-    margin-left: 0.23rem;
-}
-
-.pages-links > #login-link{
-    float: right;
+.pages-links a{
+    width: 5.16em;
 }
 
 .register-btn > button{
@@ -50,7 +39,7 @@ body{
     color: var(--clr-white);
     border: none;
     border-radius: 0.28rem;
-    padding: 0.67rem 1.78rem;
+    padding: 0.67em 1.78em;
 }
 
 .register-btn{
@@ -58,8 +47,61 @@ body{
     align-items: center;
     justify-content: end;
     border: none; 
-    
 }
 
- 
+.hamburger-menu{
+    display: none;
+}
+
+.register-login{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1.78em;
+    justify-content: end;
+}
+
+
+.login-link > a{
+    display: flex;
+}
+
+@media (width <= 960px) {
+    .wrapper{
+        padding: 1.78em 2.67em 0 1.78em;
+    }
+
+    .register-btn > button{
+        padding: 0.44em 2em;
+    }
+}
+
+@media (width <= 420px) {
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.12em 1em 0 0.89em;
+    }
+    .hamburger-menu-wrapper{
+        display: flex;
+        flex-direction: column;
+        border: solid;
+    }
+    .hamburger-menu-wrapper .pages-links, .register-login{
+        display: flex;
+        flex-direction: column;
+    }
+    .hamburger-menu-wrapper .register-login > button{
+        
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .hamburger-menu > button{
+        border: none;
+    }
+}
+
+
+
 
