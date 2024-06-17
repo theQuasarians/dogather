@@ -37,8 +37,8 @@ function NavBar() {
           href={`/${element.name.replace(" ", "")}`}
         >
           {element.name}
-          <img id='page-arrow-link' src="../src/assets/ArrowLink.svg" alt="arrowLink" />
-          <img id="page-mobile-icon" src={`../src/assets/${element.name}.svg`} alt="mobileIcon" />
+          <img src="../src/assets/ArrowLink.svg" alt="arrowLink" />
+          <img src={`../src/assets/${element.name.replace(' ','')}.svg`} alt="mobileIcon" />
         </a>
       </>
     );
@@ -81,15 +81,16 @@ function NavBar() {
             <img
               src={
                 toggleMenu
-                  ? "../src/assets/HamburgerMenu.svg"
-                  : "../src/assets/toggleMenuArrows.svg"
+                  ? "../src/assets/toggleMenuArrows.svg"
+                  : "../src/assets/HamburgerMenu.svg"
+                 
               }
               alt=""
             />
           </button>
         </div>
       </div>
-        <div className="hamburger-menu-wrapper">
+        <div style={{display:toggleMenu ? 'block' : 'none'}} className="hamburger-menu-wrapper">
           <div className="pages-links">
            {pageLinks.map((element) => (
             <PageButtons name={element.name} key={element.id} />
@@ -102,20 +103,19 @@ function NavBar() {
             href={`/${loginLink.name.replace(" ", "")}`}
           >
             {loginLink.name}
+          <img  src="../src/assets/ArrowLink.svg" alt="arrowLink" />
+          <img  src={`../src/assets/${loginLink.name}.svg`} alt="mobileIcon" />
           </a>
-          <img id='page-arrow-link' src="../src/assets/ArrowLink.svg" alt="arrowLink" />
-          <img id="page-mobile-icon" src={`../src/assets/${loginLink.name}.svg`} alt="mobileIcon" />
-          <div className="register-btn">
           <a
             key={registerLink.id}
             id={`${registerLink.name}-link`}
             href={`/${loginLink.name.replace(" ", "")}`}
           >
             {registerLink.name}
+          <img  src="../src/assets/ArrowLink.svg" alt="arrowLink" />
+          <img  src={`../src/assets/${registerLink.name}.svg`} alt="mobileIcon" />
           </a>
-          <img id='page-arrow-link' src="../src/assets/ArrowLink.svg" alt="arrowLink" />
-          <img id="page-mobile-icon" src={`../src/assets/${registerLink.name}.svg`} alt="mobileIcon" />
-          </div>
+
         </div>
         </div>
     </>
