@@ -1,8 +1,9 @@
+import Hero from "../../components/Hero/Hero"
 
 const Landing = () => {
   return (
     <div>
-      Landing page content
+      <Hero />
     </div>
   )
 }
