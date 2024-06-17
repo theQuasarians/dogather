@@ -101,7 +101,6 @@
   .accordion-item__title {
     font-weight: var(--fw-medium);
   }
-
 }
 
 @media only screen and (min-width: 600px) {
@@ -141,6 +140,10 @@
     margin-inline: 4rem;
   }
 
+  .accordion-item {
+    padding-bottom: 1.778rem;
+  }
+
   .accordion-item__icon {
     width: 20px;
     height: 20px;
@@ -152,5 +155,4 @@
     max-width: 50rem;
     margin-inline: auto;
   }
-
 }
