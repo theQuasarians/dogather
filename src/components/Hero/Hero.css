@@ -64,6 +64,7 @@
   object-fit: cover;
   width: 100%;
 }
+
 /* only in mobile  */
 @media (max-width: 480px) {
   /* .hero__title {
@@ -74,6 +75,7 @@
     display: block;
   }
 }
+
 @media ((min-width: 481px) and (max-width: 580px)) {
   .hero__title {
     font-size: clamp(3rem, 2rem + 3vw, 3rem) !important;
@@ -81,6 +83,7 @@
     font-weight: var(--fw-regular) !important;
   }
 }
+
 /* Tablet */
 @media (min-width: 481px) {
   /*center everything inside this container*/
