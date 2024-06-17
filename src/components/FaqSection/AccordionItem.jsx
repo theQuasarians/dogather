@@ -11,17 +11,18 @@ const AccordionItem = ({ question, answer, index }) => {
 
   return (
     <div className='accordion-item'>
-      <div className='accordion-item__text-group'>
+      <div className='accordion-item__title-group'>
         <h4 className='accordion-item__title'>{question}</h4>
-        <p className={`accordion-item__content ${isOpen ? 'accordion-item__content--active' : ''}`}>
-          {answer}
-        </p>
+        <img
+          onClick={toggleOpen}
+          className='accordion-item__icon'
+          src={isOpen ? accordionMinus : accordionPlus}
+        />
       </div>
-      <img
-        onClick={toggleOpen}
-        className='accordion-item__icon'
-        src={isOpen ? accordionMinus : accordionPlus}
-      />
+      <p className={`accordion-item__content 
+          ${isOpen ? 'accordion-item__content--active' : ''}`}>
+        {answer}
+      </p>
     </div>
   )
 }

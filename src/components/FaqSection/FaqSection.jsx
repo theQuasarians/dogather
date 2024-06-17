@@ -8,8 +8,8 @@ const FaqSection = () => {
 
   return (
     <section className='faq-section'>
-      <h5 className='faq-section__heading'>Questions & answers</h5>
-      <h6 className='faq-section__heading--small'>FAQs</h6>
+      <h3 className='faq-section__heading'>Questions & answers</h3>
+      <h5 className='faq-section__heading--small'>FAQ</h5>
       <div className='faq-section__accordion-wrapper'>
         {faqData && (
           faqData.map((data, index) => (

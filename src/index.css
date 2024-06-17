@@ -1,10 +1,15 @@
 :root {
   font-size: 18px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   /*colors*/
   --clr-accent: #61c554;
   --clr-white: #ffffff;
   --clr-text: #000000;
+  --clr-text-grey: #00000099;
+  /* black 60% opacity */
   --clr-blue: #47a6ff;
   --clr-orange: #ea4e43;
   --clr-grey: #f1f1f1;
@@ -27,6 +32,10 @@
 
   /*border-radius*/
   --bradius-btn: 0.313rem;
+}
+
+* {
+  font: inherit;
 }
 
 *,
