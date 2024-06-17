@@ -1,5 +1,5 @@
 
-import ctaSvg from '/ctaIllustration.svg'
+import ctaSvg from '../../assets/ctaIllustration.svg'
 import './CTA.css'
 
 function CTA() {
