@@ -19,30 +19,31 @@
 
 .hero__title {
   text-align: center;
-  font-size: 1.5rem; /* 24px */
-  line-height: 1.3em; /*2.4em in figma ; but it doesn't look fit*/
-
-  margin-bottom: 0.75em;
+  font-size: clamp(2rem, 1rem + 5vw, 2.5rem);
+  line-height: 1.2em;
+  margin-bottom: 0.625em;
   color: var(--clr-text);
   font-weight: var(--fw-regular);
   font-family: var(--ff-title);
+  transition: font-size 0.3s ease;
 }
 
 /* mb-16px */
 .hero__description {
   text-align: center;
-  font-size: 0.875; /*14px*/
-  color: var(--clr-dark-grey);
+  font-size: 0.875rem; /*14px*/
+  color: var(--clr-text);
   font-weight: var(--fw-light);
-  line-height: 1.05em;
+  line-height: 1.2em;
   margin-bottom: 1.2em;
+  letter-spacing: 0.026rem;
 }
 
 .hero__btn {
   font-family: inherit; /*inter*/
   font-size: 0.875rem; /*old 0.688rem == 11px so small*/
-  font-weight: var(--fw-bold);
-  padding: 0.5em 1em; /*8px 16px*/
+  font-weight: var(--fw-regular);
+  padding: 0.54em 1.5em;
   color: var(--clr-white);
   background: var(--clr-blue);
   border: none;
@@ -53,7 +54,7 @@
 
 .hero__box_illustration {
   display: none;
-  margin: 3.375em auto 0; /*top :54px ; right-left:auto */
+  margin: 3.25em auto 0; /*top :54px ; right-left:auto */
   width: 10.125em; /*162px*/
   height: 8.75em; /*140px*/
 }
@@ -64,18 +65,24 @@
   width: 100%;
 }
 /* only in mobile  */
-@media (max-width: 599px) {
-  .hero__title {
+@media (max-width: 480px) {
+  /* .hero__title {
     margin-bottom: 1.125em;
-  }
+  } */
   .hero__box_illustration,
   .hero__potato_man {
     display: block;
   }
 }
-
+@media ((min-width: 481px) and (max-width: 580px)) {
+  .hero__title {
+    font-size: clamp(3rem, 2rem + 3vw, 3rem) !important;
+    line-height: 1.2em !important;
+    font-weight: var(--fw-regular) !important;
+  }
+}
 /* Tablet */
-@media (min-width: 600px) {
+@media (min-width: 481px) {
   /*center everything inside this container*/
   .hero__section {
     display: flex;
@@ -86,7 +93,7 @@
     max-width: 27.5em; /*440px*/
   }
   .hero__title {
-    font-size: 3.563rem; /*57px*/
+    font-size: clamp(3.375rem, 2.475rem + 3vw, 3.5625rem);
     font-weight: var(--fw-semibold);
   }
   .hero__description {
@@ -112,8 +119,8 @@
   }
   .hero__description {
     font-size: 1.5rem; /*24px*/
-    line-height: 1.8em; /*28.8*/
-    /* margin-bottom: 3.25em;  */
+    line-height: 1.2em; /*28.8*/
+    margin-bottom: 2.167em;
   }
   .hero__btn {
     padding: 1em 2em; /*16px 32px*/

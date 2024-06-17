@@ -1,5 +1,5 @@
 import potato_man_img from "../../assets/potato_man.svg"
-
+import "./Hero.css"
 const Hero = () => {
   return (
     <section className="hero__section">
