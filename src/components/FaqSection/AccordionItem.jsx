@@ -11,10 +11,9 @@ const AccordionItem = ({ question, answer, index }) => {
 
   return (
     <div className='accordion-item'>
-      <div className='accordion-item__title-group'>
+      <div className='accordion-item__title-group' onClick={toggleOpen}>
         <h4 className='accordion-item__title'>{question}</h4>
         <img
-          onClick={toggleOpen}
           className='accordion-item__icon'
           src={isOpen ? accordionMinus : accordionPlus}
         />

@@ -7,10 +7,8 @@
 .faq-section__heading {
   font-family: var(--ff-title);
   font-weight: var(--fw-semibold);
-  font-size: 2.389rem;
   letter-spacing: 0.026em;
   line-height: 1.2em;
-  margin-bottom: 4.444rem;
   color: var(--clr-text);
 }
 
@@ -21,7 +19,6 @@
 .accordion-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding-top: 1.333rem;
   padding-bottom: 1.778rem;
   border-bottom: 1px solid #EAECF0;
@@ -43,12 +40,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .accordion-item__content {
   display: none;
   margin-top: 0.444rem;
-  /* 8px margin top */
   font-size: 1rem;
   line-height: 1.333em;
   color: var(--clr-text-grey)
@@ -105,12 +102,11 @@
 
 @media only screen and (min-width: 600px) {
   .faq-section {
-    margin-inline: 16px;
+    margin-inline: 4rem;
   }
 
   .faq-section__heading {
     font-size: 1.778rem;
-    line-height: 1.2em;
     margin-bottom: 2.222rem;
   }
 
@@ -131,28 +127,28 @@
 /* Tablet size */
 @media only screen and (min-width: 768px) {
   .faq-section {
-    margin-inline: 2rem;
+    margin-inline: 6rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .faq-section {
-    margin-inline: 4rem;
+    margin-inline: 8rem;
   }
 
   .accordion-item {
     padding-bottom: 1.778rem;
   }
-
-  .accordion-item__icon {
-    width: 20px;
-    height: 20px;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
   .faq-section {
-    max-width: 50rem;
+    max-width: 45rem;
     margin-inline: auto;
+  }
+
+  .faq-section__heading {
+    margin-bottom: 4.444rem;
+    font-size: 2.289rem;
   }
 }
