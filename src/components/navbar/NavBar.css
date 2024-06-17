@@ -66,6 +66,12 @@ body{
     display: flex;
 }
 
+@media (width >= 420px) {
+    .hamburger-menu-wrapper{
+        display: none;
+    }
+}
+
 @media (width <= 960px) {
     .wrapper{
         padding: 1.78em 2.67em 0 1.78em;
@@ -74,25 +80,42 @@ body{
     .register-btn > button{
         padding: 0.44em 2em;
     }
+
 }
 
 @media (width <= 420px) {
     .wrapper{
         display: flex;
         justify-content: space-between;
-        padding: 1.12em 1em 0 0.89em;
+        padding: 1.12em 1em 1.71em 0.89em;
+        border-bottom: solid;
+    }
+    .wrapper .register-login, .pages-links{
+        display: none;
     }
     .hamburger-menu-wrapper{
         display: flex;
         flex-direction: column;
-        border: solid;
+        
     }
     .hamburger-menu-wrapper .pages-links, .register-login{
         display: flex;
         flex-direction: column;
+        gap: 1.71em;
     }
-    .hamburger-menu-wrapper .register-login > button{
-        
+    .hamburger-menu-wrapper .pages-links{
+        padding-top: 1.71em;
+        border-bottom: solid;
+        margin-left: 0;
+        padding-bottom: 2.28em;
+    }
+    .hamburger-menu-wrapper .pages-links a{
+        padding-left: 1.14em;
+    }
+    .hamburger-menu-wrapper .register-login{
+        padding-top: 1.14em;
+        padding-left: 1.14em;
+        align-items: start;
     }
     .hamburger-menu{
         display: block;

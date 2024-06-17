@@ -22,6 +22,11 @@ function NavBar() {
     id: 4,
   };
 
+  const registerLink = {
+    name: "register",
+    id: 5,
+  };
+
   /* Function that returns the links */
   function PageButtons(element) {
     return (
@@ -32,7 +37,8 @@ function NavBar() {
           href={`/${element.name.replace(" ", "")}`}
         >
           {element.name}
-          <img src="../src/assets/ArrowLink.svg" alt="ArrowLink" />
+          <img id='page-arrow-link' src="../src/assets/ArrowLink.svg" alt="arrowLink" />
+          <img id="page-mobile-icon" src={`../src/assets/${element.name}.svg`} alt="mobileIcon" />
         </a>
       </>
     );
@@ -96,10 +102,19 @@ function NavBar() {
             href={`/${loginLink.name.replace(" ", "")}`}
           >
             {loginLink.name}
-            <img src="../src/assets/ArrowLink.svg" alt="ArrowLink" />
           </a>
+          <img id='page-arrow-link' src="../src/assets/ArrowLink.svg" alt="arrowLink" />
+          <img id="page-mobile-icon" src={`../src/assets/${loginLink.name}.svg`} alt="mobileIcon" />
           <div className="register-btn">
-            <button>register</button>
+          <a
+            key={registerLink.id}
+            id={`${registerLink.name}-link`}
+            href={`/${loginLink.name.replace(" ", "")}`}
+          >
+            {registerLink.name}
+          </a>
+          <img id='page-arrow-link' src="../src/assets/ArrowLink.svg" alt="arrowLink" />
+          <img id="page-mobile-icon" src={`../src/assets/${registerLink.name}.svg`} alt="mobileIcon" />
           </div>
         </div>
         </div>
