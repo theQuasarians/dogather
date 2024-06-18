@@ -1,0 +1,154 @@
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+}
+
+.faq-section__heading {
+  font-family: var(--ff-title);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.026em;
+  line-height: 1.2em;
+  color: var(--clr-text);
+}
+
+.faq-section__heading--small {
+  display: none;
+}
+
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.333rem;
+  padding-bottom: 1.778rem;
+  border-bottom: 1px solid #EAECF0;
+  font-family: var(--ff-base);
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-item__title {
+  font-size: 1.333rem;
+  line-height: 1.2em;
+  color: var(--clr-text);
+}
+
+.accordion-item__title-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-item__content {
+  display: none;
+  margin-top: 0.444rem;
+  font-size: 1rem;
+  line-height: 1.333em;
+  color: var(--clr-text-grey)
+}
+
+.accordion-item__content,
+.accordion-item__title {
+  max-width: 90%;
+}
+
+.accordion-item__content--active {
+  display: block;
+}
+
+.accordion-item__icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .faq-section {
+    margin-inline: 16px;
+  }
+
+  .faq-section__heading {
+    display: none;
+  }
+
+  .faq-section__heading--small {
+    display: block;
+    margin-bottom: 1.333rem;
+    font-size: 1.333rem;
+    line-height: 1.2em;
+    font-weight: var(--fw-regular);
+    font-family: var(--ff-title);
+  }
+
+  .accordion-item {
+    border: none;
+    padding: 0.889rem 0;
+  }
+
+  .accordion-item__title,
+  .accordion-item__content {
+    font-size: 0.778rem;
+    line-height: 1.4em;
+  }
+
+  .accordion-item__title {
+    font-weight: var(--fw-medium);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .faq-section {
+    margin-inline: 4rem;
+  }
+
+  .faq-section__heading {
+    font-size: 1.778rem;
+    margin-bottom: 2.222rem;
+  }
+
+  .accordion-item {
+    padding-bottom: 2rem;
+  }
+
+  .accordion-item__title {
+    font-size: 1rem;
+  }
+
+  .accordion-item__content {
+    font-size: 0.778rem;
+    line-height: 1.714em;
+  }
+}
+
+/* Tablet size */
+@media only screen and (min-width: 768px) {
+  .faq-section {
+    margin-inline: 6rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .faq-section {
+    margin-inline: 8rem;
+  }
+
+  .accordion-item {
+    padding-bottom: 1.778rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .faq-section {
+    max-width: 45rem;
+    margin-inline: auto;
+  }
+
+  .faq-section__heading {
+    margin-bottom: 4.444rem;
+    font-size: 2.289rem;
+  }
+}

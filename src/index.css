@@ -1,0 +1,85 @@
+:root {
+  font-size: 18px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /*colors*/
+  --clr-accent: #61c554;
+  --clr-white: #ffffff;
+  --clr-text: #000000;
+  --clr-text-grey: #00000099;
+  /* black 60% opacity */
+  --clr-blue: #47a6ff;
+  --clr-orange: #ea4e43;
+  --clr-grey: #f1f1f1;
+  --clr-dark-grey: #323232cc;
+  --clr-dark-border: #0000001a;
+  --clr-border-input: #0f0f0f1a;
+
+  /*font family*/
+  --ff-base: "Inter", sans-serif;
+  --ff-title: "Source Sans 3", sans-serif;
+
+  /*font weight*/
+  --fw-thin: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-title: 900;
+
+  /*border-radius*/
+  --bradius-btn: 0.313rem;
+}
+
+* {
+  font: inherit;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"],
+li {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+}
+
+/* Remove text-decoration  */
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+}
+
+/*utility classes*/
+.bg-white {
+  background-color: var(--clr-white);
+}
+
+.bg-grey {
+  background-color: var(--clr-grey);
+}
