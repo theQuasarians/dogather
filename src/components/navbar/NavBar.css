@@ -1,16 +1,15 @@
 body{
     font-size: 18px;
 }
-
-.wrapper, .register-btn > button{
-    font-family: var(--ff-base);
-    font-size: 1em;
-}
-
 .wrapper{ 
     display: flex;
     align-items: center;
     padding: 1.78em 4.44em 0 4.44em;
+}
+
+.wrapper, .register-btn button{
+    font-family: var(--ff-base);
+    font-size: 1em;
 }
 .logo a{
     display: flex;
@@ -18,7 +17,6 @@ body{
     align-items: center;
     font-weight: bold;
 }
-
 .logo  a  img{
     margin-left: 0.23em;
     width: 1.34em;
@@ -34,7 +32,7 @@ body{
     width: 5.16em;
 }
 
-.register-btn > button{
+.register-btn button{
     background-color: var(--clr-accent);
     color: var(--clr-white);
     border: none;

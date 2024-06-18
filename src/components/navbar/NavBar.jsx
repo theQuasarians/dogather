@@ -27,6 +27,12 @@ function NavBar() {
     id: 5,
   };
 
+  window.addEventListener('resize',() => {
+    if(document.body.clientWidth >= '420') {
+      setToggleMenu(false)
+    } 
+  })
+
   /* Function that returns the links */
   function PageButtons(element) {
     return (
@@ -56,7 +62,6 @@ function NavBar() {
           </a>
         </div>
         {/* Buttons get created thanks to array prototype.map */}
-
         <div className="pages-links">
           {pageLinks.map((element) => (
             <PageButtons name={element.name} key={element.id} />
@@ -90,7 +95,7 @@ function NavBar() {
           </button>
         </div>
       </div>
-        <div style={{display:toggleMenu ? 'block' : 'none'}} className="hamburger-menu-wrapper">
+        <div style={{display: toggleMenu ? 'block' : 'none'}} className="hamburger-menu-wrapper">
           <div className="pages-links">
            {pageLinks.map((element) => (
             <PageButtons name={element.name} key={element.id} />
