@@ -1,0 +1,32 @@
+.container {
+  width: 580px; 
+  margin: 0 auto;
+  text-align: center;
+}
+.title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 4.2em;
+  font-weight: 700;
+  color: #000000;
+}
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.44em;
+  margin: 30px 80px 30px 80px;
+}
+.button {
+  font-family: "Inter", sans-serif;
+  width: 140px;
+  height: 47px;
+  font-size: 1em;
+  font-weight: 400;
+  border: none;
+  background-color: #47A6FF;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 
+  0px 4px 9px 0px #0000000D,
+  0px 1.54px 2.87px 0px #00000012,
+  0px 0.33px 0.73px 0px #0000001F;
+}
