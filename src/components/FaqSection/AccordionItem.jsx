@@ -11,6 +11,7 @@ const AccordionItem = ({ question, answer, index }) => {
 
   return (
     <div className='accordion-item'>
+      {/* Toggles content when title text is clicked */}
       <div className='accordion-item__title-group' onClick={toggleOpen}>
         <h4 className='accordion-item__title'>{question}</h4>
         <img

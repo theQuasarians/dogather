@@ -66,6 +66,7 @@
   height: 20px;
 }
 
+/* Mobile screen */
 @media only screen and (max-width: 600px) {
   .faq-section {
     margin-inline: 16px;
