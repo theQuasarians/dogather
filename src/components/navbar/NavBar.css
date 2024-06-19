@@ -32,6 +32,10 @@ body{
     width: 5.16em;
 }
 
+.pages-links a img:first-of-type{
+    margin-left: 0.28em;
+}
+
 .register-btn button{
     background-color: var(--clr-accent);
     color: var(--clr-white);
@@ -47,7 +51,7 @@ body{
     border: none; 
 }
 
-.hamburger-menu{
+.mobile-menu{
     display: none;
 }
 
@@ -60,15 +64,24 @@ body{
 }
 
 
-.login-link > a{
+#login-link  a{
     display: flex;
 }
 
+.register-login #login-link img{
+    margin-left: 0.28em;
+ 
+
+}
+
 @media (width >= 420px) {
-    .hamburger-menu-wrapper{
+    .mobile-menu-wrapper{
         display: none;
     }
     .pages-links img:last-of-type{
+        display: none;
+    }
+    .register-login img:last-of-type{
         display: none;
     }
 }
@@ -104,45 +117,48 @@ body{
     .wrapper .register-login, .pages-links{
         display: none;
     }
-    .hamburger-menu-wrapper{
+    .mobile-menu-wrapper{
         display: flex;
         flex-direction: column;
     }
     
-    .hamburger-menu-wrapper .pages-links, .register-login{
+    .mobile-menu-wrapper .pages-links, .register-login{
         display: flex;
         flex-direction: column;
         gap: 1.71em;
     }
-    .hamburger-menu-wrapper .pages-links{
+    .mobile-menu-wrapper .pages-links{
         padding-top: 1.71em;
         border-top: solid #F1F1F1;
         border-bottom: solid #F1F1F1;
         margin-left: 0;
         padding-bottom: 2.28em;
     }
-    .hamburger-menu-wrapper .pages-links a{
+    .mobile-menu-wrapper .pages-links a{
         padding-left: 1.14em;
     }
-    .hamburger-menu-wrapper .register-login{
+    .mobile-menu-wrapper .register-login{
         padding-top: 1.14em;
         padding-left: 1.14em;
         align-items: start;
     }
-    .hamburger-menu-wrapper .register-login img:first-of-type {
+    .mobile-menu-wrapper .register-login img:first-of-type {
        display: none;
     }
-    .hamburger-menu-wrapper .register-login a {
+    .mobile-menu-wrapper .register-login img:last-of-type {
+        margin-left: -10px;
+     }
+    .mobile-menu-wrapper .register-login a {
         width: 100%;
         display: flex;
         flex-direction: row-reverse;
         justify-content: start;
-        gap: 0.28em;
+        border: solid;
      }
-    .hamburger-menu{
+    .mobile-menu{
         display: block;
     }
-    .hamburger-menu > button{
+    .mobile-menu > button{
         border: none;
     }
 }

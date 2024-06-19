@@ -50,6 +50,41 @@ function NavBar() {
     );
   }
 
+  function RegisterLoginContent(content) {
+
+    return(
+      <>
+         <div className="register-login">
+          <a
+            key={loginLink.id}
+            id={`${loginLink.name}-link`}
+            href={`/${loginLink.name.replace(" ", "")}`}
+          >
+            {loginLink.name}
+            <img src="../src/assets/ArrowLink.svg" alt="ArrowLink" />
+            <img  src={`../src/assets/${loginLink.name}.svg`} alt="mobileIcon" />
+          </a>
+        {content.type == 'mobile' ?
+           <a
+           key={registerLink.id}
+           id={`${registerLink.name}-link`}
+           href={`/${registerLink.name.replace(" ", "")}`}
+         >
+           {registerLink.name}
+         <img  src="../src/assets/ArrowLink.svg" alt="arrowLink" />
+         <img  src={`../src/assets/${registerLink.name}.svg`} alt="mobileIcon" />
+         </a>
+          :
+          <div className="register-btn">
+            <button>register</button>
+          </div>
+      
+      }
+        </div>
+      </>
+    )
+  }
+
   return (
     <>
       {/* External part of the navbar */}
@@ -67,21 +102,9 @@ function NavBar() {
             <PageButtons name={element.name} key={element.id} />
           ))}
         </div>
-
-        <div className="register-login">
-          <a
-            key={loginLink.id}
-            id={`${loginLink.name}-link`}
-            href={`/${loginLink.name.replace(" ", "")}`}
-          >
-            {loginLink.name}
-            <img src="../src/assets/ArrowLink.svg" alt="ArrowLink" />
-          </a>
-          <div className="register-btn">
-            <button>register</button>
-          </div>
-        </div>
-        <div className="hamburger-menu">
+        <RegisterLoginContent type='desktop'/>
+    
+        <div className="mobile-menu">
           <button onClick={() => setToggleMenu(!toggleMenu)}>
             <img
               src={
@@ -95,33 +118,13 @@ function NavBar() {
           </button>
         </div>
       </div>
-        <div style={{display: toggleMenu ? 'block' : 'none'}} className="hamburger-menu-wrapper">
+        <div style={{display: toggleMenu ? 'block' : 'none'}} className="mobile-menu-wrapper">
           <div className="pages-links">
            {pageLinks.map((element) => (
             <PageButtons name={element.name} key={element.id} />
           ))}
           </div>
-          <div className="register-login">
-          <a
-            key={loginLink.id}
-            id={`${loginLink.name}-link`}
-            href={`/${loginLink.name.replace(" ", "")}`}
-          >
-            {loginLink.name}
-          <img  src="../src/assets/ArrowLink.svg" alt="arrowLink" />
-          <img  src={`../src/assets/${loginLink.name}.svg`} alt="mobileIcon" />
-          </a>
-          <a
-            key={registerLink.id}
-            id={`${registerLink.name}-link`}
-            href={`/${loginLink.name.replace(" ", "")}`}
-          >
-            {registerLink.name}
-          <img  src="../src/assets/ArrowLink.svg" alt="arrowLink" />
-          <img  src={`../src/assets/${registerLink.name}.svg`} alt="mobileIcon" />
-          </a>
-
-        </div>
+          <RegisterLoginContent type='mobile'/>
         </div>
     </>
   );
