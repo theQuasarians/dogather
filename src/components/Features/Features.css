@@ -1,0 +1,174 @@
+.features {
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top:7em;
+}
+
+.features--header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding:1em 0;
+}
+
+.features--searchBar{
+    height: 100%;
+}
+
+.features--commands {
+    padding-left:4em;
+}
+
+.features--extra {
+    padding-right: 4em;
+    display: flex; 
+    gap: 1.25em;
+}
+
+.features--commands {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.features--main {
+    width: 100%;
+    background-color: var(--clr-grey);
+}
+
+.features--mainContainer {
+    padding-top: 4em;
+    text-align: center;
+}
+
+.features--title {
+    font-family: var(--ff-title); font-weight: var(--fw-semibold); font-size: 2.688rem;
+    letter-spacing: 0.56px; line-height: 51.6px;
+    padding-top:0.372em;
+}
+
+.features--descr {
+    font-family: var(--ff-base); font-weight: var(--fw-regular); font-size: 1.125rem;
+    color:#000000;
+    letter-spacing: 0.96px; line-height: 21.6px;
+    padding-top: 0.6em;
+}
+
+.features--imgDemo {
+    margin-top: 2.5em;
+    padding-bottom: 5.75em;
+}
+
+.features--imgPhone{
+    display: none;
+}
+
+.features--headerPhoneTitle{
+    display: none;
+}
+
+/*Tablet*/
+@media screen and (max-width: 960px) {
+   .md-hidden{
+    display: none;
+   }
+
+   .features--title {
+        letter-spacing: 0.512px;
+    }
+
+    .features--imgDemo {
+        margin-top: 2.5em;
+        padding-bottom: 5.75em;
+    }
+
+    .features--header {
+        display: block;
+        padding:1.5em 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .features--title{
+        font-size: clamp(1.5rem, -0.02rem + 7.6vw, 2.6875rem);
+    }
+    .features--descr{
+        font-size: clamp(0.75rem, 0.2885rem + 2.3077vw, 1.125rem);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .features {
+        width: 100%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin-top: 3.25em;
+    }
+    
+    .features--header {
+        display: block;
+        padding:1.5em 0;
+        text-align: center;
+    }
+    
+    .features--searchBar{
+        height: 100%;
+    }
+   
+    .features--mainContainer {
+        padding-top: 2.5em;
+        text-align: center;
+    }
+    
+    .features--title,
+    .features--descr{
+        display: block;
+    }
+
+    .features--title{
+        line-height: 31.734px;
+    }
+    
+    .features--mainImg{
+        display: none;
+    }
+
+    .features--headerPhoneTitle p{
+        font-family:var(--ff-base); font-size: .875rem;
+    }
+
+    .features--headerPhoneTitleImg{
+        display: flex; gap:0.5em;
+    }
+}
+
+@media screen and (max-width:320px){
+
+    .features--main {
+        width: 100%;
+        background-color: #DBEDDB;
+        overflow-x: hidden;
+    }
+
+    .features--headerPhoneTitle{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0.5em 1em 0.75em 1em;
+        background-color:#cee0cf ;
+    }
+
+    .features--imgPhone{
+        display: block;
+        margin-left: 1em;
+    }
+
+
+    .features--imgDemo {
+        margin-top: 0.688em;
+        margin-left:0.7em;
+        padding-bottom: 1.25em;
+    }
+
+    .features--title,
+    .features--descr{
+        display: none;
+    }
+}

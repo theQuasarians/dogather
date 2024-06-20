@@ -1,0 +1,112 @@
+.cta--container {
+    display: flex; justify-content: center; align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top:7em;
+    margin-bottom: 15.5em;
+}
+
+.cta--img {
+    padding-bottom:3.25em;    
+}
+
+.cta--title {
+    font-family:var(--ff-title); font-size:3.563rem;
+    font-weight: var(--fw-semibold);
+    line-height: 68.4px;
+    padding-bottom:0.913em;
+}
+
+
+.cta--input {
+    padding:0.75em 0.6em;
+    min-width: 363px;
+    border:1px solid var(--clr-border-input);
+    margin-right:0.5rem;
+    border-radius: var(--bradius-btn);
+}
+
+.cta__container--newsLetter{
+    display: flex; justify-content: center; align-items: center;
+}
+
+.cta--input::placeholder {
+    font-family: var(--ff-base); font-weight: var(--fw-regular); font-size: 0.875rem;
+    line-height: 18.2px;
+}
+
+.cta--btn{
+    font-family: var(--ff-base); font-weight: var(--fw-medium); font-size: 1.125rem;
+    padding: 0.417em 2.928em;
+    margin:0;
+    background-color: var(--clr-orange); color:var(--clr-white);
+    border:none; outline:none;
+    border-radius:var(--bradius-btn);
+    cursor: pointer;
+}
+
+/*Tablet*/
+@media screen and (max-width: 960px) {
+    
+    .cta--img {
+        padding-bottom:1.5rem;    
+    }
+    
+    .cta--title {
+        font-size:2.688rem;
+        line-height: 51.6px;
+        padding-bottom:1.2em;
+    }
+    
+    .cta--input {
+        padding:0.6em 0.6em;
+        min-width: 329px;
+        border:1px solid var(--clr-border-input);
+        margin-right:0.5rem;
+        border-radius: var(--bradius-btn);
+    }
+
+    .cta--btn{
+        font-size: 0.875rem;
+        padding: 0.572em 1.66em;
+        margin:0;
+    }
+}
+/*Phone*/
+@media screen and (max-width: 450px) {
+
+    .cta--img {
+        padding-bottom:2em;      
+    }
+    
+    .cta--title {
+        font-size:1.5rem; font-weight: var(--fw-regular);
+        line-height: 28.8px;
+        padding-bottom:0.75em;
+    }
+    
+    .cta--input {
+        min-width: 0;
+        width: 170px;
+        padding: 0.563em 0.6em; 
+    }
+
+    .cta--input::placeholder {
+        font-weight: var(--fw-regular); font-size: 0.875rem;
+        line-height: 14.3px;
+    }
+
+    .cta--btn{
+        font-size: 0.875rem;
+        padding: 0.536em 1.192em;
+        margin:0;
+    }
+
+    .cta--title {
+        font-size:1.7rem;
+        line-height: 28.8px;
+        padding-bottom:2rem;
+    }
+  
+}
