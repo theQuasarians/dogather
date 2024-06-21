@@ -1,0 +1,170 @@
+/* Navbar wrapper */
+.wrapper{ 
+    display: flex;
+    align-items: center;
+    padding: 1.78em 4.44em 0 4.44em;
+}
+/* Navbar content and button gets the font-family and size applied */
+.wrapper, .register-btn button{
+    font-family: var(--ff-base);
+    font-size: 1em;
+}
+
+.logo a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+}
+.logo  a  img{
+    margin-left: 0.23em;
+    width: 1.34em;
+}
+/* Pages links contains about us, features and contact values */
+.pages-links{
+    margin-left: 10%;
+    display: flex;
+    gap: 2.22em;
+}
+
+.pages-links a{
+    width: 5.16em;
+}
+
+.pages-links a img:first-of-type{
+    margin-left: 0.28em;
+}
+
+.register-btn button{
+    background-color: var(--clr-accent);
+    color: var(--clr-white);
+    border: none;
+    border-radius: 0.28rem;
+    padding: 0.67em 1.78em;
+}
+
+.register-btn{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border: none; 
+}
+/* hide mobile-menu on page load */
+.mobile-menu{
+    display: none;
+}
+/* This contains the login and register buttons */
+.register-login{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1.78em;
+    justify-content: end;
+}
+
+.register-login a{
+    display: flex;
+    flex-direction: row;
+}
+
+.register-login #login-link img{
+    margin-left: 0.28em;
+}
+
+
+/* Tablet */
+@media (width <= 960px) {
+    .wrapper{
+        font-size: 16px;
+        padding: 1.78em 2.67em 0 1.78em;
+    }
+    
+    .register-btn > button{
+        padding: 0.44em 2em;
+    }
+    
+}
+
+/* Mobile */
+@media (width <= 770px) {
+    /* wrapper of the mobile menu */
+    .mobile-menu-wrapper{
+        font-family: var(--ff-base);
+    }
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.12em 1em 1.71em 0.89em;
+    }
+    .register-login a{
+        gap: 0.28em;
+    }
+    .pages-links a {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        gap: 0.28em;
+    }
+    .register-login #login-link img{
+        margin-left: 0em;
+    }
+    .wrapper .register-login, .pages-links{
+        display: none;
+    }
+    /* hide first-of-type image to only show icons */
+    .pages-links img:first-of-type, .register-login img:first-of-type{
+        display: none;
+    }
+
+    .mobile-menu-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mobile-menu-wrapper .pages-links, .register-login{
+        display: flex;
+        flex-direction: column;
+        gap: 1.71em;
+    }
+    .mobile-menu-wrapper .pages-links{
+        padding-top: 1.71em;
+        border-top: solid #F1F1F1;
+        border-bottom: solid #F1F1F1;
+        margin-left: 0;
+        padding-bottom: 2.28em;
+    }
+    .mobile-menu-wrapper .pages-links a{
+        padding-left: 1.14em;
+    }
+    .mobile-menu-wrapper .register-login{
+        padding-top: 1.14em;
+        padding-left: 1.14em;
+        align-items: start;
+    }
+    .mobile-menu-wrapper .register-login a {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+     }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .mobile-menu > button{
+        border: none;
+    }
+}
+
+/* If width is higher than Tablet mobile content won't be showed */
+@media (width >= 770px) {
+    .mobile-menu-wrapper, .pages-links img:last-of-type, .register-login img:last-of-type{
+        display: none;
+    }
+}
+
+
+
+
