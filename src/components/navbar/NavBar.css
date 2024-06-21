@@ -63,9 +63,9 @@ body{
     justify-content: end;
 }
 
-
-#login-link  a{
+.register-login a{
     display: flex;
+    flex-direction: row;
 }
 
 .register-login #login-link img{
@@ -145,14 +145,15 @@ body{
     .mobile-menu-wrapper .register-login img:first-of-type {
        display: none;
     }
-    .mobile-menu-wrapper .register-login img:last-of-type {
-        margin-left: -10px;
-     }
+
     .mobile-menu-wrapper .register-login a {
         width: 100%;
         display: flex;
         flex-direction: row-reverse;
         justify-content: start;
+
+     }
+     .mobile-menu-wrapper .register-login a img:last-of-type{
         border: solid;
      }
     .mobile-menu{
