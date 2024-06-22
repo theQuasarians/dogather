@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./NavBar.css";
+
+/* fix color on click */
 
 function NavBar() {
   /* React state that will show or hide the mobile menu */
@@ -30,11 +32,14 @@ function NavBar() {
   };
 
   /* Remove content if browser width goes beyond mobile */
-  window.addEventListener('resize',() => {
-    if(document.body.clientWidth >= '770') {
-      setToggleMobileMenu(false)
-    } 
-  })
+  useEffect(() => {
+    window.addEventListener('resize',() => {
+      if(document.body.clientWidth >= '770') {
+        setToggleMobileMenu(false)
+      } 
+    })
+  }, [])
+  
 
   /* Component that returns the links */
   function PageButtons(element) {
@@ -80,6 +85,7 @@ function NavBar() {
          <img  src={`../src/assets/navbarAssets/${registerLink.name}.svg`} alt="mobileIcon" />
          </a>
           :
+          /* make this a link */
           <div className="register-btn">
             <button>register</button>
           </div>
@@ -117,7 +123,7 @@ function NavBar() {
             <img
               src={
                 toggleMobileMenu
-                  ? "../src/assets/navbarAssets/toggleMobileMenuArrows.svg"
+                  ? "../src/assets/navbarAssets/toggleMenuArrows.svg"
                   : "../src/assets/navbarAssets/mobileMenu.svg"
                  
               }

@@ -155,6 +155,7 @@
 
     .mobile-menu > button{
         border: none;
+        background-color: transparent;
     }
 }
 
