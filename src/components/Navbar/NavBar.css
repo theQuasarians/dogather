@@ -72,6 +72,11 @@
 
 /* Mobile */
 @media (width <= 770px) {
+    /* Mobile menu button */
+    .mobile-menu button{
+        border: none;
+        background: transparent;
+    }
     /* wrapper of the mobile menu */
     .mobile-menu-wrapper{
         font-family: var(--ff-base);
