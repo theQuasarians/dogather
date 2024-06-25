@@ -113,6 +113,7 @@
         align-items: start;
     }
     .mobile-menu-wrapper .pages-links a{
+        flex-wrap: wrap;
         margin-left: 2.14em;
         padding: 0;
        width: auto;
