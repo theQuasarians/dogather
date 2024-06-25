@@ -24,62 +24,47 @@
 .pages-links{
     margin-left: 10%;
     display: flex;
+    align-items: center;
     gap: 2.22em;
+    width: 100%;
 }
-
 .pages-links a{
-    width: 5.16em;
+    text-decoration: none;
+    color: black;
 }
-
 .pages-links a img:first-of-type{
     margin-left: 0.28em;
 }
+.pages-links #login-link{
+    margin-left: auto;
+}
 
-.register-btn button{
+.pages-links #register-link{
     background-color: var(--clr-accent);
+    padding: 0.66rem 1.77rem;
     color: var(--clr-white);
-    border: none;
-    border-radius: 0.28rem;
-    padding: 0.67em 1.78em;
+    border-radius: 0.27em;
+}
+.pages-links #register-link img:first-of-type{
+    display: none;
 }
 
-.register-btn{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    border: none; 
-}
 /* hide mobile-menu on page load */
 .mobile-menu{
     display: none;
 }
 /* This contains the login and register buttons */
-.register-login{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    gap: 1.78em;
-    justify-content: end;
-}
 
-.register-login a{
-    display: flex;
-    flex-direction: row;
-}
-
-.register-login #login-link img{
-    margin-left: 0.28em;
-}
 
 
 /* Tablet */
 @media (width <= 960px) {
     .wrapper{
-        font-size: 16px;
+        font-size: 0.88em;
         padding: 1.78em 2.67em 0 1.78em;
     }
     
-    .register-btn > button{
+    .pages-links #register-link{
         padding: 0.44em 2em;
     }
     
@@ -116,48 +101,45 @@
     .pages-links img:first-of-type, .register-login img:first-of-type{
         display: none;
     }
-
-    .mobile-menu-wrapper{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .mobile-menu-wrapper .pages-links, .register-login{
+    .mobile-menu-wrapper .pages-links{
         display: flex;
         flex-direction: column;
         gap: 1.71em;
-    }
-    .mobile-menu-wrapper .pages-links{
         padding-top: 1.71em;
-        border-top: solid #F1F1F1;
-        border-bottom: solid #F1F1F1;
+        border-top: solid var(--clr-grey);
+        border-bottom: solid var(--clr-grey);
         margin-left: 0;
         padding-bottom: 2.28em;
-    }
-    .mobile-menu-wrapper .pages-links a{
-        padding-left: 1.14em;
-    }
-    .mobile-menu-wrapper .register-login{
-        padding-top: 1.14em;
-        padding-left: 1.14em;
         align-items: start;
     }
-    .mobile-menu-wrapper .register-login a {
-        width: 100%;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: start;
-     }
-
+    .mobile-menu-wrapper .pages-links a{
+        margin-left: 2.14em;
+        padding: 0;
+       width: auto;
+    }
     .mobile-menu{
         display: block;
     }
-
-    .mobile-menu > button{
-        border: none;
+    .pages-links #register-link{
+        padding: 0 0 0 0em;
         background-color: transparent;
+        color: var(--clr-text);
     }
-}
+    .pages-links #login-link{
+      margin-top: 2em;
+      margin-left: 2.14em;
+    }
+    /* Render border before #Login link making a div not needed */
+    .pages-links #login-link::after{
+        content: '';
+        border-top: solid var(--clr-grey);
+        position: absolute;
+        margin-top: -2em;
+        margin-left: -2.14em;
+        width: 100%;
+    }
+}   
+    
 
 /* If width is higher than Tablet mobile content won't be showed */
 @media (width >= 770px) {
