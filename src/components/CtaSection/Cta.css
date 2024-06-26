@@ -1,112 +1,118 @@
-.cta--container {
-    display: flex; justify-content: center; align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    margin-top:7em;
-    margin-bottom: 15.5em;
+.cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+  margin-bottom: 15.5rem;
 }
 
-.cta--img {
-    padding-bottom:3.25em;    
+.cta__container {
+  width: 100%;
+  max-width: 540px;
+  text-align: center;
 }
 
-.cta--title {
-    font-family:var(--ff-title); font-size:3.563rem;
-    font-weight: var(--fw-semibold);
-    line-height: 68.4px;
-    padding-bottom:0.913em;
+.cta__contImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2.889rem;
 }
 
-
-.cta--input {
-    padding:0.75em 0.6em;
-    min-width: 363px;
-    border:1px solid var(--clr-border-input);
-    margin-right:0.5rem;
-    border-radius: var(--bradius-btn);
+.cta__img img {
+  width: 100%;
 }
 
-.cta__container--newsLetter{
-    display: flex; justify-content: center; align-items: center;
+.cta__container h2 {
+  font-family: var(--ff-title);
+  font-size: clamp(2.389rem, 0.7784rem + 3.1818vw, 3.167rem);
+  font-weight: var(--fw-semibold);
+  line-height: 68.4px;
+  padding-bottom: 0.913em;
 }
 
-.cta--input::placeholder {
-    font-family: var(--ff-base); font-weight: var(--fw-regular); font-size: 0.875rem;
-    line-height: 18.2px;
+.cta__signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.348rem;
 }
 
-.cta--btn{
-    font-family: var(--ff-base); font-weight: var(--fw-medium); font-size: 1.125rem;
-    padding: 0.417em 2.928em;
-    margin:0;
-    background-color: var(--clr-orange); color:var(--clr-white);
-    border:none; outline:none;
-    border-radius:var(--bradius-btn);
-    cursor: pointer;
+.cta__signup input[type="text"] {
+  padding: 0.472em 0.533em;
+  width: 70%;
+  border: 1px solid var(--clr-border-input);
+  border-radius: var(--bradius-btn);
 }
 
-/*Tablet*/
+.cta__signup input[type="text"]::placeholder {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: 1rem;
+  line-height: 18.2px;
+}
+
+.cta__signup button {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-medium);
+  font-size: 1rem;
+  width: 30%;
+  padding: 0.417em 0;
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+  border: none;
+  outline: none;
+  border-radius: var(--bradius-btn);
+  cursor: pointer;
+}
+
+/* Tablet*/
 @media screen and (max-width: 960px) {
-    
-    .cta--img {
-        padding-bottom:1.5rem;    
-    }
-    
-    .cta--title {
-        font-size:2.688rem;
-        line-height: 51.6px;
-        padding-bottom:1.2em;
-    }
-    
-    .cta--input {
-        padding:0.6em 0.6em;
-        min-width: 329px;
-        border:1px solid var(--clr-border-input);
-        margin-right:0.5rem;
-        border-radius: var(--bradius-btn);
-    }
+  .cta__contImg {
+    padding-bottom: 1.5rem;
+  }
 
-    .cta--btn{
-        font-size: 0.875rem;
-        padding: 0.572em 1.66em;
-        margin:0;
-    }
+  .h2 {
+    font-size: 2.389rem;
+    line-height: 1.19em;
+    padding-bottom: 1.2em;
+  }
+
+  .cta__signup input[type="text"] {
+    padding: 0.361em 0.53em;
+  }
+
+  .cta__signup button {
+    font-size: 0.778rem;
+    padding: 0.572em 0em;
+  }
 }
-/*Phone*/
+
+/*Phone 450*/
 @media screen and (max-width: 450px) {
+  .cta__contImg {
+    padding-bottom: 2em;
+  }
 
-    .cta--img {
-        padding-bottom:2em;      
-    }
-    
-    .cta--title {
-        font-size:1.5rem; font-weight: var(--fw-regular);
-        line-height: 28.8px;
-        padding-bottom:0.75em;
-    }
-    
-    .cta--input {
-        min-width: 0;
-        width: 170px;
-        padding: 0.563em 0.6em; 
-    }
+  .cta__container h2 {
+    font-size: clamp(1.333rem, -1.4234rem + 14.6169vw, 2.389rem);
+    line-height: clamp(1.6rem, -4.2923rem + 30.4615vw, 3.8rem);;
+    padding-bottom: 2rem;
+    font-weight: var(--fw-regular);
+  }
 
-    .cta--input::placeholder {
-        font-weight: var(--fw-regular); font-size: 0.875rem;
-        line-height: 14.3px;
-    }
+  .cta__signup {
+    padding: 0 2rem;
+  }
+  .cta__signup input[type="text"]::placeholder {
+    font-weight: var(--fw-regular);
+    font-size: 0.778rem;
+  }
 
-    .cta--btn{
-        font-size: 0.875rem;
-        padding: 0.536em 1.192em;
-        margin:0;
-    }
-
-    .cta--title {
-        font-size:1.7rem;
-        line-height: 28.8px;
-        padding-bottom:2rem;
-    }
-  
+  .cta--btn {
+    font-size: 0.778rem;
+    padding: 0.536em 0;
+  }
 }
