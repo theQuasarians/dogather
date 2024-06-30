@@ -6,7 +6,6 @@ import icoShareFeatures from "../../assets/featuresAssets/icoShareFeatures.svg"
 import icoAddFeatures from "../../assets/featuresAssets/icoAddFeatures.svg"
 import icoHelloFeatures from "../../assets/featuresAssets/icoHelloFeatures.svg"
 import imgAppDemoFeatures from "../../assets/featuresAssets/imgAppDemoFeatures.svg"
-import imgAppDemoFeaturesTablet from "../../assets/featuresAssets/imgAppDemoFeaturesTablet.svg"
 import imgAppDemoFeaturesPhone from "../../assets/featuresAssets/imgAppDemoFeaturesPhone.svg"
 import imgAppDemoFeaturesStatusBarPhone from "../../assets/featuresAssets/imgAppDemoFeaturesStatusBarPhone.svg"
 import icoZoomFeaturesPhone from "../../assets/featuresAssets/icoZoomFeaturesPhone.svg"
@@ -61,8 +60,8 @@ export default function Features() {
                     {/*Phone */}
                     <img src={imgAppDemoFeaturesStatusBarPhone} alt="features-img" className="features--imgPhone" />
                     <img 
-                        srcSet={`${imgAppDemoFeatures} 1440w, ${imgAppDemoFeaturesTablet} 960w, ${imgAppDemoFeaturesPhone} 320w`}
-                        sizes="(max-width:320px) 320px, (max-width:960px) 960px, (min-width:961px) 1440px"
+                        srcSet={`${imgAppDemoFeatures} 1440w, ${imgAppDemoFeaturesPhone} 320w`}
+                        sizes="(max-width:320px) 320px, (min-width:321px) 1440px"
                         src={imgAppDemoFeatures} 
                         alt="features-img" 
                         className="features--imgDemo"
