@@ -67,6 +67,12 @@ form label {
   font-family: var(--ff-base);
 }
 
+.form .username_error,
+.form .email_error,
+.form .password_error {
+  border: 2px solid red !important;
+}
+
 .passwordContainer {
   margin-bottom: 0.667rem;
   width: 100%;
