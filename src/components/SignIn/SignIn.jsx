@@ -1,8 +1,35 @@
-import "./SignIn.css";
+import "./SignIn.css"
 
-import logoSignIn from "../../assets/signInAssets/logo.svg";
-import eyes from "../../assets/signInAssets/eyes.svg";
+import logoSignIn from "../../assets/signInAssets/logo.svg"
+import eyes from "../../assets/signInAssets/eyes.svg"
+import { useState } from "react"
+import { validateSigninForm } from "../../utils/validateData"
 export default function SignIn() {
+  const [signinForm, setSigninForm] = useState({
+    email: null,
+    password: null,
+    errors: {
+      email: null,
+      password: null,
+    },
+  })
+  const fillDataFields = (e) => {
+    if (e.target?.name) {
+      const { name } = e.target
+      setSigninForm((prev) => ({ ...prev, [name]: e.target.value }))
+    }
+  }
+  const submitSigninForm = (e) => {
+    e.preventDefault()
+    const errors = validateSigninForm(signinForm)
+    console.log("validation fun", errors)
+    if (errors.password?.length | errors.email?.length) {
+      setSigninForm((prev) => ({ ...prev, errors }))
+    } else {
+      // post data to the server
+      // console.log(signinForm)
+    }
+  }
   return (
     <>
       <nav className="signin__nav">
@@ -19,6 +46,7 @@ export default function SignIn() {
               type="email"
               name="email"
               id="email"
+              onChange={(e) => fillDataFields(e)}
               placeholder="Enter your email address"
               required
             />
@@ -28,6 +56,7 @@ export default function SignIn() {
                 type="password"
                 name="password"
                 id="password"
+                onChange={(e) => fillDataFields(e)}
                 placeholder="Enter your password"
                 required
               />
@@ -43,12 +72,16 @@ export default function SignIn() {
                 </a>
               </span>
             </p>
-            <button type="submit" className="form__cta">
+            <button
+              onClick={(e) => submitSigninForm(e)}
+              type="submit"
+              className="form__cta"
+            >
               Sign in
             </button>
           </form>
         </div>
       </div>
     </>
-  );
+  )
 }
