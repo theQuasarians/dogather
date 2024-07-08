@@ -1,27 +1,34 @@
-import { Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import AuthLayout from "./_auth/AuthLayout"
-import { Landing, SignInPage, SignUpPage } from "./_auth/pages"
+import {
+  Dashboard,
+  Landing,
+  Profile,
+  SignInPage,
+  SignUpPage,
+} from "./_auth/pages"
 
 import "./index.css"
+import ContextProvider from "./Context/ContextProvider"
 
 const App = () => {
   return (
-    <main>
-      <Routes>
-        {/* public routes */}
-        <Route element={<AuthLayout />}>
+    <BrowserRouter>
+      <ContextProvider>
+        <Routes>
+          {/* private routes */}
+          <Route element={<AuthLayout />}>
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Route>
+          {/* public routes */}
           <Route index element={<Landing />} />
           <Route path="/sign-in" element={<SignInPage />} />
           <Route path="/sign-up" element={<SignUpPage />} />
-        </Route>
-        {/* private routes */}
-        {/* <Route element={<RootLayout />}>
-          <Route index element={<Home />} />
-          <Route path="/name" element={<Name />} />
-        </Route> */}
-      </Routes>
-    </main>
+        </Routes>
+      </ContextProvider>
+    </BrowserRouter>
   )
 }
 

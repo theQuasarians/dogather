@@ -4,7 +4,11 @@ import logoSignIn from "../../assets/signInAssets/logo.svg"
 import eyes from "../../assets/signInAssets/eyes.svg"
 import { useState } from "react"
 import { validateSigninForm } from "../../utils/validateData"
+import { useAppDispatch } from "../../Context/ContextProvider"
+import { signInCall } from "../../api"
+import axios from "axios"
 export default function SignIn() {
+  const dispatch = useAppDispatch()
   const [signinForm, setSigninForm] = useState({
     email: null,
     password: null,
@@ -26,6 +30,28 @@ export default function SignIn() {
     if (errors.password?.length | errors.email?.length) {
       setSigninForm((prev) => ({ ...prev, errors }))
     } else {
+      const { email, password } = signinForm
+      axios
+        .post("http://localhost:5000/login", {
+          email,
+          password,
+        })
+        .then((result) => {
+          console.log(result)
+          if (result.data === "Success") {
+            console.log("Login Success")
+            alert("Login successful!")
+            navigate("/home")
+          } else {
+            alert("Incorrect password! Please try again.")
+          }
+        })
+        .catch((err) => console.log(err))
+
+      // dispatch({ type: "LOGGED", payload: token })
+      // dispatch("LOGIN",signinForm
+
+      // console.log(typeof dispatch)
       // post data to the server
       // console.log(signinForm)
     }

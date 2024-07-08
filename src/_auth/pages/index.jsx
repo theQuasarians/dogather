@@ -1,3 +1,5 @@
-export { default as SignInPage } from "./SignInPage";
-export { default as Landing } from "./Landing";
-export { default as SignUpPage } from "./SignUpPage";
+export { default as SignInPage } from "./SignInPage"
+export { default as Landing } from "./Landing"
+export { default as SignUpPage } from "./SignUpPage"
+export { default as Profile } from "./Profile"
+export { default as Dashboard } from "./Dashboard"
