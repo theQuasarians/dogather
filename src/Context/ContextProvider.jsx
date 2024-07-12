@@ -20,7 +20,9 @@ export default function ContextProvider({ children }) {
 
 export const useAppContext = () => {
   const appContext = useContext(AppContext)
+  
   if (!appContext)
     throw new Error("Context must be use within AppContext Provider ")
-  return appContext
+
+    return appContext
 }

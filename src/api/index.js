@@ -1,25 +1,30 @@
 import axios from "axios"
 
 const API = axios.create({
-  baseURL: "http://localhost:5000",
-  withCredentials: false,
-  headers: {
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-  },
+  baseURL: "http://127.0.0.1:3000/api",
+  withCredentials: true,
 })
 
-export const signInCall = async (body) => {
+API.interceptors.request.use(
+  (config) => {
+    const token = document.cookie.replace(
+      /(?:(?:^|.*;\s*)token\s*=\s*([^;]*).*$)|^.*$/,
+      "$1"
+    )
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`
+    }
+    return config
+  },
+  (error) => {
+    return Promise.reject(error)
+  }
+)
+
+export const signInCall = (data) => {
   try {
-    //     const { data } = await API.post("/login", { data: body })
-    const response = await fetch("http://localhost:5000/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(body),
-    })
-    console.log(response)
+    return API.post("/auth/login", data)
+    // console.log(response)
   } catch (error) {
     console.log("something went wrong!", error)
   }

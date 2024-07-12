@@ -1,0 +1,28 @@
+{
+   "author": "Ritwick Dey",
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "./img/icon.png",
+      "default_popup": "./popup/popup.html",
+      "default_title": "Live Server"
+   },
+   "content_scripts": [ {
+      "js": [ "reload.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": " Makes your existing server live. This is a browser extension that helps you to live reload feature for dynamic pages",
+   "homepage_url": "https://github.com/ritwickdey/live-server-web-extension",
+   "icons": {
+      "128": "./img/icon128.png",
+      "96": "./img/icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA29uSenKhCND5Nb+AmvUj2U+ifKzr1lQem31MOfy5wjIOzuzg5EXEnPjZSd41Zf9VW7t2aI/jAEQKpOTx3eD2BiRldwxw3IdacbRFzmIyPHZ36hdTQkCTNzCmUP5rUCKq69acipxvFyDCBqGh/Ay8dSVAmpUCp3POA+BJIGJ7BbtjqZQ1ZOxPJ8l71JoIewdu7HWOxWi94Oi1x2UiLrKDJSbBZ8hKef6GEGrP3fcdJ7ScvmgaSRj2sAKuFy4X3kslVmz/jlm0O3jtwXBB65oeNDfNbuXq7hTK+lHe/Ai9Q+jUtBq9HY5MOipy+gQXOu9K8NF6Oa0eP+AOZBoei5cH5QIDAQAB",
+   "manifest_version": 2,
+   "name": "Live Server Web Extension",
+   "permissions": [ "http://*/*", "https://*/*" ],
+   "short_name": "Live Server Web Extension",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.0"
+}

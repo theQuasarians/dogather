@@ -1,0 +1,14 @@
+2024/07/10-21:17:32.913 154f2 Creating DB /home/boualam/Desktop/community-projects/auth_dogather/~/tmp/Default/Sync Data/LevelDB since it was missing.
+2024/07/10-21:17:33.039 154f2 Reusing MANIFEST /home/boualam/Desktop/community-projects/auth_dogather/~/tmp/Default/Sync Data/LevelDB/MANIFEST-000001
+2024/07/10-21:19:04.639 154ae Level-0 table #5: started
+2024/07/10-21:19:05.428 154ae Level-0 table #5: 2791515 bytes OK
+2024/07/10-21:19:05.454 154ae Delete type=0 #3
+2024/07/10-21:19:05.988 154af Level-0 table #7: started
+2024/07/10-21:19:06.041 154af Level-0 table #7: 609974 bytes OK
+2024/07/10-21:19:06.058 154af Delete type=0 #4
+2024/07/10-21:19:19.617 154f2 Level-0 table #9: started
+2024/07/10-21:19:19.635 154f2 Level-0 table #9: 61140 bytes OK
+2024/07/10-21:19:19.665 154f2 Delete type=0 #6
+2024/07/10-21:19:33.250 154f2 Level-0 table #11: started
+2024/07/10-21:19:33.262 154f2 Level-0 table #11: 56517 bytes OK
+2024/07/10-21:19:33.271 154f2 Delete type=0 #8

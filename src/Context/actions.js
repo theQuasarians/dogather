@@ -11,29 +11,48 @@ import {
   DELETE_POST,
 } from "./constants"
 
+import { signInCall } from "../api/index"
 // auth actions
-export const authLoginRequest = () => ({
-  type: AUTH_LOGIN_REQUEST,
-})
+//login action
+export const authLoginRequest = async (data, dispatch) => {
+  try {
+    dispatch({ type: AUTH_LOGIN_REQUEST })
 
-export const authLoginSuccess = (payload) => ({
-  type: AUTH_LOGIN_SUCCESS,
-  payload,
-})
+    const res = await signInCall(data)
+    console.log(res)
+    const setCookieHeader = res?.headers["set-cookie"]
+    console.log(setCookieHeader)
+    if (res.status === 200) {
+      //when user logged successfully we provide user details and token in payload
+      console.log(res.cookie)
+      dispatch({
+        type: AUTH_LOGIN_SUCCESS,
+        payload: { user: res.data, token: "" },
+      })
+    } else {
+      dispatch({ type: AUTH_LOGIN_FAILURE, payload: "Authentication failed!" })
+    }
+  } catch (error) {
+    console.log(error)
+    dispatch({ type: AUTH_LOGIN_FAILURE, payload: error.message })
+  }
+}
 
-export const authLoginFailure = (error) => ({
-  type: AUTH_LOGIN_FAILURE,
-  payload: error,
-})
-
-export const authLogout = () => ({
-  type: AUTH_LOGOUT,
-})
+export const authLogout = async (dispatch) => {
+  try {
+    // TODO : call logout api here and check the status code
+    dispatch({ type: AUTH_LOGOUT })
+  } catch (error) {
+    console.log(error.message)
+  }
+}
 
 // post actions
-export const fetchPostsRequest = () => ({
-  type: FETCH_POSTS_REQUEST,
-})
+export const fetchPosts = async (dispatch) => {
+  try {
+    //1.
+  } catch (error) {}
+}
 
 export const fetchPostsSuccess = (posts) => ({
   type: FETCH_POSTS_SUCCESS,

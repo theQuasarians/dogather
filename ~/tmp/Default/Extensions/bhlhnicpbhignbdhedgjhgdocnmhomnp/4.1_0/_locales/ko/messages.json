@@ -1,0 +1,407 @@
+{
+   "11x11_average": {
+      "description": "This mode takes a 11x11 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "11x11 평균"
+   },
+   "25x25_average": {
+      "description": "This mode takes a 25x25 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "25x25 평균"
+   },
+   "3x3_average": {
+      "description": "This mode takes a 3x3 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "3x3 평균"
+   },
+   "5x5_average": {
+      "description": "This mode takes a 5x5 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "5x5 평균"
+   },
+   "about_colorzilla": {
+      "description": "Shows information about the app, its author, version etc",
+      "message": "ColorZilla 소개"
+   },
+   "allow_access_to_file_urls": {
+      "description": "Instructs the user to enable access to 'file' URLs - special URLs hosted locally",
+      "message": "클릭해서 \"파일 URL 액세스 허용\" 활성화"
+   },
+   "analyzing_please_wait": {
+      "description": "Indicates to user that the tool is Analyzing colors, and requests the user to wait until it completes the analysis",
+      "message": "분석중... 잠시만 기다려 주세요..."
+   },
+   "attributions": {
+      "description": "The attributions of various elements used in the products etc.",
+      "message": "속성"
+   },
+   "auto_copy": {
+      "description": "Auto copy a color or similar to clipboard after being picked/sampled",
+      "message": "자동 복사"
+   },
+   "auto_copy_format": {
+      "description": "The format to use when auto-copying the color to clipboard",
+      "message": "자동 복사 색상 포맷:"
+   },
+   "auto_copy_picked_to_clipboard": {
+      "description": "Auto copy the picked/sampled color to clipboard",
+      "message": "선택된 색상을 클립보드에 자동으로 복사합니다."
+   },
+   "auto_start_eyedropper_when_button_clicked": {
+      "description": "An option that starts the color sampling (eyedropper) mode immediately after the main app button is clicked, without needing to click on a menu item",
+      "message": "메인 버튼을 클릭하면 점안기가 자동으로 시작됩니다."
+   },
+   "cancel": {
+      "description": "The Cancel option, e.g. in a dialog",
+      "message": "취소"
+   },
+   "cancel_and_revert": {
+      "description": "Cancel the color selection and revert to the previous color",
+      "message": "취소하고 원래 색상으로 돌아가기"
+   },
+   "change_cursor_to_crosshair": {
+      "description": "An option that changes the cursor to crosshair (a cross) while the user is sampling the colors from the page with the eyedropper tool",
+      "message": "커서를 십자선으로 변경합니다."
+   },
+   "chrome_doesn_allow_picking_local": {
+      "description": "A warning for the user that the Color Picker / Eyedropper cannot pick colors from the current page, because its a local (non web-based) page",
+      "message": "브라우저가 로컬 페이지에서의 색상 추출을 허용하지 않습니다"
+   },
+   "chrome_doesn_allow_picking_special_page": {
+      "description": "A warning for the user that the Color Picker / Eyedropper cannot pick colors from the current page",
+      "message": "Chrome은 이 특별 페이지에서의 색상 추출을 허용하지 않습니다"
+   },
+   "chrome_doesn_allow_picking_webstore": {
+      "description": "A warning for the user that the Color Picker / Eyedropper cannot pick colors from the current page, because its a Chrome Web Store page",
+      "message": "Chrome은 Chrome 웹 스토어에서의 색상 추출을 허용하지 않습니다"
+   },
+   "clear_history": {
+      "description": "Clears/erases the entire color history",
+      "message": "기록 지우기"
+   },
+   "clear_history_question": {
+      "description": "A confirmation question asking user to confirm clearing/erasing the entire color history",
+      "message": "색상 기록 삭제?"
+   },
+   "click_to_revert": {
+      "description": "Indicates that clicking will revert the color selection to previously selected color",
+      "message": "원래 색상으로 돌아가려면 클릭하세요"
+   },
+   "close_and_stop_picking": {
+      "description": "Close the tool and stop picking colors from the page",
+      "message": "닫고 추출 중지"
+   },
+   "collapse_this_panel": {
+      "description": "Collapse the panel - make it more compact visually",
+      "message": "이 패널 접기"
+   },
+   "color_copied_to_clipboard": {
+      "description": "The color has been copied to user's clipboard",
+      "message": "색상 클립보드에 복사됨"
+   },
+   "color_format": {
+      "description": "The format of a color to use - eg. RGB, HEX, HSL etc.",
+      "message": "색상 포맷"
+   },
+   "color_history_label": {
+      "description": "Label of the Color History panel etc.",
+      "message": "색상 기록:"
+   },
+   "color_picked": {
+      "description": "The color was succesfully sampled/picked from the screen",
+      "message": "색상 추출 완료"
+   },
+   "color_picker_by": {
+      "description": "Specifies and gives attribution to the authors of the Color Picker tool",
+      "message": "$AUTHOR1$ 및 $AUTHOR2$에 의한 색상 추출기.",
+      "placeholders": {
+         "author1": {
+            "content": "$1"
+         },
+         "author2": {
+            "content": "$2"
+         }
+      }
+   },
+   "color_picker_panel": {
+      "description": "The Color Picker Panel is a dialog that allows to choose colors from a palette or specify a color using RGB, HEX, HSL, or other color models. This is different from the Eyedropper tool that picks colors from pages etc.",
+      "message": "색상 선택기 패널"
+   },
+   "colorzilla_homepage": {
+      "description": "The home page of ColorZilla",
+      "message": "ColorZilla 홈페이지"
+   },
+   "colorzilla_options": {
+      "description": "Application Options/Preferences",
+      "message": "ColorZilla 옵션"
+   },
+   "commit_to_this_color": {
+      "description": "Using this option will make the selected color active.",
+      "message": "이 색상 선택을 확정하세요"
+   },
+   "copy_to_clipboard_menu_label": {
+      "description": "This allows the user to copy the current color to clipboard using various special color formats - RGB, HEX etc.",
+      "message": "특별 포맷 복사..."
+   },
+   "copy_with_param": {
+      "description": "Copy a string to clipboard, the string is provided using the paramater",
+      "message": "$STRING$ 복사",
+      "placeholders": {
+         "string": {
+            "content": "$1"
+         }
+      }
+   },
+   "created_by": {
+      "description": "The author/creator of the app",
+      "message": "제작:"
+   },
+   "css_color_analysis_results": {
+      "description": "The colors found in various CSS definitions on this page",
+      "message": "이 페이지의 CSS 색상"
+   },
+   "css_gradient_generator": {
+      "description": "A tool that allows users to create various CSS-based gradients",
+      "message": "CSS 변화도 생성기"
+   },
+   "current_color_label": {
+      "description": "Signifies previously selected color (which is the last current color) in the Color Picker UI",
+      "message": "현재 색"
+   },
+   "dont_move_document_down_when_sampling": {
+      "description": "An option that prevents the document from moving down to make room for the tool UI, when the eyedropper is active.",
+      "message": "샘플링할 때 문서를 아래로 이동하지 마세요."
+   },
+   "enable_keyboard_shortcuts": {
+      "description": "An option to enable the user to use a keyboard shortcut to activate the eyedropper/color picker tool",
+      "message": "키보드 단축키를 사용해서 페이지에서 색상 추출을 활성화합니다."
+   },
+   "enter_blue_value": {
+      "description": "Allows the user to enter the blue component of the color into the box",
+      "message": "\"파란색\" 값 입력 (0-255)"
+   },
+   "enter_green_value": {
+      "description": "Allows the user to enter the green component of the color into the box",
+      "message": "\"녹색\" 값 입력 (0-255)"
+   },
+   "enter_hex_value": {
+      "description": "Allows the user to enter the color in hex format into the box",
+      "message": "\"Hex\" 값 입력 (#000000-#ffffff)"
+   },
+   "enter_hue_value": {
+      "description": "Allows the user to enter the hue value into the box",
+      "message": "\"색조\" 값 입력 (0-360°)"
+   },
+   "enter_red_value": {
+      "description": "Allows the user to enter the red component of the color into the box",
+      "message": "\"빨간색\" 값 입력 (0-255)"
+   },
+   "enter_sat_value": {
+      "description": "Allows the user to enter the saturation value into the box",
+      "message": "\"채도\" 값 입력 (0-100%)"
+   },
+   "enter_val_value": {
+      "description": "Allows the user to enter the brightness value into the box",
+      "message": "\"명도\" 값 입력 (0-100%)"
+   },
+   "expand_this_panel": {
+      "description": "Expand the panel - make it full size visually",
+      "message": "이 패널 확장"
+   },
+   "extension_description": {
+      "description": "Eyedropper is the tool used to sample colors from an image, Color Picker Panel is a dialog where you can choose and adjust colors in various ways",
+      "message": "고급 점안기, 색상 선택기, 그라데이션 생성기 및 기타 색상 도구"
+   },
+   "eyedropper": {
+      "description": "The tool that allows users to pick/sample colors from screen/webpages/images etc. ",
+      "message": "점안기"
+   },
+   "help": {
+      "description": "Application help",
+      "message": "도움"
+   },
+   "help_translate_colorzilla": {
+      "description": "Asks users to help translate ColorZilla into different languages",
+      "message": "ColorZilla 번역 돕기"
+   },
+   "home_page": {
+      "description": "Home page of the app etc.",
+      "message": "홈페이지"
+   },
+   "keyboard_shortcut_label": {
+      "description": "Label for a keyboard shortcut to use",
+      "message": "단축키:"
+   },
+   "keyboard_shortcuts": {
+      "description": "Combination of keys to activate the tool etc.",
+      "message": "키보드 단축키"
+   },
+   "license": {
+      "description": "The license of the product",
+      "message": "허가"
+   },
+   "licensing": {
+      "description": "The various legal info relating to license of the product",
+      "message": "라이선싱"
+   },
+   "locale": {
+      "description": "This should always be set to this file's locale",
+      "message": "ko"
+   },
+   "new_color_commit": {
+      "description": "Indicates that this is the newly selected color, and by pressing OK the user can commit - make it the current color",
+      "message": "새로운 색상 - \"OK\"를 눌러 확인하세요"
+   },
+   "new_color_label": {
+      "description": "Signifies newly selected color in the Color Picker UI",
+      "message": "새로운 색"
+   },
+   "new_feature_label": {
+      "description": "The text of a badge that's displayed next to menu items to indicate to users that the feature is new",
+      "message": "신규"
+   },
+   "ok": {
+      "description": "The Ok option, e.g. in a dialog",
+      "message": "확인"
+   },
+   "online_help": {
+      "description": "The online portion of help",
+      "message": "온라인 도움말"
+   },
+   "options": {
+      "description": "Application Options/Preferences",
+      "message": "옵션"
+   },
+   "options_saved": {
+      "description": "A confirmation message indicating to user that their selected options have been saved",
+      "message": "선택사항 저장됨"
+   },
+   "outline_hovered_elements": {
+      "description": "An option that outlines with a line the HTML element the users cursor is currently hovering/positioned over",
+      "message": "마우스를 올린 요소의 윤곽선을 그립니다."
+   },
+   "page_color_picker_active": {
+      "description": "Indicates to the user that the Eyedropper / Color Picker has been activated and is currently active",
+      "message": "페이지 색상 추출기 활성화"
+   },
+   "palette_browser": {
+      "description": "A tool that presents various color palettes and their colors",
+      "message": "파레트 탐색기"
+   },
+   "palette_name_huesandbrightnesses": {
+      "description": "A palette with various color hues and color brightnesses",
+      "message": "색조 및 밝기"
+   },
+   "palette_name_huesandsaturations": {
+      "description": "A palette with various color hues and color saturations",
+      "message": "색조 및 채도"
+   },
+   "palette_name_w3cnamedcolors": {
+      "description": "A palette with various colors that have basic standard W3C names",
+      "message": "W3C 네임드 컬러"
+   },
+   "palette_name_webcolorsbyhue": {
+      "description": "A palette with various Web colors organized by their hue value",
+      "message": "색조 기준 웹 색상"
+   },
+   "palette_name_webnamedcolors": {
+      "description": "A palette with various colors that have names in Web standards",
+      "message": "웹 네임드 컬러"
+   },
+   "palette_name_websafecolors": {
+      "description": "A palette that has colors that are considered Web Safe - they are displayed consistenly over the widest variety of displays",
+      "message": "웹 안전색"
+   },
+   "palette_name_xnamedcolors": {
+      "description": "A palette with various colors that have names in X-Windows standards",
+      "message": "X 네임드 컬러"
+   },
+   "pick_color_from_anywhere": {
+      "description": "Tells the user they can pick a color from any screen location, including outside the browser window",
+      "message": "브러우저 밖을 포함해 어디에서든 색상 추출..."
+   },
+   "pick_color_from_outside_the_browser": {
+      "description": "Allows picking colors from anywhere on user's screen, including from outside the browser",
+      "message": "브라우저 밖 색상 추출"
+   },
+   "pick_color_from_page": {
+      "description": "Starts the Eyedropper / Color Picker tool to let the user sample color from a specific page location",
+      "message": "페이지에서 색상 선택"
+   },
+   "picked_color_history": {
+      "description": "The history of colors that the user picked",
+      "message": "선택된 색상 기록"
+   },
+   "point_sample": {
+      "description": "This mode samples one 1x1 pixel/point for the current color",
+      "message": "포인트 채취"
+   },
+   "report_translation_issue": {
+      "description": "Allows the user to report incorrect or inaccurate translations",
+      "message": "번역 문제 보고"
+   },
+   "resample_last_location": {
+      "description": "Gets the color of the last location sampled with the Eyedropper tool. Used for cases where the location might have changed or had a hover state",
+      "message": "최종 위치 재채취"
+   },
+   "sampling": {
+      "description": "Indicates to the user that the tool is currently sampling the screen for colors",
+      "message": "채취 중..."
+   },
+   "save_button_label": {
+      "description": "An action that allows the user to save the currently selected options/values",
+      "message": "저장"
+   },
+   "select_area_to_sample": {
+      "description": "Instructs the user to select an area from the screen so this area's pixels can be averaged into one sampled color",
+      "message": "채취 영역 선택"
+   },
+   "selection_average": {
+      "description": "This mode allows the user to select a certain visual portion of the current screen and the color will be determined by averaging all the pixel within this user-selected area",
+      "message": "선택 평균"
+   },
+   "set_to_blue_color_mode": {
+      "description": "Sets the current mode to select colors by amount of blue",
+      "message": "\"파란색\" 모드로 설정"
+   },
+   "set_to_green_color_mode": {
+      "description": "Sets the current mode to select colors by amount of green",
+      "message": "\"녹색\" 모드로 설정"
+   },
+   "set_to_hue_color_mode": {
+      "description": "Sets the current mode to select colors by hue",
+      "message": "\"색조\" 색상 모드로 설정"
+   },
+   "set_to_red_color_mode": {
+      "description": "Sets the current mode to select colors by amount of red",
+      "message": "\"빨간색\" 모드로 설정"
+   },
+   "set_to_sat_color_mode": {
+      "description": "Sets the current mode to select colors by saturation",
+      "message": "\"채도\" 색상 모드로 설정"
+   },
+   "set_to_val_color_mode": {
+      "description": "Sets the current mode to select colors by brightnesses",
+      "message": "\"명도\" 색상 모드로 설정"
+   },
+   "show_hex_codes_lowercase": {
+      "description": "An option to show HEX-formatted color values in lowercase (eg. #dddddd vs #DDDDDD)",
+      "message": "Hex 코드를 소문자로 표시."
+   },
+   "show_magnifier": {
+      "description": "An option that shows a magnified view of the sampled area while picking/samlping colors",
+      "message": "돋보기 표시."
+   },
+   "temporarily_show_hide_by_holding_shift": {
+      "description": "This allows temporarily showing or hiding the magnifier by holding the 'Shift' key while picking colors",
+      "message": "'Shift' 키를 누르고 있으면 일시적으로 표시/숨김."
+   },
+   "version": {
+      "description": "The version of the app (e.g v3.4)",
+      "message": "버전"
+   },
+   "webpage_color_analyzer": {
+      "description": "A tool that analyzes web pages, extracts the colors present, their definitions and elements",
+      "message": "웹페이지 색상 분석기"
+   },
+   "whats_new": {
+      "description": "News and updates about the app",
+      "message": "최신 정보"
+   }
+}

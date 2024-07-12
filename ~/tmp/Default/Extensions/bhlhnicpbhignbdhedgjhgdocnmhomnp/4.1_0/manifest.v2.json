@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "ColorZilla",
+  "version": "4.1",
+  "description": "__MSG_extension_description__",
+  "default_locale": "en",
+
+  "background": {
+      "scripts": ["lib/chrome-promise.js", "js/background-combo.js"]
+  },
+
+  "options_ui": {
+     "page": "html/options.html"
+  },
+
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+
+  "browser_action": {
+    "default_icon": "images/main-icon-19.png",
+    "default_title": "ColorZilla",
+    "default_popup": "html/popup.html"
+  },
+
+  "permissions": [ "tabs", "<all_urls>", "storage" ],
+
+  "web_accessible_resources": [
+    "css/content-style.css",
+    "images/checkmark-icon.svg",
+    "images/*.png",
+    "images/*.gif",
+    "images/material/*.svg"
+  ]
+}

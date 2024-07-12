@@ -1,0 +1,407 @@
+{
+   "11x11_average": {
+      "description": "This mode takes a 11x11 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "Среднее 11x11"
+   },
+   "25x25_average": {
+      "description": "This mode takes a 25x25 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "Среднее 25x25"
+   },
+   "3x3_average": {
+      "description": "This mode takes a 3x3 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "Среднее 3x3"
+   },
+   "5x5_average": {
+      "description": "This mode takes a 5x5 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "Среднее 5x5"
+   },
+   "about_colorzilla": {
+      "description": "Shows information about the app, its author, version etc",
+      "message": "О ColorZilla"
+   },
+   "allow_access_to_file_urls": {
+      "description": "Instructs the user to enable access to 'file' URLs - special URLs hosted locally",
+      "message": "Нажмите и активизируйте настройку «Разрешить доступ к URL-адресам вида file»"
+   },
+   "analyzing_please_wait": {
+      "description": "Indicates to user that the tool is Analyzing colors, and requests the user to wait until it completes the analysis",
+      "message": "Идет анализ… Пожалуйста, подождите…"
+   },
+   "attributions": {
+      "description": "The attributions of various elements used in the products etc.",
+      "message": "Атрибуция"
+   },
+   "auto_copy": {
+      "description": "Auto copy a color or similar to clipboard after being picked/sampled",
+      "message": "Автокопирование"
+   },
+   "auto_copy_format": {
+      "description": "The format to use when auto-copying the color to clipboard",
+      "message": "Формат автокопированного цвета:"
+   },
+   "auto_copy_picked_to_clipboard": {
+      "description": "Auto copy the picked/sampled color to clipboard",
+      "message": "Автоматически копировать выбранный цвет в буфер обмена."
+   },
+   "auto_start_eyedropper_when_button_clicked": {
+      "description": "An option that starts the color sampling (eyedropper) mode immediately after the main app button is clicked, without needing to click on a menu item",
+      "message": "Автоматически запускать инструмент «Пипетка» при нажатии основной кнопки."
+   },
+   "cancel": {
+      "description": "The Cancel option, e.g. in a dialog",
+      "message": "Отмена"
+   },
+   "cancel_and_revert": {
+      "description": "Cancel the color selection and revert to the previous color",
+      "message": "Отменить и вернуться к исходному цвету"
+   },
+   "change_cursor_to_crosshair": {
+      "description": "An option that changes the cursor to crosshair (a cross) while the user is sampling the colors from the page with the eyedropper tool",
+      "message": "Изменить курсор на крест."
+   },
+   "chrome_doesn_allow_picking_local": {
+      "description": "A warning for the user that the Color Picker / Eyedropper cannot pick colors from the current page, because its a local (non web-based) page",
+      "message": "Ваш браузер не позволяет пользоваться инструментом выбора цвета на местных страницах"
+   },
+   "chrome_doesn_allow_picking_special_page": {
+      "description": "A warning for the user that the Color Picker / Eyedropper cannot pick colors from the current page",
+      "message": "Chrome не позволяет пользоваться инструментом выбора цвета на данной странице"
+   },
+   "chrome_doesn_allow_picking_webstore": {
+      "description": "A warning for the user that the Color Picker / Eyedropper cannot pick colors from the current page, because its a Chrome Web Store page",
+      "message": "Chrome не позволяет пользоваться инструментом выбора цвета на страницах интернет-магазина Chrome"
+   },
+   "clear_history": {
+      "description": "Clears/erases the entire color history",
+      "message": "Очистить историю"
+   },
+   "clear_history_question": {
+      "description": "A confirmation question asking user to confirm clearing/erasing the entire color history",
+      "message": "Очистить историю цветов?"
+   },
+   "click_to_revert": {
+      "description": "Indicates that clicking will revert the color selection to previously selected color",
+      "message": "Нажмите для возврата к исходному цвету"
+   },
+   "close_and_stop_picking": {
+      "description": "Close the tool and stop picking colors from the page",
+      "message": "Закрыть и прекратить выбор цвета"
+   },
+   "collapse_this_panel": {
+      "description": "Collapse the panel - make it more compact visually",
+      "message": "Свернуть панель"
+   },
+   "color_copied_to_clipboard": {
+      "description": "The color has been copied to user's clipboard",
+      "message": "Цвет скопирован в буфер обмена"
+   },
+   "color_format": {
+      "description": "The format of a color to use - eg. RGB, HEX, HSL etc.",
+      "message": "Формат цвета"
+   },
+   "color_history_label": {
+      "description": "Label of the Color History panel etc.",
+      "message": "История цветов:"
+   },
+   "color_picked": {
+      "description": "The color was succesfully sampled/picked from the screen",
+      "message": "Цвет выбран"
+   },
+   "color_picker_by": {
+      "description": "Specifies and gives attribution to the authors of the Color Picker tool",
+      "message": "Инструмент выбора цвета: $AUTHOR1$ и $AUTHOR2$.",
+      "placeholders": {
+         "author1": {
+            "content": "$1"
+         },
+         "author2": {
+            "content": "$2"
+         }
+      }
+   },
+   "color_picker_panel": {
+      "description": "The Color Picker Panel is a dialog that allows to choose colors from a palette or specify a color using RGB, HEX, HSL, or other color models. This is different from the Eyedropper tool that picks colors from pages etc.",
+      "message": "Панель выбора цвета"
+   },
+   "colorzilla_homepage": {
+      "description": "The home page of ColorZilla",
+      "message": "Домашняя страница ColorZilla"
+   },
+   "colorzilla_options": {
+      "description": "Application Options/Preferences",
+      "message": "Настройки ColorZilla"
+   },
+   "commit_to_this_color": {
+      "description": "Using this option will make the selected color active.",
+      "message": "Подтвердить выбор этого цвета"
+   },
+   "copy_to_clipboard_menu_label": {
+      "description": "This allows the user to copy the current color to clipboard using various special color formats - RGB, HEX etc.",
+      "message": "Специальное копирование..."
+   },
+   "copy_with_param": {
+      "description": "Copy a string to clipboard, the string is provided using the paramater",
+      "message": "Копировать $STRING$",
+      "placeholders": {
+         "string": {
+            "content": "$1"
+         }
+      }
+   },
+   "created_by": {
+      "description": "The author/creator of the app",
+      "message": "Разработчик"
+   },
+   "css_color_analysis_results": {
+      "description": "The colors found in various CSS definitions on this page",
+      "message": "Цвета CSS на этой странице"
+   },
+   "css_gradient_generator": {
+      "description": "A tool that allows users to create various CSS-based gradients",
+      "message": "Генератор градиентов CSS"
+   },
+   "current_color_label": {
+      "description": "Signifies previously selected color (which is the last current color) in the Color Picker UI",
+      "message": "текущий"
+   },
+   "dont_move_document_down_when_sampling": {
+      "description": "An option that prevents the document from moving down to make room for the tool UI, when the eyedropper is active.",
+      "message": "Не смещать страницу вниз при выборе цвета."
+   },
+   "enable_keyboard_shortcuts": {
+      "description": "An option to enable the user to use a keyboard shortcut to activate the eyedropper/color picker tool",
+      "message": "Включить выбор цвета со страницы с помощью сочетания клавиш."
+   },
+   "enter_blue_value": {
+      "description": "Allows the user to enter the blue component of the color into the box",
+      "message": "Введите значение \"Синий\" (0-255)"
+   },
+   "enter_green_value": {
+      "description": "Allows the user to enter the green component of the color into the box",
+      "message": "Введите значение \"Зелёный\" (0-255)"
+   },
+   "enter_hex_value": {
+      "description": "Allows the user to enter the color in hex format into the box",
+      "message": "Введите значение \"Hex\" (#000000-#ffffff)"
+   },
+   "enter_hue_value": {
+      "description": "Allows the user to enter the hue value into the box",
+      "message": "Введите значение \"Оттенок\" (0-360°)"
+   },
+   "enter_red_value": {
+      "description": "Allows the user to enter the red component of the color into the box",
+      "message": "Введите значение \"Красный\" (0-255)"
+   },
+   "enter_sat_value": {
+      "description": "Allows the user to enter the saturation value into the box",
+      "message": "Введите значение \"Насыщенность\" (0-100%)"
+   },
+   "enter_val_value": {
+      "description": "Allows the user to enter the brightness value into the box",
+      "message": "Введите значение \"Яркость\" (0-100%)"
+   },
+   "expand_this_panel": {
+      "description": "Expand the panel - make it full size visually",
+      "message": "Развернуть панель"
+   },
+   "extension_description": {
+      "description": "Eyedropper is the tool used to sample colors from an image, Color Picker Panel is a dialog where you can choose and adjust colors in various ways",
+      "message": "Инструменты пипетка, выбор цвета, генератор градиентов и другие полезности для работы с цветами"
+   },
+   "eyedropper": {
+      "description": "The tool that allows users to pick/sample colors from screen/webpages/images etc. ",
+      "message": "Пипетка"
+   },
+   "help": {
+      "description": "Application help",
+      "message": "Помощь"
+   },
+   "help_translate_colorzilla": {
+      "description": "Asks users to help translate ColorZilla into different languages",
+      "message": "Помогите перевести ColorZilla"
+   },
+   "home_page": {
+      "description": "Home page of the app etc.",
+      "message": "Главная страница"
+   },
+   "keyboard_shortcut_label": {
+      "description": "Label for a keyboard shortcut to use",
+      "message": "Сочетание клавиш:"
+   },
+   "keyboard_shortcuts": {
+      "description": "Combination of keys to activate the tool etc.",
+      "message": "Горячие клавиши"
+   },
+   "license": {
+      "description": "The license of the product",
+      "message": "Лицензия"
+   },
+   "licensing": {
+      "description": "The various legal info relating to license of the product",
+      "message": "Лицензирование"
+   },
+   "locale": {
+      "description": "This should always be set to this file's locale",
+      "message": "ru"
+   },
+   "new_color_commit": {
+      "description": "Indicates that this is the newly selected color, and by pressing OK the user can commit - make it the current color",
+      "message": "Новый цвет - нажмите \"OK\" для подтверждения"
+   },
+   "new_color_label": {
+      "description": "Signifies newly selected color in the Color Picker UI",
+      "message": "новый"
+   },
+   "new_feature_label": {
+      "description": "The text of a badge that's displayed next to menu items to indicate to users that the feature is new",
+      "message": "Новый"
+   },
+   "ok": {
+      "description": "The Ok option, e.g. in a dialog",
+      "message": "OK"
+   },
+   "online_help": {
+      "description": "The online portion of help",
+      "message": "Онлайн помощь"
+   },
+   "options": {
+      "description": "Application Options/Preferences",
+      "message": "Настройки"
+   },
+   "options_saved": {
+      "description": "A confirmation message indicating to user that their selected options have been saved",
+      "message": "Настройки сохранены"
+   },
+   "outline_hovered_elements": {
+      "description": "An option that outlines with a line the HTML element the users cursor is currently hovering/positioned over",
+      "message": "Выделять элементы при наведении."
+   },
+   "page_color_picker_active": {
+      "description": "Indicates to the user that the Eyedropper / Color Picker has been activated and is currently active",
+      "message": "Функция выбора цвета со страницы включена"
+   },
+   "palette_browser": {
+      "description": "A tool that presents various color palettes and their colors",
+      "message": "Браузер палитр"
+   },
+   "palette_name_huesandbrightnesses": {
+      "description": "A palette with various color hues and color brightnesses",
+      "message": "Оттенки и яркости"
+   },
+   "palette_name_huesandsaturations": {
+      "description": "A palette with various color hues and color saturations",
+      "message": "Оттенки и насыщенности"
+   },
+   "palette_name_w3cnamedcolors": {
+      "description": "A palette with various colors that have basic standard W3C names",
+      "message": "Цвета по стандартам W3C"
+   },
+   "palette_name_webcolorsbyhue": {
+      "description": "A palette with various Web colors organized by their hue value",
+      "message": "Web-цвета по оттенкам"
+   },
+   "palette_name_webnamedcolors": {
+      "description": "A palette with various colors that have names in Web standards",
+      "message": "Web-цвета с названиями"
+   },
+   "palette_name_websafecolors": {
+      "description": "A palette that has colors that are considered Web Safe - they are displayed consistenly over the widest variety of displays",
+      "message": "Безопасные (Web Safe) цвета"
+   },
+   "palette_name_xnamedcolors": {
+      "description": "A palette with various colors that have names in X-Windows standards",
+      "message": "Цвета с X названиями"
+   },
+   "pick_color_from_anywhere": {
+      "description": "Tells the user they can pick a color from any screen location, including outside the browser window",
+      "message": "Выберите цвета отовсюду, в том числе за пределами браузера..."
+   },
+   "pick_color_from_outside_the_browser": {
+      "description": "Allows picking colors from anywhere on user's screen, including from outside the browser",
+      "message": "Выбрать цвет за пределами браузера"
+   },
+   "pick_color_from_page": {
+      "description": "Starts the Eyedropper / Color Picker tool to let the user sample color from a specific page location",
+      "message": "Выбор цвета со страницы"
+   },
+   "picked_color_history": {
+      "description": "The history of colors that the user picked",
+      "message": "История выбранных цветов"
+   },
+   "point_sample": {
+      "description": "This mode samples one 1x1 pixel/point for the current color",
+      "message": "Точечная проба"
+   },
+   "report_translation_issue": {
+      "description": "Allows the user to report incorrect or inaccurate translations",
+      "message": "Сообщить о проблемах с переводом"
+   },
+   "resample_last_location": {
+      "description": "Gets the color of the last location sampled with the Eyedropper tool. Used for cases where the location might have changed or had a hover state",
+      "message": "Повторный выбор последнего места"
+   },
+   "sampling": {
+      "description": "Indicates to the user that the tool is currently sampling the screen for colors",
+      "message": "Выборка…"
+   },
+   "save_button_label": {
+      "description": "An action that allows the user to save the currently selected options/values",
+      "message": "Сохранить"
+   },
+   "select_area_to_sample": {
+      "description": "Instructs the user to select an area from the screen so this area's pixels can be averaged into one sampled color",
+      "message": "Выберите область для анализа"
+   },
+   "selection_average": {
+      "description": "This mode allows the user to select a certain visual portion of the current screen and the color will be determined by averaging all the pixel within this user-selected area",
+      "message": "Среднее значение области"
+   },
+   "set_to_blue_color_mode": {
+      "description": "Sets the current mode to select colors by amount of blue",
+      "message": "Установить режим цвета \"Синий\""
+   },
+   "set_to_green_color_mode": {
+      "description": "Sets the current mode to select colors by amount of green",
+      "message": "Установить режим цвета \"Зелёный\""
+   },
+   "set_to_hue_color_mode": {
+      "description": "Sets the current mode to select colors by hue",
+      "message": "Установить режим цвета \"Оттенок\""
+   },
+   "set_to_red_color_mode": {
+      "description": "Sets the current mode to select colors by amount of red",
+      "message": "Установить режим цвета \"Красный\""
+   },
+   "set_to_sat_color_mode": {
+      "description": "Sets the current mode to select colors by saturation",
+      "message": "Установить режим цвета \"Насыщенность\""
+   },
+   "set_to_val_color_mode": {
+      "description": "Sets the current mode to select colors by brightnesses",
+      "message": "Установить режим цвета \"Яркость\""
+   },
+   "show_hex_codes_lowercase": {
+      "description": "An option to show HEX-formatted color values in lowercase (eg. #dddddd vs #DDDDDD)",
+      "message": "Показывать Hex-коды в нижнем регистре."
+   },
+   "show_magnifier": {
+      "description": "An option that shows a magnified view of the sampled area while picking/samlping colors",
+      "message": "Показывать лупу."
+   },
+   "temporarily_show_hide_by_holding_shift": {
+      "description": "This allows temporarily showing or hiding the magnifier by holding the 'Shift' key while picking colors",
+      "message": "Временно показать/скрыть, удерживая клавишу Shift."
+   },
+   "version": {
+      "description": "The version of the app (e.g v3.4)",
+      "message": "Версия"
+   },
+   "webpage_color_analyzer": {
+      "description": "A tool that analyzes web pages, extracts the colors present, their definitions and elements",
+      "message": "Анализатор цветов на веб-странице"
+   },
+   "whats_new": {
+      "description": "News and updates about the app",
+      "message": "Что нового"
+   }
+}

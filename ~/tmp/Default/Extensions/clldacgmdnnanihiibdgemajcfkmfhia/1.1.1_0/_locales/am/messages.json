@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "ሄክስ, ሪግሎ ቀለም መራጭ, እርጋታው የተደራጀ አይ የዓይን ምልክት, በማንኛውም ገጽ ላይ የቀለም ኮድ ይፈልጉ"
+   },
+   "appTitle": {
+      "message": "ለ Chrome ™ የቀለም መራጭ"
+   },
+   "feedback": {
+      "message": "ግብረመልስ"
+   },
+   "pick": {
+      "message": "ይምረጡ"
+   },
+   "rateUs": {
+      "message": "ደረጃ ይስጡን"
+   },
+   "selectedColor": {
+      "message": "የተመረጠ ቀለም"
+   }
+}

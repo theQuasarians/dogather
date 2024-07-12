@@ -63,7 +63,8 @@ export const combineReducers = (...reducers) => {
 }
 
 // This is the simple implementation of combineReducers as it is defined above just we past reducers in object
-// like that {reducer1,reducer2,reducer3} as parameter , as it is clear here newState[key] = reducer(state[key], action) for every reducer fuck both are same just one combine all dispatcher in one dispatch which call all handler and this will call every reducer with specific slice and actions
+// like that { reducer1, reducer2, reducer3 } as parameter , as it is clear here newState[key] = reducer(state[key], action) for every reducer fuck both are same just one combine all dispatcher in one dispatch which call all handler and this will call every reducer with specific slice and actions
+
 // export const combineReducersSimpler = (reducers) => {
 //   return (state, action) => {
 //     const newState = {}

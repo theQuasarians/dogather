@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "Hex, RGB Color Picker, Advanched Eyedropper, Finn fargekode på hvilken som helst side"
+   },
+   "appTitle": {
+      "message": "Fargelukker for Chrome ™"
+   },
+   "feedback": {
+      "message": "Tilbakemelding"
+   },
+   "pick": {
+      "message": "plukke"
+   },
+   "rateUs": {
+      "message": "Rangere oss"
+   },
+   "selectedColor": {
+      "message": "Valgt farge"
+   }
+}

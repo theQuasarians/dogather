@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "Hex, Picker de colors RGB, Eyedropper Advanched, Cerqueu el codi de color a qualsevol pàgina"
+   },
+   "appTitle": {
+      "message": "Picker de colors per a Chrome ™"
+   },
+   "feedback": {
+      "message": "Comentaris"
+   },
+   "pick": {
+      "message": "collir"
+   },
+   "rateUs": {
+      "message": "Puntua'ns"
+   },
+   "selectedColor": {
+      "message": "Color seleccionat"
+   }
+}

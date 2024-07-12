@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "„Hex“, „RGB Color Picker“, „Advanched Eyedropper“, bet kuriame puslapyje raskite spalvų kodą"
+   },
+   "appTitle": {
+      "message": "„Chrome ™“ spalvų rinkiklis"
+   },
+   "feedback": {
+      "message": "Atsiliepimas"
+   },
+   "pick": {
+      "message": "Pasirinkite"
+   },
+   "rateUs": {
+      "message": "Įvertinkite mus"
+   },
+   "selectedColor": {
+      "message": "Pasirinkta spalva"
+   }
+}

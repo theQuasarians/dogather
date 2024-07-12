@@ -1,0 +1,407 @@
+{
+   "11x11_average": {
+      "description": "This mode takes a 11x11 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "Trung bình 11x11"
+   },
+   "25x25_average": {
+      "description": "This mode takes a 25x25 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "Trung bình 25x25"
+   },
+   "3x3_average": {
+      "description": "This mode takes a 3x3 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "Trung bình 3x3"
+   },
+   "5x5_average": {
+      "description": "This mode takes a 5x5 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "Trung bình 5x5"
+   },
+   "about_colorzilla": {
+      "description": "Shows information about the app, its author, version etc",
+      "message": "Giới thiệu về ColorZilla"
+   },
+   "allow_access_to_file_urls": {
+      "description": "Instructs the user to enable access to 'file' URLs - special URLs hosted locally",
+      "message": "Nhấn và bật \"Cho phép truy cập URL của tập tin\""
+   },
+   "analyzing_please_wait": {
+      "description": "Indicates to user that the tool is Analyzing colors, and requests the user to wait until it completes the analysis",
+      "message": "Đang phân tích... Vui lòng chờ..."
+   },
+   "attributions": {
+      "description": "The attributions of various elements used in the products etc.",
+      "message": "Thuộc tính"
+   },
+   "auto_copy": {
+      "description": "Auto copy a color or similar to clipboard after being picked/sampled",
+      "message": "Tự động sao chép"
+   },
+   "auto_copy_format": {
+      "description": "The format to use when auto-copying the color to clipboard",
+      "message": "Tự động sao chép định dạng màu:"
+   },
+   "auto_copy_picked_to_clipboard": {
+      "description": "Auto copy the picked/sampled color to clipboard",
+      "message": "Tự động sao chép màu đã chọn vào bộ nhớ tạm."
+   },
+   "auto_start_eyedropper_when_button_clicked": {
+      "description": "An option that starts the color sampling (eyedropper) mode immediately after the main app button is clicked, without needing to click on a menu item",
+      "message": "Tự động bắt đầu trình lấy mẫu màu khi nút chính được nhấn."
+   },
+   "cancel": {
+      "description": "The Cancel option, e.g. in a dialog",
+      "message": "Hủy"
+   },
+   "cancel_and_revert": {
+      "description": "Cancel the color selection and revert to the previous color",
+      "message": "Hủy và trở về màu gốc"
+   },
+   "change_cursor_to_crosshair": {
+      "description": "An option that changes the cursor to crosshair (a cross) while the user is sampling the colors from the page with the eyedropper tool",
+      "message": "Thay đổi con trỏ thành tâm ngắm."
+   },
+   "chrome_doesn_allow_picking_local": {
+      "description": "A warning for the user that the Color Picker / Eyedropper cannot pick colors from the current page, because its a local (non web-based) page",
+      "message": "Trình duyệt của bạn không cho phép chọn màu từ các trang cục bộ"
+   },
+   "chrome_doesn_allow_picking_special_page": {
+      "description": "A warning for the user that the Color Picker / Eyedropper cannot pick colors from the current page",
+      "message": "Chrome không cho phép chọn màu từ trang đặc biệt này"
+   },
+   "chrome_doesn_allow_picking_webstore": {
+      "description": "A warning for the user that the Color Picker / Eyedropper cannot pick colors from the current page, because its a Chrome Web Store page",
+      "message": "Chrome không cho phép chọn màu từ các trang Chrome Web Store"
+   },
+   "clear_history": {
+      "description": "Clears/erases the entire color history",
+      "message": "Xóa lịch sử"
+   },
+   "clear_history_question": {
+      "description": "A confirmation question asking user to confirm clearing/erasing the entire color history",
+      "message": "Xóa lịch sử màu?"
+   },
+   "click_to_revert": {
+      "description": "Indicates that clicking will revert the color selection to previously selected color",
+      "message": "Nhấp để quay lại màu gốc"
+   },
+   "close_and_stop_picking": {
+      "description": "Close the tool and stop picking colors from the page",
+      "message": "Đóng và dừng chọn"
+   },
+   "collapse_this_panel": {
+      "description": "Collapse the panel - make it more compact visually",
+      "message": "Thu hẹp bảng này"
+   },
+   "color_copied_to_clipboard": {
+      "description": "The color has been copied to user's clipboard",
+      "message": "Màu đã được sao chép vào bộ nhớ tạm"
+   },
+   "color_format": {
+      "description": "The format of a color to use - eg. RGB, HEX, HSL etc.",
+      "message": "Định dạng màu"
+   },
+   "color_history_label": {
+      "description": "Label of the Color History panel etc.",
+      "message": "Lịch sử màu:"
+   },
+   "color_picked": {
+      "description": "The color was succesfully sampled/picked from the screen",
+      "message": "Màu đã được chọn"
+   },
+   "color_picker_by": {
+      "description": "Specifies and gives attribution to the authors of the Color Picker tool",
+      "message": "Trình Chọn màu bởi $AUTHOR1$ và $AUTHOR2$.",
+      "placeholders": {
+         "author1": {
+            "content": "$1"
+         },
+         "author2": {
+            "content": "$2"
+         }
+      }
+   },
+   "color_picker_panel": {
+      "description": "The Color Picker Panel is a dialog that allows to choose colors from a palette or specify a color using RGB, HEX, HSL, or other color models. This is different from the Eyedropper tool that picks colors from pages etc.",
+      "message": "Bảng chọn màu"
+   },
+   "colorzilla_homepage": {
+      "description": "The home page of ColorZilla",
+      "message": "Trang chủ ColorZilla"
+   },
+   "colorzilla_options": {
+      "description": "Application Options/Preferences",
+      "message": "Các tùy chọn của ColorZilla"
+   },
+   "commit_to_this_color": {
+      "description": "Using this option will make the selected color active.",
+      "message": "Xác nhận lựa chọn màu này"
+   },
+   "copy_to_clipboard_menu_label": {
+      "description": "This allows the user to copy the current color to clipboard using various special color formats - RGB, HEX etc.",
+      "message": "Sao chép đặc biệt..."
+   },
+   "copy_with_param": {
+      "description": "Copy a string to clipboard, the string is provided using the paramater",
+      "message": "Sao chép $STRING$",
+      "placeholders": {
+         "string": {
+            "content": "$1"
+         }
+      }
+   },
+   "created_by": {
+      "description": "The author/creator of the app",
+      "message": "Tạo bởi"
+   },
+   "css_color_analysis_results": {
+      "description": "The colors found in various CSS definitions on this page",
+      "message": "Các màu CSS trên trang này"
+   },
+   "css_gradient_generator": {
+      "description": "A tool that allows users to create various CSS-based gradients",
+      "message": "Trình tạo građien CSS"
+   },
+   "current_color_label": {
+      "description": "Signifies previously selected color (which is the last current color) in the Color Picker UI",
+      "message": "hiện tại"
+   },
+   "dont_move_document_down_when_sampling": {
+      "description": "An option that prevents the document from moving down to make room for the tool UI, when the eyedropper is active.",
+      "message": "Không di chuyển tài liệu xuống khi đang lấy mẫu."
+   },
+   "enable_keyboard_shortcuts": {
+      "description": "An option to enable the user to use a keyboard shortcut to activate the eyedropper/color picker tool",
+      "message": "Cho phép chọn màu từ trang bằng phím tắt."
+   },
+   "enter_blue_value": {
+      "description": "Allows the user to enter the blue component of the color into the box",
+      "message": "Nhập giá trị màu xanh dương (0-255)"
+   },
+   "enter_green_value": {
+      "description": "Allows the user to enter the green component of the color into the box",
+      "message": "Nhập giá trị màu xanh lá (0-255)"
+   },
+   "enter_hex_value": {
+      "description": "Allows the user to enter the color in hex format into the box",
+      "message": "Nhập giá trị \"Hex\" (#000000-#ffffff)"
+   },
+   "enter_hue_value": {
+      "description": "Allows the user to enter the hue value into the box",
+      "message": "Nhập giá trị \"Hue\" (0-360°)"
+   },
+   "enter_red_value": {
+      "description": "Allows the user to enter the red component of the color into the box",
+      "message": "Nhập giá trị màu đỏ (0-255)"
+   },
+   "enter_sat_value": {
+      "description": "Allows the user to enter the saturation value into the box",
+      "message": "Nhập giá trị độ bão hòa (0-100%)"
+   },
+   "enter_val_value": {
+      "description": "Allows the user to enter the brightness value into the box",
+      "message": "Nhập giá trị độ sáng (0-100%)"
+   },
+   "expand_this_panel": {
+      "description": "Expand the panel - make it full size visually",
+      "message": "Mở rộng bảng này"
+   },
+   "extension_description": {
+      "description": "Eyedropper is the tool used to sample colors from an image, Color Picker Panel is a dialog where you can choose and adjust colors in various ways",
+      "message": "Lấy mẫu màu nâng cao, Chọn màu, Trình tạo građien và các công cụ nhiều màu sắc khác"
+   },
+   "eyedropper": {
+      "description": "The tool that allows users to pick/sample colors from screen/webpages/images etc. ",
+      "message": "Lấy mẫu màu"
+   },
+   "help": {
+      "description": "Application help",
+      "message": "Trợ giúp"
+   },
+   "help_translate_colorzilla": {
+      "description": "Asks users to help translate ColorZilla into different languages",
+      "message": "Giúp biên dịch ColorZilla"
+   },
+   "home_page": {
+      "description": "Home page of the app etc.",
+      "message": "Trang chủ"
+   },
+   "keyboard_shortcut_label": {
+      "description": "Label for a keyboard shortcut to use",
+      "message": "Phím tắt:"
+   },
+   "keyboard_shortcuts": {
+      "description": "Combination of keys to activate the tool etc.",
+      "message": "Phím tắt"
+   },
+   "license": {
+      "description": "The license of the product",
+      "message": "Giấy phép"
+   },
+   "licensing": {
+      "description": "The various legal info relating to license of the product",
+      "message": "Cấp phép"
+   },
+   "locale": {
+      "description": "This should always be set to this file's locale",
+      "message": "vi"
+   },
+   "new_color_commit": {
+      "description": "Indicates that this is the newly selected color, and by pressing OK the user can commit - make it the current color",
+      "message": "Màu mới - Nhấn \"OK\" để xác nhận"
+   },
+   "new_color_label": {
+      "description": "Signifies newly selected color in the Color Picker UI",
+      "message": "mới"
+   },
+   "new_feature_label": {
+      "description": "The text of a badge that's displayed next to menu items to indicate to users that the feature is new",
+      "message": "Mới"
+   },
+   "ok": {
+      "description": "The Ok option, e.g. in a dialog",
+      "message": "OK"
+   },
+   "online_help": {
+      "description": "The online portion of help",
+      "message": "Trợ giúp trực tuyến"
+   },
+   "options": {
+      "description": "Application Options/Preferences",
+      "message": "Tùy chọn"
+   },
+   "options_saved": {
+      "description": "A confirmation message indicating to user that their selected options have been saved",
+      "message": "Đã lưu tùy chọn"
+   },
+   "outline_hovered_elements": {
+      "description": "An option that outlines with a line the HTML element the users cursor is currently hovering/positioned over",
+      "message": "Kẻ viền quanh các yếu tố được di chuột lên."
+   },
+   "page_color_picker_active": {
+      "description": "Indicates to the user that the Eyedropper / Color Picker has been activated and is currently active",
+      "message": "Trình chọn màu trên trang đang hoạt động"
+   },
+   "palette_browser": {
+      "description": "A tool that presents various color palettes and their colors",
+      "message": "Trình duyệt palet"
+   },
+   "palette_name_huesandbrightnesses": {
+      "description": "A palette with various color hues and color brightnesses",
+      "message": "Họ màu và độ sáng"
+   },
+   "palette_name_huesandsaturations": {
+      "description": "A palette with various color hues and color saturations",
+      "message": "Họ màu và độ bão hòa"
+   },
+   "palette_name_w3cnamedcolors": {
+      "description": "A palette with various colors that have basic standard W3C names",
+      "message": "Màu theo tên W3C"
+   },
+   "palette_name_webcolorsbyhue": {
+      "description": "A palette with various Web colors organized by their hue value",
+      "message": "Màu web theo họ màu"
+   },
+   "palette_name_webnamedcolors": {
+      "description": "A palette with various colors that have names in Web standards",
+      "message": "Màu theo tên web"
+   },
+   "palette_name_websafecolors": {
+      "description": "A palette that has colors that are considered Web Safe - they are displayed consistenly over the widest variety of displays",
+      "message": "Màu an toàn cho web"
+   },
+   "palette_name_xnamedcolors": {
+      "description": "A palette with various colors that have names in X-Windows standards",
+      "message": "Màu theo tên X"
+   },
+   "pick_color_from_anywhere": {
+      "description": "Tells the user they can pick a color from any screen location, including outside the browser window",
+      "message": "Chọn màu từ mọi nơi, bao gồm bên ngoài trình duyệt..."
+   },
+   "pick_color_from_outside_the_browser": {
+      "description": "Allows picking colors from anywhere on user's screen, including from outside the browser",
+      "message": "Chọn màu bên ngoài trình duyệt"
+   },
+   "pick_color_from_page": {
+      "description": "Starts the Eyedropper / Color Picker tool to let the user sample color from a specific page location",
+      "message": "Chọn màu từ trang"
+   },
+   "picked_color_history": {
+      "description": "The history of colors that the user picked",
+      "message": "Lịch sử màu đã chọn"
+   },
+   "point_sample": {
+      "description": "This mode samples one 1x1 pixel/point for the current color",
+      "message": "Lấy mẫu điểm"
+   },
+   "report_translation_issue": {
+      "description": "Allows the user to report incorrect or inaccurate translations",
+      "message": "Báo cáo vấn đề về dịch thuật"
+   },
+   "resample_last_location": {
+      "description": "Gets the color of the last location sampled with the Eyedropper tool. Used for cases where the location might have changed or had a hover state",
+      "message": "Lấy lại mẫu từ vị trí cuối cùng"
+   },
+   "sampling": {
+      "description": "Indicates to the user that the tool is currently sampling the screen for colors",
+      "message": "Đang lấy mẫu..."
+   },
+   "save_button_label": {
+      "description": "An action that allows the user to save the currently selected options/values",
+      "message": "Lưu"
+   },
+   "select_area_to_sample": {
+      "description": "Instructs the user to select an area from the screen so this area's pixels can be averaged into one sampled color",
+      "message": "Chọn một khu vực để lấy mẫu"
+   },
+   "selection_average": {
+      "description": "This mode allows the user to select a certain visual portion of the current screen and the color will be determined by averaging all the pixel within this user-selected area",
+      "message": "Trung bình vùng lựa chọn"
+   },
+   "set_to_blue_color_mode": {
+      "description": "Sets the current mode to select colors by amount of blue",
+      "message": "Chọn chế độ màu \"Xanh dương\""
+   },
+   "set_to_green_color_mode": {
+      "description": "Sets the current mode to select colors by amount of green",
+      "message": "Chọn chế độ màu \"Xanh lá\""
+   },
+   "set_to_hue_color_mode": {
+      "description": "Sets the current mode to select colors by hue",
+      "message": "Chọn chế độ màu \"Hue\""
+   },
+   "set_to_red_color_mode": {
+      "description": "Sets the current mode to select colors by amount of red",
+      "message": "Chọn chế độ màu \"Đỏ\""
+   },
+   "set_to_sat_color_mode": {
+      "description": "Sets the current mode to select colors by saturation",
+      "message": "Chọn chế độ màu \"Độ bão hòa\""
+   },
+   "set_to_val_color_mode": {
+      "description": "Sets the current mode to select colors by brightnesses",
+      "message": "Chọn chế độ màu \"Độ sáng\""
+   },
+   "show_hex_codes_lowercase": {
+      "description": "An option to show HEX-formatted color values in lowercase (eg. #dddddd vs #DDDDDD)",
+      "message": "Hiển thị mã Hex dưới dạng chữ viết thường."
+   },
+   "show_magnifier": {
+      "description": "An option that shows a magnified view of the sampled area while picking/samlping colors",
+      "message": "Hiển thị kính lúp."
+   },
+   "temporarily_show_hide_by_holding_shift": {
+      "description": "This allows temporarily showing or hiding the magnifier by holding the 'Shift' key while picking colors",
+      "message": "Tạm thời hiển thị/ẩn bằng cách giữ phím 'Shift'."
+   },
+   "version": {
+      "description": "The version of the app (e.g v3.4)",
+      "message": "Phiên bản"
+   },
+   "webpage_color_analyzer": {
+      "description": "A tool that analyzes web pages, extracts the colors present, their definitions and elements",
+      "message": "Phân tích màu của trang web"
+   },
+   "whats_new": {
+      "description": "News and updates about the app",
+      "message": "Có gì mới"
+   }
+}

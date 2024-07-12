@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "Hex, RGB -Farbwählerin, beruhigte Eyedropper, Färbecode auf jeder Seite finden"
+   },
+   "appTitle": {
+      "message": "Farbwählerin für Chrome ™"
+   },
+   "feedback": {
+      "message": "Rückmeldung"
+   },
+   "pick": {
+      "message": "wählen"
+   },
+   "rateUs": {
+      "message": "Bewerten Sie uns"
+   },
+   "selectedColor": {
+      "message": "Ausgewählte Farbe"
+   }
+}

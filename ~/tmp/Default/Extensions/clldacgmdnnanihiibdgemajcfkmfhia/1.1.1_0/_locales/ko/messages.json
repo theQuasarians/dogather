@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "16 진수, RGB 컬러 피커, Advanched eyeDropper, 모든 페이지에서 색상 코드 찾기"
+   },
+   "appTitle": {
+      "message": "Chrome ™의 컬러 피커"
+   },
+   "feedback": {
+      "message": "피드백"
+   },
+   "pick": {
+      "message": "선택하다"
+   },
+   "rateUs": {
+      "message": "우리를 평가하십시오"
+   },
+   "selectedColor": {
+      "message": "선택된 색상"
+   }
+}

@@ -1,0 +1,31 @@
+{
+   "action": {
+      "default_icon": "colorpicker.png",
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "canvas.css" ],
+      "js": [ "jquery.min.js", "contentScript.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "colorpicker.png",
+      "48": "colorpicker.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5BAwrH81k1HSuF8ICdmShdyW/k2KMdfoD13F/+bW7CH7ZmoDdDULznRDP3cELR4+ahhyc/wZnF7ie2ajcoMZr1ZslEszL8f6S1uT7HSmhr0iKISDkOtN/jS3clJix81PqAojUF3VeQ2Sj7KMVXbvLW80qA3pN7F1uGWqq+9Tze6WtDX+eNqZFzEpCdx7cRmWtdtjB0O8E4kRcEpuwIvxby67A8gNl9lNiv2COoSc9IytjwP3Y05RSGVXg5AbHGKJb0D4IKiBVh7W70UvDADW9xathslQpbTA1w4sn/6vBCXLdkNZgIRGUxZStEws/nrf4bH/O9ttD/CdhtQOCsSYSQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appTitle__",
+   "permissions": [ "storage", "activeTab", "background", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.1",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "canvas.css", "plus.png", "copy.png", "cp.png", "logo.svg", "pickicon.svg" ]
+   } ]
+}

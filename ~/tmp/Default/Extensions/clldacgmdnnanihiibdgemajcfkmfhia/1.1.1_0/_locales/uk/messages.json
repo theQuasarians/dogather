@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "HEX, RGB Color Picker, Advanced Eyedropper, знайти кольоровий код на будь -якій сторінці"
+   },
+   "appTitle": {
+      "message": "Вибір кольору для Chrome ™"
+   },
+   "feedback": {
+      "message": "Зворотний зв'язок"
+   },
+   "pick": {
+      "message": "вибирати"
+   },
+   "rateUs": {
+      "message": "Оцініть нас"
+   },
+   "selectedColor": {
+      "message": "Вибраний колір"
+   }
+}

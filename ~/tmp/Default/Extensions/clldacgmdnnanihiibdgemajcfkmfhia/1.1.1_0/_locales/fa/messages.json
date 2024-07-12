@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "hex ، انتخاب رنگ RGB ، Advanched Eyedropper ، کد رنگی را در هر صفحه پیدا کنید"
+   },
+   "appTitle": {
+      "message": "انتخاب کننده رنگ برای Chrome"
+   },
+   "feedback": {
+      "message": "بازخورد"
+   },
+   "pick": {
+      "message": "انتخاب"
+   },
+   "rateUs": {
+      "message": "به ما رای دهید"
+   },
+   "selectedColor": {
+      "message": "رنگ انتخاب شده"
+   }
+}

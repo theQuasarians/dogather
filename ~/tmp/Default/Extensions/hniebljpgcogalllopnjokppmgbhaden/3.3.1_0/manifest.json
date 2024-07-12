@@ -1,0 +1,28 @@
+{
+   "action": {
+      "default_icon": "img/128.png"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "img/128.png",
+      "16": "img/16.png",
+      "32": "img/32.png",
+      "48": "img/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlmvS4Na2Sm+BET2BjMg8wU99b56XPf+9FuY8UTFc5JH4YVZceXu1MeZSKyWaSpXvmGfwKd7CXG4ay5eQE1cQDr8WqTFqxMRLCC/NcLzWFzVscNEX6xVKn3HqEAzdtpLaDYLizeX0NJ3svce6A8C/cxH94rr0nfi9dizgnw5R1aQPaCgmitnMCimv/LMohZZRxzsRdNlkGcKKze/NnzGpkCWxIMuw69a5CsIGrkBrHCHEFc5Xci+Y/Hkm5KrDgrCdIkJdMQrdd8m/3uQ5afnf9JfgE24oCYhS7al9ptsCy8AFrFfsP4dHJFPrtnKR17F+SUEGZEgYVnn2hY9jcwRVFwIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "88",
+   "name": "__MSG_appName__",
+   "offline_enabled": true,
+   "options_page": "index.html#/settings",
+   "permissions": [ "desktopCapture" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.3.1"
+}

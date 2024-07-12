@@ -4,56 +4,41 @@ import logoSignIn from "../../assets/signInAssets/logo.svg"
 import eyes from "../../assets/signInAssets/eyes.svg"
 import { useState } from "react"
 import { validateSigninForm } from "../../utils/validateData"
-import { useAppDispatch } from "../../Context/ContextProvider"
+import { useAppContext } from "../../Context/ContextProvider"
 import { signInCall } from "../../api"
 import axios from "axios"
+import { authLoginRequest } from "../../Context/actions"
 export default function SignIn() {
-  const dispatch = useAppDispatch()
+  const { state, dispatch } = useAppContext()
+
   const [signinForm, setSigninForm] = useState({
-    email: null,
+    username: null,
     password: null,
     errors: {
-      email: null,
+      username: null,
       password: null,
     },
   })
   const fillDataFields = (e) => {
     if (e.target?.name) {
-      const { name } = e.target
-      setSigninForm((prev) => ({ ...prev, [name]: e.target.value }))
+      const { name, value } = e.target
+      setSigninForm((prev) => ({ ...prev, [name]: value }))
     }
   }
   const submitSigninForm = (e) => {
     e.preventDefault()
     const errors = validateSigninForm(signinForm)
     console.log("validation fun", errors)
-    if (errors.password?.length | errors.email?.length) {
+    if (errors.password?.length | errors.username?.length) {
       setSigninForm((prev) => ({ ...prev, errors }))
     } else {
-      const { email, password } = signinForm
-      axios
-        .post("http://localhost:5000/login", {
-          email,
-          password,
-        })
-        .then((result) => {
-          console.log(result)
-          if (result.data === "Success") {
-            console.log("Login Success")
-            alert("Login successful!")
-            navigate("/home")
-          } else {
-            alert("Incorrect password! Please try again.")
-          }
-        })
-        .catch((err) => console.log(err))
-
-      // dispatch({ type: "LOGGED", payload: token })
-      // dispatch("LOGIN",signinForm
-
-      // console.log(typeof dispatch)
-      // post data to the server
-      // console.log(signinForm)
+      // call login action
+      const { username, password, ...errors } = signinForm
+      // console.log(state)
+      console.log({ username, password })
+      //just for test login
+      // signInCall({ username, password }).then((res) => console.log(res))
+      authLoginRequest({ username, password }, dispatch)
     }
   }
   return (
@@ -67,13 +52,13 @@ export default function SignIn() {
         <div className="signin__form">
           <form className="form">
             <h2> Sign in </h2>
-            <label htmlFor="email">Your email</label>
+            <label htmlFor="username">Your username</label>
             <input
-              type="email"
-              name="email"
+              type="text"
+              name="username"
               id="email"
               onChange={(e) => fillDataFields(e)}
-              placeholder="Enter your email address"
+              placeholder="Enter your username"
               required
             />
             <label htmlFor="password">Your password</label>

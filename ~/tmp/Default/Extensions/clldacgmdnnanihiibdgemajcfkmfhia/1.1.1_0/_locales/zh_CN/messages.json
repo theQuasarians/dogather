@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "十六进制，RGB彩色拾取器，Advanched EyeDropper，在任何页面上查找颜色代码"
+   },
+   "appTitle": {
+      "message": "Chrome™的彩色选择器"
+   },
+   "feedback": {
+      "message": "反馈"
+   },
+   "pick": {
+      "message": "挑选"
+   },
+   "rateUs": {
+      "message": "评价我们"
+   },
+   "selectedColor": {
+      "message": "选定的颜色"
+   }
+}

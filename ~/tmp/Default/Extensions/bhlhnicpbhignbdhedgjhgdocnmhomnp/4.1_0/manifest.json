@@ -1,0 +1,35 @@
+{
+   "action": {
+      "default_icon": {
+         "19": "images/main-icon-19.png"
+      },
+      "default_popup": "html/popup.html",
+      "default_title": "ColorZilla"
+   },
+   "background": {
+      "service_worker": "js/background-combo.js"
+   },
+   "default_locale": "en",
+   "description": "__MSG_extension_description__",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "images/icon-128.png",
+      "16": "images/icon-16.png",
+      "48": "images/icon-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC1Ks3Tv4BlSCaQaCS7g+ald+IKtfvOHpTR6h6vE2tEx59fsM5ejHNUmGoHePItUy28IJmnGmzJfgVHZ4OOmUwtvgliT7/hRbgWrEWweGl3uzeO2js0V9HeR4vA1RsxXMRYOC+VY8w2IfCfgOEX0gAslSm6CwpvrHcBMz3Jk/nSMwIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "114",
+   "name": "ColorZilla",
+   "options_ui": {
+      "page": "html/options.html"
+   },
+   "permissions": [ "tabs", "scripting", "storage", "offscreen" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.1",
+   "web_accessible_resources": [ {
+      "extension_ids": [  ],
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "css/content-style.css", "images/*" ]
+   } ]
+}

@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "Hex, RGB -kleurenkiezer, voorstander van Eyedropper, vind kleurcode op elke pagina"
+   },
+   "appTitle": {
+      "message": "Kleurenkiezer voor Chrome ™"
+   },
+   "feedback": {
+      "message": "Feedback"
+   },
+   "pick": {
+      "message": "plukken"
+   },
+   "rateUs": {
+      "message": "Beoordeel ons"
+   },
+   "selectedColor": {
+      "message": "Geselecteerde kleur"
+   }
+}

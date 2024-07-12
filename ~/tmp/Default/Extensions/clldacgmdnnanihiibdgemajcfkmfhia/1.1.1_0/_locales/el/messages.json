@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "Hex, RGB Color Picker, Advanched Eyedropper, Βρείτε κωδικό χρώματος σε οποιαδήποτε σελίδα"
+   },
+   "appTitle": {
+      "message": "Χρώμα Picker για Chrome ™"
+   },
+   "feedback": {
+      "message": "Ανατροφοδότηση"
+   },
+   "pick": {
+      "message": "διαλέγω"
+   },
+   "rateUs": {
+      "message": "Βαθμολογήστε μας"
+   },
+   "selectedColor": {
+      "message": "Επιλεγμένο χρώμα"
+   }
+}

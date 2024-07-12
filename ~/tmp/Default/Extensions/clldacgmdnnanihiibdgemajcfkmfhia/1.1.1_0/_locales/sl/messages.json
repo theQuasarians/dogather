@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "Hex, RGB barvni nabiralnik, Advenched EyeDropper, poiščite barvno kodo na kateri koli strani"
+   },
+   "appTitle": {
+      "message": "Barvni nabiralnik za Chrome ™"
+   },
+   "feedback": {
+      "message": "Povratne informacije"
+   },
+   "pick": {
+      "message": "Pick"
+   },
+   "rateUs": {
+      "message": "Ocenite nas"
+   },
+   "selectedColor": {
+      "message": "Izbrana barva"
+   }
+}

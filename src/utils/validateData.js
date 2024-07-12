@@ -1,9 +1,14 @@
 const emailRegex =
   /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-const passwordRegex =
+// letters, numbers , Capital letters , symbols required
+const hardPasswordRegex =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
 
+// letters, numbers , min 8 .Capital letters , symbols optional
+const passwordRegex = /^[a-zA-Z0-9]{8,20}$/
+
+const usernameRegex = /^[a-zA-Z][a-zA-Z0-9_]{3,19}$/
 export const validateSignupForm = (data) => {
   const errors = {
     username: null,
@@ -11,10 +16,6 @@ export const validateSignupForm = (data) => {
     password: null,
   }
   // if(name === "username")
-  const usernameRegex = /^[a-zA-Z][a-zA-Z0-9_]{2,19}$/
-
-  const passwordRegex =
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
 
   if (!usernameRegex.test(data.username))
     errors.username = "Please check your username !"
@@ -28,10 +29,12 @@ export const validateSignupForm = (data) => {
 
 export const validateSigninForm = (data) => {
   const errors = {
-    email: null,
+    username: null,
     password: null,
   }
-  if (!emailRegex.test(data.email)) errors.email = "email address is wrong!"
+  // if (!emailRegex.test(data.email)) errors.email = "email address is wrong!"
+  if (!usernameRegex.test(data.username))
+    errors.username = "username is not valid"
   if (!passwordRegex.test(data.password)) errors.password = "password is easy !"
   return errors
 }

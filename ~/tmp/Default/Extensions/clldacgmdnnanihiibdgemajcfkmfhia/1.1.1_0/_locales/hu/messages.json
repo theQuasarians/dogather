@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "Hex, RGB színválasztó, az Eyedropper támogatása, keresse meg a színkódot bármely oldalon"
+   },
+   "appTitle": {
+      "message": "Színválasztó a Chrome ™ számára"
+   },
+   "feedback": {
+      "message": "Visszacsatolás"
+   },
+   "pick": {
+      "message": "szed"
+   },
+   "rateUs": {
+      "message": "Értékelj minket"
+   },
+   "selectedColor": {
+      "message": "Kiválasztott szín"
+   }
+}

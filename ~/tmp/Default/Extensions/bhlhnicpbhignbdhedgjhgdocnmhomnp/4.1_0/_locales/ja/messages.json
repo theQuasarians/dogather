@@ -1,0 +1,407 @@
+{
+   "11x11_average": {
+      "description": "This mode takes a 11x11 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "11x11 平均"
+   },
+   "25x25_average": {
+      "description": "This mode takes a 25x25 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "25x25 平均"
+   },
+   "3x3_average": {
+      "description": "This mode takes a 3x3 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "3x3 平均"
+   },
+   "5x5_average": {
+      "description": "This mode takes a 5x5 pixel window around the current cursor location, and averages the color value across this area",
+      "message": "5x5 平均"
+   },
+   "about_colorzilla": {
+      "description": "Shows information about the app, its author, version etc",
+      "message": "について"
+   },
+   "allow_access_to_file_urls": {
+      "description": "Instructs the user to enable access to 'file' URLs - special URLs hosted locally",
+      "message": "クリックして「ファイルの URLへのアクセスを許可」を有効にする"
+   },
+   "analyzing_please_wait": {
+      "description": "Indicates to user that the tool is Analyzing colors, and requests the user to wait until it completes the analysis",
+      "message": "分析中です...お待ちください..."
+   },
+   "attributions": {
+      "description": "The attributions of various elements used in the products etc.",
+      "message": "帰属"
+   },
+   "auto_copy": {
+      "description": "Auto copy a color or similar to clipboard after being picked/sampled",
+      "message": "選択した色を自動的にコピー"
+   },
+   "auto_copy_format": {
+      "description": "The format to use when auto-copying the color to clipboard",
+      "message": "自動コピーのカラーフォーマット："
+   },
+   "auto_copy_picked_to_clipboard": {
+      "description": "Auto copy the picked/sampled color to clipboard",
+      "message": "選択した色を自動的にクリップボードにコピーする。"
+   },
+   "auto_start_eyedropper_when_button_clicked": {
+      "description": "An option that starts the color sampling (eyedropper) mode immediately after the main app button is clicked, without needing to click on a menu item",
+      "message": "メインボタンがクリックされたら、自動的にカラーサンプリング（スポイト）を開始する。"
+   },
+   "cancel": {
+      "description": "The Cancel option, e.g. in a dialog",
+      "message": "キャンセル"
+   },
+   "cancel_and_revert": {
+      "description": "Cancel the color selection and revert to the previous color",
+      "message": "キャンセルして元の色に戻す"
+   },
+   "change_cursor_to_crosshair": {
+      "description": "An option that changes the cursor to crosshair (a cross) while the user is sampling the colors from the page with the eyedropper tool",
+      "message": "カーソルを十字に変更する。"
+   },
+   "chrome_doesn_allow_picking_local": {
+      "description": "A warning for the user that the Color Picker / Eyedropper cannot pick colors from the current page, because its a local (non web-based) page",
+      "message": "お使いのブラウザーがローカルページからのカラー選択を許可しません"
+   },
+   "chrome_doesn_allow_picking_special_page": {
+      "description": "A warning for the user that the Color Picker / Eyedropper cannot pick colors from the current page",
+      "message": "Chrome がこのページからのカラー選択を許可しません"
+   },
+   "chrome_doesn_allow_picking_webstore": {
+      "description": "A warning for the user that the Color Picker / Eyedropper cannot pick colors from the current page, because its a Chrome Web Store page",
+      "message": "Chrome が Chrome ウェブストアページからのカラー選択を許可しません"
+   },
+   "clear_history": {
+      "description": "Clears/erases the entire color history",
+      "message": "履歴をクリア"
+   },
+   "clear_history_question": {
+      "description": "A confirmation question asking user to confirm clearing/erasing the entire color history",
+      "message": "カラー履歴をクリアしますか？"
+   },
+   "click_to_revert": {
+      "description": "Indicates that clicking will revert the color selection to previously selected color",
+      "message": "元の色に戻すためにクリック"
+   },
+   "close_and_stop_picking": {
+      "description": "Close the tool and stop picking colors from the page",
+      "message": "閉じて、選択を止める"
+   },
+   "collapse_this_panel": {
+      "description": "Collapse the panel - make it more compact visually",
+      "message": "このパネルをたたむ"
+   },
+   "color_copied_to_clipboard": {
+      "description": "The color has been copied to user's clipboard",
+      "message": "カラーがクリップボードにコピーされました"
+   },
+   "color_format": {
+      "description": "The format of a color to use - eg. RGB, HEX, HSL etc.",
+      "message": "カラーフォーマット"
+   },
+   "color_history_label": {
+      "description": "Label of the Color History panel etc.",
+      "message": "色の履歴"
+   },
+   "color_picked": {
+      "description": "The color was succesfully sampled/picked from the screen",
+      "message": "カラーを選択しました"
+   },
+   "color_picker_by": {
+      "description": "Specifies and gives attribution to the authors of the Color Picker tool",
+      "message": "$AUTHOR1$ と $AUTHOR2$ のカラーピッカーです。",
+      "placeholders": {
+         "author1": {
+            "content": "$1"
+         },
+         "author2": {
+            "content": "$2"
+         }
+      }
+   },
+   "color_picker_panel": {
+      "description": "The Color Picker Panel is a dialog that allows to choose colors from a palette or specify a color using RGB, HEX, HSL, or other color models. This is different from the Eyedropper tool that picks colors from pages etc.",
+      "message": "カラーピッカーパネル"
+   },
+   "colorzilla_homepage": {
+      "description": "The home page of ColorZilla",
+      "message": "ColorZilla ホームページ"
+   },
+   "colorzilla_options": {
+      "description": "Application Options/Preferences",
+      "message": "ColorZillaの設定"
+   },
+   "commit_to_this_color": {
+      "description": "Using this option will make the selected color active.",
+      "message": "この色の選択を確定"
+   },
+   "copy_to_clipboard_menu_label": {
+      "description": "This allows the user to copy the current color to clipboard using various special color formats - RGB, HEX etc.",
+      "message": "特定の形式でコピー"
+   },
+   "copy_with_param": {
+      "description": "Copy a string to clipboard, the string is provided using the paramater",
+      "message": "$STRING$ をコピー",
+      "placeholders": {
+         "string": {
+            "content": "$1"
+         }
+      }
+   },
+   "created_by": {
+      "description": "The author/creator of the app",
+      "message": "作成者:"
+   },
+   "css_color_analysis_results": {
+      "description": "The colors found in various CSS definitions on this page",
+      "message": "このページの CSS カラー"
+   },
+   "css_gradient_generator": {
+      "description": "A tool that allows users to create various CSS-based gradients",
+      "message": "CSS グラデーション生成ツール"
+   },
+   "current_color_label": {
+      "description": "Signifies previously selected color (which is the last current color) in the Color Picker UI",
+      "message": "現在"
+   },
+   "dont_move_document_down_when_sampling": {
+      "description": "An option that prevents the document from moving down to make room for the tool UI, when the eyedropper is active.",
+      "message": "色を選択する際にドキュメントを下に移動させない"
+   },
+   "enable_keyboard_shortcuts": {
+      "description": "An option to enable the user to use a keyboard shortcut to activate the eyedropper/color picker tool",
+      "message": "キーボードショートカットを使用した、ページからのカラー選びを有効にする。"
+   },
+   "enter_blue_value": {
+      "description": "Allows the user to enter the blue component of the color into the box",
+      "message": "青の値を入力 (0-255)"
+   },
+   "enter_green_value": {
+      "description": "Allows the user to enter the green component of the color into the box",
+      "message": "緑の値を入力 (0-255)"
+   },
+   "enter_hex_value": {
+      "description": "Allows the user to enter the color in hex format into the box",
+      "message": "\"Hex\"値を入力 (#000000-#ffffff)"
+   },
+   "enter_hue_value": {
+      "description": "Allows the user to enter the hue value into the box",
+      "message": "色相の値を入力 (0-360°)"
+   },
+   "enter_red_value": {
+      "description": "Allows the user to enter the red component of the color into the box",
+      "message": "赤の値を入力 (0-255)"
+   },
+   "enter_sat_value": {
+      "description": "Allows the user to enter the saturation value into the box",
+      "message": "彩度の値を入力 (0-100%)"
+   },
+   "enter_val_value": {
+      "description": "Allows the user to enter the brightness value into the box",
+      "message": "明度の値を入力 (0-100%)"
+   },
+   "expand_this_panel": {
+      "description": "Expand the panel - make it full size visually",
+      "message": "このパネルを拡大する"
+   },
+   "extension_description": {
+      "description": "Eyedropper is the tool used to sample colors from an image, Color Picker Panel is a dialog where you can choose and adjust colors in various ways",
+      "message": "高度なスポイトツール、カラーピッカー、グラデーション生成ツールなどの多彩で魅力的な機能"
+   },
+   "eyedropper": {
+      "description": "The tool that allows users to pick/sample colors from screen/webpages/images etc. ",
+      "message": "スポイト"
+   },
+   "help": {
+      "description": "Application help",
+      "message": "ヘルプ(英語)"
+   },
+   "help_translate_colorzilla": {
+      "description": "Asks users to help translate ColorZilla into different languages",
+      "message": "ColorZilla の翻訳に協力する "
+   },
+   "home_page": {
+      "description": "Home page of the app etc.",
+      "message": "ホームページ"
+   },
+   "keyboard_shortcut_label": {
+      "description": "Label for a keyboard shortcut to use",
+      "message": "ショートカット："
+   },
+   "keyboard_shortcuts": {
+      "description": "Combination of keys to activate the tool etc.",
+      "message": "キーボードショートカット"
+   },
+   "license": {
+      "description": "The license of the product",
+      "message": "ライセンス"
+   },
+   "licensing": {
+      "description": "The various legal info relating to license of the product",
+      "message": "ライセンス供与"
+   },
+   "locale": {
+      "description": "This should always be set to this file's locale",
+      "message": "ja"
+   },
+   "new_color_commit": {
+      "description": "Indicates that this is the newly selected color, and by pressing OK the user can commit - make it the current color",
+      "message": "新しい色 - \"OK\"を押して確定"
+   },
+   "new_color_label": {
+      "description": "Signifies newly selected color in the Color Picker UI",
+      "message": "新規"
+   },
+   "new_feature_label": {
+      "description": "The text of a badge that's displayed next to menu items to indicate to users that the feature is new",
+      "message": "new"
+   },
+   "ok": {
+      "description": "The Ok option, e.g. in a dialog",
+      "message": "OK"
+   },
+   "online_help": {
+      "description": "The online portion of help",
+      "message": "オンラインヘルプ"
+   },
+   "options": {
+      "description": "Application Options/Preferences",
+      "message": "オプション"
+   },
+   "options_saved": {
+      "description": "A confirmation message indicating to user that their selected options have been saved",
+      "message": "オプションが保存されました"
+   },
+   "outline_hovered_elements": {
+      "description": "An option that outlines with a line the HTML element the users cursor is currently hovering/positioned over",
+      "message": "カーソルが重なったタグにアウトラインを表示"
+   },
+   "page_color_picker_active": {
+      "description": "Indicates to the user that the Eyedropper / Color Picker has been activated and is currently active",
+      "message": "ページのカラーピッカーが有効になっています"
+   },
+   "palette_browser": {
+      "description": "A tool that presents various color palettes and their colors",
+      "message": "パレットブラウザー"
+   },
+   "palette_name_huesandbrightnesses": {
+      "description": "A palette with various color hues and color brightnesses",
+      "message": "色相と明度"
+   },
+   "palette_name_huesandsaturations": {
+      "description": "A palette with various color hues and color saturations",
+      "message": "色相と彩度"
+   },
+   "palette_name_w3cnamedcolors": {
+      "description": "A palette with various colors that have basic standard W3C names",
+      "message": "W3C 規格で色名称のあるカラー"
+   },
+   "palette_name_webcolorsbyhue": {
+      "description": "A palette with various Web colors organized by their hue value",
+      "message": "彩度別 Web カラー"
+   },
+   "palette_name_webnamedcolors": {
+      "description": "A palette with various colors that have names in Web standards",
+      "message": "Web 標準で色名称のあるカラー"
+   },
+   "palette_name_websafecolors": {
+      "description": "A palette that has colors that are considered Web Safe - they are displayed consistenly over the widest variety of displays",
+      "message": "Web セーフカラー"
+   },
+   "palette_name_xnamedcolors": {
+      "description": "A palette with various colors that have names in X-Windows standards",
+      "message": "X Windows 標準で色名称のあるカラー"
+   },
+   "pick_color_from_anywhere": {
+      "description": "Tells the user they can pick a color from any screen location, including outside the browser window",
+      "message": "ブラウザーの外など、どこからでもカラーを選択できます..."
+   },
+   "pick_color_from_outside_the_browser": {
+      "description": "Allows picking colors from anywhere on user's screen, including from outside the browser",
+      "message": "ブラウザーの外のカラーを選択する"
+   },
+   "pick_color_from_page": {
+      "description": "Starts the Eyedropper / Color Picker tool to let the user sample color from a specific page location",
+      "message": "ページからカラーを選択"
+   },
+   "picked_color_history": {
+      "description": "The history of colors that the user picked",
+      "message": "選択した色の履歴"
+   },
+   "point_sample": {
+      "description": "This mode samples one 1x1 pixel/point for the current color",
+      "message": "点のサンプル"
+   },
+   "report_translation_issue": {
+      "description": "Allows the user to report incorrect or inaccurate translations",
+      "message": "翻訳の問題を報告する"
+   },
+   "resample_last_location": {
+      "description": "Gets the color of the last location sampled with the Eyedropper tool. Used for cases where the location might have changed or had a hover state",
+      "message": "最後に採取した色情報を表示"
+   },
+   "sampling": {
+      "description": "Indicates to the user that the tool is currently sampling the screen for colors",
+      "message": "サンプリング中..."
+   },
+   "save_button_label": {
+      "description": "An action that allows the user to save the currently selected options/values",
+      "message": "保存"
+   },
+   "select_area_to_sample": {
+      "description": "Instructs the user to select an area from the screen so this area's pixels can be averaged into one sampled color",
+      "message": "サンプリングする領域を選択"
+   },
+   "selection_average": {
+      "description": "This mode allows the user to select a certain visual portion of the current screen and the color will be determined by averaging all the pixel within this user-selected area",
+      "message": "選択平均"
+   },
+   "set_to_blue_color_mode": {
+      "description": "Sets the current mode to select colors by amount of blue",
+      "message": "青色モードに設定"
+   },
+   "set_to_green_color_mode": {
+      "description": "Sets the current mode to select colors by amount of green",
+      "message": "緑色モードに設定"
+   },
+   "set_to_hue_color_mode": {
+      "description": "Sets the current mode to select colors by hue",
+      "message": "色相モードに設定"
+   },
+   "set_to_red_color_mode": {
+      "description": "Sets the current mode to select colors by amount of red",
+      "message": "赤色モードに設定"
+   },
+   "set_to_sat_color_mode": {
+      "description": "Sets the current mode to select colors by saturation",
+      "message": "彩度モードに設定"
+   },
+   "set_to_val_color_mode": {
+      "description": "Sets the current mode to select colors by brightnesses",
+      "message": "明度モードに設定"
+   },
+   "show_hex_codes_lowercase": {
+      "description": "An option to show HEX-formatted color values in lowercase (eg. #dddddd vs #DDDDDD)",
+      "message": "16進数の値を小文字で表示"
+   },
+   "show_magnifier": {
+      "description": "An option that shows a magnified view of the sampled area while picking/samlping colors",
+      "message": "拡大表示を有効にする"
+   },
+   "temporarily_show_hide_by_holding_shift": {
+      "description": "This allows temporarily showing or hiding the magnifier by holding the 'Shift' key while picking colors",
+      "message": "「シフト」キーを押すことで一時的に表示/非表示を切り替える"
+   },
+   "version": {
+      "description": "The version of the app (e.g v3.4)",
+      "message": "バージョン"
+   },
+   "webpage_color_analyzer": {
+      "description": "A tool that analyzes web pages, extracts the colors present, their definitions and elements",
+      "message": "Web ページカラーアナライザー"
+   },
+   "whats_new": {
+      "description": "News and updates about the app",
+      "message": "最新情報"
+   }
+}

@@ -1,0 +1,10 @@
+/*!
+   This file is part of ColorZilla
+
+   Written by Alex Sirota (alex @ iosart.com)
+
+   Copyright (c) iosart labs llc 2011, All Rights Reserved
+
+   Please do not use without permission
+*/
+var ColorZilla,browser=chrome||browser;let browserPromise="undefined"!=typeof ChromePromise?new ChromePromise:browser;(ColorZilla=void 0!==ColorZilla&&ColorZilla?ColorZilla:{}).BrowserUtils={"openURLInNewTab":function(e){browser.tabs.create({"url":e})},"getLocalizedURL":function(e,r){let o=browser.i18n.getMessage("locale");return o&&"en"!=o?e+"/"+(o=o.trim().toLowerCase().replace(/_/g,"-"))+r:e+r},"getExtensionVersion":function(r){fetch(browser.runtime.getURL("/manifest.json")).then(e=>e.json()).then(e=>{r(e.version)})},"getChromeVersion":function(){var e;return navigator&&(e=navigator.userAgent)&&e.match(/Chrome\/([0-9.]+)/)?RegExp.$1:"-"},"getFirefoxVersion":function(){var e;return navigator&&(e=navigator.userAgent)&&e.match(/Firefox\/([0-9.]+)/)?RegExp.$1:"-"},"getBrowserVersion":function(){switch(this.getBrowser()){case"firefox":return this.getFirefoxVersion();case"chrome":return this.getChromeVersion();default:return"-"}},"getBrowser":function(){var e=navigator.userAgent.toLowerCase();return e?e.match(/chrome/)?"chrome":e.match(/firefox/)?"firefox":void 0:"unknown"},"getPlatform":function(){var e=navigator.userAgent.toLowerCase();return-1!=e.indexOf("mac")?"mac":-1!=e.indexOf("windows")?"windows":-1!=e.indexOf("linux")?"linux":"unknown"},"platformIs":function(e){return this.getPlatform()==e},"platformSupportsNonForegroundHover":function(){return"windows"==this.getPlatform()||"firefox"==this.getBrowser()},"i18nReplace":function(e,r){$(e).html(browser.i18n.getMessage(r))},"copyToClipboard":function(e,r){var o=(r=r||document).getElementById("clipboard-copier");o||((o=r.createElement("textarea")).id="clipboard-copier",o.style="position:absolute;top:0;left:0;overflow:hidden;width:1px;height:1px;opacity:0.01",r.body.appendChild(o)),o.value=e,o.select();try{r.execCommand("copy",!1,null)}catch(e){}},"escapeHTML":function(e){const r={"&":"&amp;",'"':"&quot;","'":"&#39;","<":"&lt;",">":"&gt;"};return e.replace(/[&"'<>]/g,function(e){return r[e]})}};

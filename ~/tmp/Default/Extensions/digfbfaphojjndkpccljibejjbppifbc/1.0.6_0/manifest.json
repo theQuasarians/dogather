@@ -1,0 +1,42 @@
+{
+   "action": {
+      "default_icon": "icon-34.png",
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.bundle.js"
+   },
+   "content_scripts": [ {
+      "css": [ "content.styles.css" ],
+      "js": [ "contentScript.bundle.js" ],
+      "matches": [ "http://*/*", "https://*/*", "\u003Call_urls>" ]
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://api.moesif.net;  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:;"
+   },
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "ruleset_1",
+         "path": "rules.json"
+      } ]
+   },
+   "description": "Allow cross-domain requests by override Origin and CORS headers. Log/capture XmlHttpRequest API calls for debugging and analytics.",
+   "host_permissions": [ "\u003Call_urls>", "https://api.moesif.net/*", "http://api.moesif.net/*" ],
+   "icons": {
+      "128": "icon-128.png",
+      "16": "icon-16.png",
+      "34": "icon-34.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqk1g719bYgKyouwXKyYMVZ9S3GjkDUGIuF4CjsqmGQlRRaN0AuiSP6XkJdb5c6DzabYE50yQpJxh1zbzt44GxivaBDnf3WwUeeAWsJ8HUcjrcytDyGzNjEh7w3HKoqaLukVDKATXWaFipiPdvDZ3oCfMf1z1dslco5p1spcRWygo/LNSdorg9FajxZFCpMbOs3cHMl26zLNYBW04Z6enrwTCHJUFk6YtdZocePTKHcvUYukTMSgVpPeyUFREbBiy33BsaiVq40zv+70mHyUD5OWJnhHo7X931+y1qlICA31SZ1eQgpqYv682+lce2Z9MQstNng6riThvp/eHKzkAJQIDAQAB",
+   "manifest_version": 3,
+   "name": "Moesif Origin/CORS Changer & API Logger",
+   "options_page": "options.html",
+   "permissions": [ "activeTab", "declarativeNetRequest", "declarativeNetRequestFeedback", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.6",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "content.styles.css", "icon-128.png", "icon-34.png", "icon-16.png", "moesif.min.js" ]
+   } ]
+}

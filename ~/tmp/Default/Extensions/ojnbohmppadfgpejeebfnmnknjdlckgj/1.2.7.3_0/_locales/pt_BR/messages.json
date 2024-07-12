@@ -1,0 +1,17 @@
+{
+   "permissionsButton": {
+      "message": "Clique aqui para acessar o ChatGPT.com com todos os recursos do AIPRM"
+   },
+   "permissionsDenied": {
+      "message": "Para garantir que você possa continuar usando o AIPRM sem interrupções, precisamos que você habilite o AIPRM no novo domínio do ChatGPT. Basta clicar no botão abaixo e conceder as permissões quando solicitado.\n\nVocê deve clicar no botão \"Permitir\"."
+   },
+   "permissionsGranted": {
+      "message": "Obrigado por ser um membro valioso da comunidade AIPRM!"
+   },
+   "permissionsMainText": {
+      "message": "Para continuar aproveitando todas as funcionalidades do AIPRM sem interrupções, habilite-o no novo domínio de ChatGPT.com."
+   },
+   "permissionsTitle": {
+      "message": "AIPRM para ChatGPT"
+   }
+}

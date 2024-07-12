@@ -1,0 +1,410 @@
+{
+   "11x11_average": {
+      "description": "This mode takes a 11x11 pixel window around the current cursor location, and averages the colour value across this area",
+      "message": "11x11 average"
+   },
+   "25x25_average": {
+      "description": "This mode takes a 25x25 pixel window around the current cursor location, and averages the colour value across this area",
+      "message": "25x25 average"
+   },
+   "3x3_average": {
+      "description": "This mode takes a 3x3 pixel window around the current cursor location, and averages the colour value across this area",
+      "message": "3x3 average"
+   },
+   "5x5_average": {
+      "description": "This mode takes a 5x5 pixel window around the current cursor location, and averages the colour value across this area",
+      "message": "5x5 average"
+   },
+   "NAME": {
+      "message": "MESSAGE"
+   },
+   "about_colorzilla": {
+      "description": "Shows information about the app, its author, version etc",
+      "message": "About ColorZilla"
+   },
+   "allow_access_to_file_urls": {
+      "description": "Instructs the user to enable access to 'file' URLs - special URLs hosted locally",
+      "message": "Click and enable \"Allow access to file URLs\""
+   },
+   "analyzing_please_wait": {
+      "description": "Indicates to user that the tool is Analysing colours, and requests the user to wait until it completes the analysis",
+      "message": "Analysing... Please wait..."
+   },
+   "attributions": {
+      "description": "The attributions of various elements used in the products etc.",
+      "message": "Attributions"
+   },
+   "auto_copy": {
+      "description": "Auto copy a colour or similar to clipboard after being picked/sampled",
+      "message": "Auto-copy"
+   },
+   "auto_copy_format": {
+      "description": "The format to use when auto-copying the colour to clipboard",
+      "message": "Auto-copy colour format:"
+   },
+   "auto_copy_picked_to_clipboard": {
+      "description": "Auto copy the picked/sampled colour to clipboard",
+      "message": "Automatically copy picked colour to clipboard."
+   },
+   "auto_start_eyedropper_when_button_clicked": {
+      "description": "An option that starts the colour sampling (eyedropper) mode immediately after the main app button is clicked, without needing to click on a menu item",
+      "message": "Automatically start eyedropper when main button is clicked."
+   },
+   "cancel": {
+      "description": "The Cancel option, e.g. in a dialog",
+      "message": "Cancel"
+   },
+   "cancel_and_revert": {
+      "description": "Cancel the colour selection and revert to the previous colour",
+      "message": "Cancel And Revert To Original Colour"
+   },
+   "change_cursor_to_crosshair": {
+      "description": "An option that changes the cursor to crosshair (a cross) while the user is sampling the colours from the page with the eyedropper tool",
+      "message": "Change cursor to crosshair."
+   },
+   "chrome_doesn_allow_picking_local": {
+      "description": "A warning for the user that the Colour Picker / Eyedropper cannot pick colours from the current page, because its a local (non web-based) page",
+      "message": "Your browser doesn't allow picking colours from local pages"
+   },
+   "chrome_doesn_allow_picking_special_page": {
+      "description": "A warning for the user that the Colour Picker / Eyedropper cannot pick colours from the current page",
+      "message": "Chrome doesn't allow picking colours from this special page"
+   },
+   "chrome_doesn_allow_picking_webstore": {
+      "description": "A warning for the user that the Colour Picker / Eyedropper cannot pick colours from the current page, because its a Chrome Web Store page",
+      "message": "Chrome doesn't allow picking colours from Chrome Web Store pages"
+   },
+   "clear_history": {
+      "description": "Clears/erases the entire colour history",
+      "message": "Clear history"
+   },
+   "clear_history_question": {
+      "description": "A confirmation question asking user to confirm clearing/erasing the entire colour history",
+      "message": "Clear colour history?"
+   },
+   "click_to_revert": {
+      "description": "Indicates that clicking will revert the colour selection to previously selected colour",
+      "message": "Click To Revert To Original Colour"
+   },
+   "close_and_stop_picking": {
+      "description": "Close the tool and stop picking colours from the page",
+      "message": "Close and Stop Picking"
+   },
+   "collapse_this_panel": {
+      "description": "Collapse the panel - make it more compact visually",
+      "message": "Collapse This Panel"
+   },
+   "color_copied_to_clipboard": {
+      "description": "The colour has been copied to user's clipboard",
+      "message": "Colour copied to clipboard"
+   },
+   "color_format": {
+      "description": "The format of a colour to use - eg. RGB, HEX, HSL etc.",
+      "message": "Colour Format"
+   },
+   "color_history_label": {
+      "description": "Label of the Colour History panel etc.",
+      "message": "Colour history:"
+   },
+   "color_picked": {
+      "description": "The colour was successfully sampled/picked from the screen",
+      "message": "Colour picked"
+   },
+   "color_picker_by": {
+      "description": "Specifies and gives attribution to the authors of the Colour Picker tool",
+      "message": "Colour Picker by $AUTHOR1$ and $AUTHOR2$.",
+      "placeholders": {
+         "author1": {
+            "content": "$1"
+         },
+         "author2": {
+            "content": "$2"
+         }
+      }
+   },
+   "color_picker_panel": {
+      "description": "The Colour Picker Panel is a dialog that allows to choose colours from a palette or specify a colour using RGB, HEX, HSL, or other colour models. This is different from the Eyedropper tool that picks colours from pages etc.",
+      "message": "Colour Picker Panel"
+   },
+   "colorzilla_homepage": {
+      "description": "The home page of ColorZilla",
+      "message": "ColorZilla Homepage"
+   },
+   "colorzilla_options": {
+      "description": "Application Options/Preferences",
+      "message": "ColorZilla Options"
+   },
+   "commit_to_this_color": {
+      "description": "Using this option will make the selected colour active.",
+      "message": "Commit To This Colour Selection"
+   },
+   "copy_to_clipboard_menu_label": {
+      "description": "This allows the user to copy the current colour to clipboard using various special colour formats - RGB, HEX etc.",
+      "message": "Copy Special..."
+   },
+   "copy_with_param": {
+      "description": "Copy a string to clipboard, the string is provided using the parameter",
+      "message": "Copy $STRING$",
+      "placeholders": {
+         "string": {
+            "content": "$1"
+         }
+      }
+   },
+   "created_by": {
+      "description": "The author/creator of the app",
+      "message": "Created By"
+   },
+   "css_color_analysis_results": {
+      "description": "The colours found in various CSS definitions on this page",
+      "message": "CSS Colours on This Page"
+   },
+   "css_gradient_generator": {
+      "description": "A tool that allows users to create various CSS-based gradients",
+      "message": "CSS Gradient Generator"
+   },
+   "current_color_label": {
+      "description": "Signifies previously selected colour (which is the last current colour) in the Colour Picker UI",
+      "message": "current"
+   },
+   "dont_move_document_down_when_sampling": {
+      "description": "An option that prevents the document from moving down to make room for the tool UI, when the eyedropper is active.",
+      "message": "Don't move document down when sampling."
+   },
+   "enable_keyboard_shortcuts": {
+      "description": "An option to enable the user to use a keyboard shortcut to activate the eyedropper/colour picker tool",
+      "message": "Enable colour picking from page using keyboard shortcut."
+   },
+   "enter_blue_value": {
+      "description": "Allows the user to enter the blue component of the colour into the box",
+      "message": "Enter a \"Blue\" Value (0-255)"
+   },
+   "enter_green_value": {
+      "description": "Allows the user to enter the green component of the colour into the box",
+      "message": "Enter a \"Green\" Value (0-255)"
+   },
+   "enter_hex_value": {
+      "description": "Allows the user to enter the colour in hex format into the box",
+      "message": "Enter a \"Hex\" Value (#000000-#ffffff)"
+   },
+   "enter_hue_value": {
+      "description": "Allows the user to enter the hue value into the box",
+      "message": "Enter a \"Hue\" Value (0-360°)"
+   },
+   "enter_red_value": {
+      "description": "Allows the user to enter the red component of the colour into the box",
+      "message": "Enter a \"Red\" Value (0-255)"
+   },
+   "enter_sat_value": {
+      "description": "Allows the user to enter the saturation value into the box",
+      "message": "Enter a \"Saturation\" Value (0-100%)"
+   },
+   "enter_val_value": {
+      "description": "Allows the user to enter the brightness value into the box",
+      "message": "Enter a \"Brightness\" Value (0-100%)"
+   },
+   "expand_this_panel": {
+      "description": "Expand the panel - make it full size visually",
+      "message": "Expand This Panel"
+   },
+   "extension_description": {
+      "description": "Eyedropper is the tool used to sample colours from an image, Colour Picker Panel is a dialog where you can choose and adjust colours in various ways",
+      "message": "Advanced Eyedropper, Colour Picker, Gradient Generator and other colourful goodies"
+   },
+   "eyedropper": {
+      "description": "The tool that allows users to pick/sample colours from screen/webpages/images etc. ",
+      "message": "Eyedropper"
+   },
+   "help": {
+      "description": "Application help",
+      "message": "Help"
+   },
+   "help_translate_colorzilla": {
+      "description": "Asks users to help translate ColorZilla into different languages",
+      "message": "Help Translate ColorZilla"
+   },
+   "home_page": {
+      "description": "Home page of the app etc.",
+      "message": "Home Page"
+   },
+   "keyboard_shortcut_label": {
+      "description": "Label for a keyboard shortcut to use",
+      "message": "Shortcut:"
+   },
+   "keyboard_shortcuts": {
+      "description": "Combination of keys to activate the tool etc.",
+      "message": "Keyboard Shortcuts"
+   },
+   "license": {
+      "description": "The license of the product",
+      "message": "License"
+   },
+   "licensing": {
+      "description": "The various legal info relating to license of the product",
+      "message": "Licensing"
+   },
+   "locale": {
+      "description": "This should always be set to this file's locale",
+      "message": "en-gb"
+   },
+   "new_color_commit": {
+      "description": "Indicates that this is the newly selected colour, and by pressing OK the user can commit - make it the current colour",
+      "message": "New Colour - Press \"OK\" To Commit"
+   },
+   "new_color_label": {
+      "description": "Signifies newly selected colour in the Colour Picker UI",
+      "message": "new"
+   },
+   "new_feature_label": {
+      "description": "The text of a badge that's displayed next to menu items to indicate to users that the feature is new",
+      "message": "New"
+   },
+   "ok": {
+      "description": "The Ok option, e.g. in a dialog",
+      "message": "OK"
+   },
+   "online_help": {
+      "description": "The online portion of help",
+      "message": "Online Help"
+   },
+   "options": {
+      "description": "Application Options/Preferences",
+      "message": "Options"
+   },
+   "options_saved": {
+      "description": "A confirmation message indicating to user that their selected options have been saved",
+      "message": "Options saved"
+   },
+   "outline_hovered_elements": {
+      "description": "An option that outlines with a line the HTML element the users cursor is currently hovering/positioned over",
+      "message": "Outline hovered elements."
+   },
+   "page_color_picker_active": {
+      "description": "Indicates to the user that the Eyedropper / Colour Picker has been activated and is currently active",
+      "message": "Page Colour Picker Active"
+   },
+   "palette_browser": {
+      "description": "A tool that presents various colour palettes and their colours",
+      "message": "Palette Browser"
+   },
+   "palette_name_huesandbrightnesses": {
+      "description": "A palette with various colour hues and colour brightnesses",
+      "message": "Hues and Brightnesses"
+   },
+   "palette_name_huesandsaturations": {
+      "description": "A palette with various colour hues and colour saturations",
+      "message": "Hues and Saturations"
+   },
+   "palette_name_w3cnamedcolors": {
+      "description": "A palette with various colours that have basic standard W3C names",
+      "message": "W3C Named Colours"
+   },
+   "palette_name_webcolorsbyhue": {
+      "description": "A palette with various Web colours organised by their hue value",
+      "message": "Web Colours by Hue"
+   },
+   "palette_name_webnamedcolors": {
+      "description": "A palette with various colours that have names in Web standards",
+      "message": "Web Named Colours"
+   },
+   "palette_name_websafecolors": {
+      "description": "A palette that has colours that are considered Web Safe - they are displayed consistently over the widest variety of displays",
+      "message": "Web Safe Colours"
+   },
+   "palette_name_xnamedcolors": {
+      "description": "A palette with various colours that have names in X-Windows standards",
+      "message": "X Named Colours"
+   },
+   "pick_color_from_anywhere": {
+      "description": "Tells the user they can pick a colour from any screen location, including outside the browser window",
+      "message": "Pick colours from anywhere, including outside the browser..."
+   },
+   "pick_color_from_outside_the_browser": {
+      "description": "Allows picking colours from anywhere on user's screen, including from outside the browser",
+      "message": "Pick Colour Outside Browser"
+   },
+   "pick_color_from_page": {
+      "description": "Starts the Eyedropper / Colour Picker tool to let the user sample colour from a specific page location",
+      "message": "Pick Colour From Page"
+   },
+   "picked_color_history": {
+      "description": "The history of colours that the user picked",
+      "message": "Picked Colour History"
+   },
+   "point_sample": {
+      "description": "This mode samples one 1x1 pixel/point for the current colour",
+      "message": "Point sample"
+   },
+   "report_translation_issue": {
+      "description": "Allows the user to report incorrect or inaccurate translations",
+      "message": "Report Translation Issue"
+   },
+   "resample_last_location": {
+      "description": "Gets the colour of the last location sampled with the Eyedropper tool. Used for cases where the location might have changed or had a hover state",
+      "message": "Re-sample Last Location"
+   },
+   "sampling": {
+      "description": "Indicates to the user that the tool is currently sampling the screen for colours",
+      "message": "Sampling..."
+   },
+   "save_button_label": {
+      "description": "An action that allows the user to save the currently selected options/values",
+      "message": "Save"
+   },
+   "select_area_to_sample": {
+      "description": "Instructs the user to select an area from the screen so this area's pixels can be averaged into one sampled colour",
+      "message": "Select an area to sample"
+   },
+   "selection_average": {
+      "description": "This mode allows the user to select a certain visual portion of the current screen and the colour will be determined by averaging all the pixel within this user-selected area",
+      "message": "Selection average"
+   },
+   "set_to_blue_color_mode": {
+      "description": "Sets the current mode to select colours by amount of blue",
+      "message": "Set To \"Blue\" Colour Mode"
+   },
+   "set_to_green_color_mode": {
+      "description": "Sets the current mode to select colours by amount of green",
+      "message": "Set To \"Green\" Colour Mode"
+   },
+   "set_to_hue_color_mode": {
+      "description": "Sets the current mode to select colours by hue",
+      "message": "Set To \"Hue\" Colour Mode"
+   },
+   "set_to_red_color_mode": {
+      "description": "Sets the current mode to select colours by amount of red",
+      "message": "Set To \"Red\" Colour Mode"
+   },
+   "set_to_sat_color_mode": {
+      "description": "Sets the current mode to select colours by saturation",
+      "message": "Set To \"Saturation\" Colour Mode"
+   },
+   "set_to_val_color_mode": {
+      "description": "Sets the current mode to select colours by brightnesses",
+      "message": "Set To \"Brightness\" Colour Mode"
+   },
+   "show_hex_codes_lowercase": {
+      "description": "An option to show HEX-formatted colour values in lowercase (eg. #dddddd vs #DDDDDD)",
+      "message": "Show Hex codes in lowercase."
+   },
+   "show_magnifier": {
+      "description": "An option that shows a magnified view of the sampled area while picking/sampling colours",
+      "message": "Show magnifier."
+   },
+   "temporarily_show_hide_by_holding_shift": {
+      "description": "This allows temporarily showing or hiding the magnifier by holding the 'Shift' key while picking colours",
+      "message": "Temporarily show/hide by holding the 'Shift' key."
+   },
+   "version": {
+      "description": "The version of the app (e.g v3.4)",
+      "message": "Version"
+   },
+   "webpage_color_analyzer": {
+      "description": "A tool that analyses web pages, extracts the colours present, their definitions and elements",
+      "message": "Webpage Colour Analyzer"
+   },
+   "whats_new": {
+      "description": "News and updates about the app",
+      "message": "What's New"
+   }
+}

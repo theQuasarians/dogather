@@ -1,0 +1,442 @@
+html, body {
+  width: 320px;
+  min-height: 480px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  font-family: "Rubik", Helvetica,  Sans-Serif;
+  padding: 0;
+  margin:0;
+  display: flex;
+}
+@media screen and (min-width:0) {
+  /* for relatively modern browsers including IE 8+ */
+  select {
+    border-radius:8px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 16 16' style='enable-background:new 0 0 16 16;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%235C646D;stroke-linecap:round;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Cpolyline class='st0' points='10,7.6 8,9.5 6,7.6 '/%3E%3C/svg%3E") !important;
+    background-position: -50px -50px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* for Webkit */
+  select {
+    -webkit-appearance: none;
+    background-position: right center;
+    padding: 3px 32px 3px 5px;
+  }
+}
+
+@-moz-document url-prefix() {
+  /* for Firefox */
+  select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: "";
+    background-position: right center;
+    padding-right: 16px;
+  }
+
+  /* hides the dotted outline on focus in FF (See SO#3773430) */
+  select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+}
+
+[contenteditable]:focus {
+  outline: 0px solid transparent;
+}
+
+select, input {
+  width: 100%;
+  border:1px solid #cccccc;
+  box-shadow: none;
+  border-radius: 8px;
+  font-size: 20px;
+  color:#888;
+  font-family: "Rubik", Helvetica,  Sans-Serif;
+  height: 40px;
+}
+input {
+  padding: 4px 0;
+}
+#import_start{
+  width: 100%;
+	padding: 16px;
+}
+.cursor {
+  padding-left: 5px;
+  font-weight: normal;
+}
+.ext-head{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+img{
+  flex:none;
+}
+.ext-head h2{
+  flex:1;
+  font-size: 16px;
+  line-height: 1;
+  color:  #091A2F;
+  margin: 0 10px;
+  display: inline-block;
+}
+.ext-main .title{
+  font-size: 22px;
+  line-height: 1;
+  text-align:center;
+  padding:30px 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid transparent
+}
+.ext-main .warning{
+  font-size: 16px;
+  background: lightyellow;
+  padding: 10px;
+}
+.ext-main .warning b{
+  font-variant: all-small-caps;
+}
+.ext-main .warning input{
+  width: auto;
+  font-size: 16px;
+  height: 16px;
+}
+.ext-main div{
+  border:1px solid #cccccc;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  background-color:white;
+  margin-bottom: 20px;
+}
+.ext-main div:hover{
+  border-color: #aaaaaa;
+}
+.ext-main .flag{
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+  top:4px;
+  left: 5px;
+  cursor: pointer;
+  pointer-events: none;
+  background-size: 28px 28px;
+  border:1px solid transparent;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+}
+.ext-main .flag.ar{background-image: url("images/flag-circle-arabic.svg");}
+.ext-main .flag.be{background-image: url("images/flag-circle-belarusian.svg");}
+.ext-main .flag.bg{background-image: url("images/flag-circle-bulgarian.svg");}
+.ext-main .flag.hk{background-image: url("images/flag-circle-cantonese.svg");}
+.ext-main .flag.ca{background-image: url("images/flag-circle-catalan.svg");}
+.ext-main .flag.zh{background-image: url("images/flag-circle-chinese.svg");}
+.ext-main .flag.zh-t{background-image: url("images/flag-circle-chinese-trad.svg");}
+.ext-main .flag.hrv{background-image: url("images/flag-circle-croatian.svg");}
+.ext-main .flag.cs{background-image: url("images/flag-circle-czech.svg");}
+.ext-main .flag.da{background-image: url("images/flag-circle-danish.svg");}
+.ext-main .flag.nl{background-image: url("images/flag-circle-dutch.svg");}
+.ext-main .flag.en{background-image: url("images/flag-circle-english.svg");}
+.ext-main .flag.eo{background-image: url("images/flag-circle-esperanto.svg");}
+.ext-main .flag.fa{background-image: url("images/flag-circle-farsi.svg");}
+.ext-main .flag.fi{background-image: url("images/flag-circle-finnish.svg");}
+.ext-main .flag.fr{background-image: url("images/flag-circle-french.svg");}
+.ext-main .flag.de{background-image: url("images/flag-circle-german.svg");}
+.ext-main .flag.el{background-image: url("images/flag-circle-greek.svg");}
+.ext-main .flag.gu{background-image: url("images/flag-circle-gujarati.svg");}
+.ext-main .flag.hi{background-image: url("images/flag-circle-hi.svg");}
+.ext-main .flag.he{background-image: url("images/flag-circle-hebrew.svg");}
+.ext-main .flag.id{background-image: url("images/flag-circle-indonesian.svg");}
+.ext-main .flag.it{background-image: url("images/flag-circle-italian.svg");}
+.ext-main .flag.ja{background-image: url("images/flag-circle-japanese.svg");}
+.ext-main .flag.ko{background-image: url("images/flag-circle-korean.svg");}
+.ext-main .flag.la{background-image: url("images/flag-circle-latin.svg");}
+.ext-main .flag.ms{background-image: url("images/flag-circle-malay.svg");}
+.ext-main .flag.no{background-image: url("images/flag-circle-norwegian.svg");}
+.ext-main .flag.pl{background-image: url("images/flag-circle-polish.svg");}
+.ext-main .flag.pl{background-image: url("images/flag-circle-polish.svg");}
+.ext-main .flag.pt{background-image: url("images/flag-circle-portuguese.svg");}
+.ext-main .flag.ro{background-image: url("images/flag-circle-romanian.svg");}
+.ext-main .flag.ru{background-image: url("images/flag-circle-russian.svg");}
+.ext-main .flag.srp{background-image: url("images/flag-circle-serbian.svg");}
+.ext-main .flag.sk{background-image: url("images/flag-circle-slovak.svg");}
+.ext-main .flag.es{background-image: url("images/flag-circle-spanish.svg");}
+.ext-main .flag.sv{background-image: url("images/flag-circle-swedish.svg");}
+.ext-main .flag.tr{background-image: url("images/flag-circle-turkish.svg");}
+.ext-main .flag.uk{background-image: url("images/flag-circle-ukrainian.svg");}
+.ext-main .flag.hy{background-image: url("images/flag-circle-armenian.svg");}
+.ext-main .flag.is{background-image: url("images/flag-circle-icelandic.svg");}
+.ext-main .flag.tl{background-image: url("images/flag-circle-tagalog.svg");}
+.ext-main .flag.mk{background-image: url("images/flag-circle-macedonian.svg");}
+.ext-main .flag.sl{background-image: url("images/flag-circle-slovenian.svg");}
+.ext-main .flag.sw{background-image: url("images/flag-circle-swahili.svg");}
+.ext-main .flag.af{background-image: url("images/flag-circle-afrikaans.svg");}
+.ext-main .flag.ka{background-image: url("images/flag-circle-georgian.svg");}
+
+.ext-main select{
+  border:0;
+  padding-left: 40px;
+  cursor: pointer;
+  background-color: #f6f6f8;
+  background-repeat: no-repeat;
+}
+
+.ext-main select [class *="language-"]{
+  font-size: 16px;
+  padding: 4px 0 4px 40px;
+  background-size: 20px 20px;
+  background-position: 8px 3px;
+  background-repeat: no-repeat;
+  background-color: #eee;
+  border:0;
+  outline: 0;
+}
+.ext-main select .language-ar{background-image: url("images/flag-circle-arabic.svg");}
+.ext-main select .language-be{background-image: url("images/flag-circle-belarusian.svg");}
+.ext-main select .language-bg{background-image: url("images/flag-circle-bulgarian.svg");}
+.ext-main select .language-hk{background-image: url("images/flag-circle-cantonese.svg");}
+.ext-main select .language-ca{background-image: url("images/flag-circle-catalan.svg");}
+.ext-main select .language-zh{background-image: url("images/flag-circle-chinese.svg");}
+.ext-main select .language-zh-t{background-image: url("images/flag-circle-chinese-trad.svg");}
+.ext-main select .language-hrv{background-image: url("images/flag-circle-croatian.svg");}
+.ext-main select .language-cs{background-image: url("images/flag-circle-czech.svg");}
+.ext-main select .language-da{background-image: url("images/flag-circle-danish.svg");}
+.ext-main select .language-nl{background-image: url("images/flag-circle-dutch.svg");}
+.ext-main select .language-en{background-image: url("images/flag-circle-english.svg");}
+.ext-main select .language-eo{background-image: url("images/flag-circle-esperanto.svg");}
+.ext-main select .language-fa{background-image: url("images/flag-circle-farsi.svg");}
+.ext-main select .language-fi{background-image: url("images/flag-circle-finnish.svg");}
+.ext-main select .language-fr{background-image: url("images/flag-circle-french.svg");}
+.ext-main select .language-de{background-image: url("images/flag-circle-german.svg");}
+.ext-main select .language-el{background-image: url("images/flag-circle-greek.svg");}
+.ext-main select .language-gu{background-image: url("images/flag-circle-gujarati.svg");}
+.ext-main select .language-hi{background-image: url("images/flag-circle-hindi.svg");}
+.ext-main select .language-he{background-image: url("images/flag-circle-hebrew.svg");}
+.ext-main select .language-id{background-image: url("images/flag-circle-indonesian.svg");}
+.ext-main select .language-it{background-image: url("images/flag-circle-italian.svg");}
+.ext-main select .language-ja{background-image: url("images/flag-circle-japanese.svg");}
+.ext-main select .language-ko{background-image: url("images/flag-circle-korean.svg");}
+.ext-main select .language-la{background-image: url("images/flag-circle-latin.svg");}
+.ext-main select .language-ms{background-image: url("images/flag-circle-malay.svg");}
+.ext-main select .language-no{background-image: url("images/flag-circle-norwegian.svg");}
+.ext-main select .language-pl{background-image: url("images/flag-circle-polish.svg");}
+.ext-main select .language-pl{background-image: url("images/flag-circle-polish.svg");}
+.ext-main select .language-pt{background-image: url("images/flag-circle-portuguese.svg");}
+.ext-main select .language-ro{background-image: url("images/flag-circle-romanian.svg");}
+.ext-main select .language-ru{background-image: url("images/flag-circle-russian.svg");}
+.ext-main select .language-srp{background-image: url("images/flag-circle-serbian.svg");}
+.ext-main select .language-sk{background-image: url("images/flag-circle-slovak.svg");}
+.ext-main select .language-es{background-image: url("images/flag-circle-spanish.svg");}
+.ext-main select .language-sv{background-image: url("images/flag-circle-swedish.svg");}
+.ext-main select .language-tr{background-image: url("images/flag-circle-turkish.svg");}
+.ext-main select .language-uk{background-image: url("images/flag-circle-ukrainian.svg");}
+.ext-main select .language-mk{background-image: url("images/flag-circle-macedonian.svg");}
+.ext-main select .language-sl{background-image: url("images/flag-circle-slovenian.svg");}
+.ext-main select .language-sw{background-image: url("images/flag-circle-swahili.svg");}
+.ext-main select .language-af{background-image: url("images/flag-circle-afrikaans.svg");}
+.ext-main select .language-ka{background-image: url("images/flag-circle-georgian.svg");}
+
+.ext-body{
+  background-color: #F6F6F8;;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding:8px;
+}
+.ext-body .text-wrapper{
+  margin-bottom: 4px;
+  display: block;
+}
+
+.button{
+  background-color: #091A2F;
+  width: 100%;
+  border:1px solid #091A2F;
+  color: white;
+  font-size: 20px;
+  padding:6px 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding: .75rem 2rem;
+}
+.button:hover{
+  background-color: #071627;
+}
+.button.is-light{
+  background-color: rgba(255,255,255,.1);
+}
+
+.button.is-light:hover{
+  background-color: rgba(255,255,255,.15);
+  border-color: rgba(255,255,255,.3);
+}
+
+.container-a
+{
+  display: grid;
+  background-color: #091A2F;
+  color: white;
+  font-size: 22px;
+  grid-template-rows: repeat(3, auto);
+  align-content: space-between;
+  justify-items: center;
+  width: 100%;
+}
+.is-middle{
+  grid-row: 2;
+}
+.container-a .image
+{
+  width: 100%;
+  align-self: center;
+}
+.container-a .is-bottom{
+  grid-row: 3;
+  margin-bottom: 4rem;
+}
+.container-a .text-wrapper{
+  opacity: .35;
+}
+
+#import_done .open-imported{
+  margin-top: 10px;
+}
+#import_done .open-imported .lesson_url{
+  color:white;
+}
+
+.login.hidden,
+#import_progress.hidden,
+#import_start.hidden,
+#import_done.hidden,
+#error.hidden
+{
+  display: none;
+}
+.hidden {
+  display: none;
+}
+
+#error .error-message{
+ font-size: .9rem;
+ text-align: center;
+ padding: 0 1rem;
+}
+.error-label{
+  color:red;
+}
+.center {
+  padding-top: 100px;
+  text-align: center;
+}
+.image.error-image{
+  width: 80px;
+}
+.image.is-top{
+  margin-top: 2rem;
+  width: 260px;
+}
+#import_done .import-checked-image, #import_progress .loader-image{
+  width: 120px;
+}
+#import_done .import-checked-image ~ span{
+  text-align: center;
+  display: block;
+  margin-bottom: -1rem;
+  margin-top: 1rem;
+}
+.has-text-blue{
+  color:#318DFF;
+}
+#import_start .select2-container--default .select2-selection--multiple{
+  height: 40px;
+  border-color: #ccc;
+  border-radius: 8px;
+  padding-right: 40px;
+}
+#import_start .select2-container--default .select2-selection--multiple::after{
+  content: "";
+  background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 16 16' style='enable-background:new 0 0 16 16;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%235C646D;stroke-linecap:round;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Cpolyline class='st0' points='10,7.6 8,9.5 6,7.6 '/%3E%3C/svg%3E");
+  display: block;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#import_start .select2-container .select2-search--inline .select2-search__field{
+  margin-top: 0;
+}
+
+#import_start .title:focus{
+  box-shadow: 0 0 10px #2486d6 inset;
+  border-color: #3261ff;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}

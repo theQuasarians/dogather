@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "HEX, Picker de couleur RVB, advanched Eyedropper, trouvez du code couleur sur n'importe quelle page"
+   },
+   "appTitle": {
+      "message": "Picker de couleur pour Chrome ™"
+   },
+   "feedback": {
+      "message": "Retour"
+   },
+   "pick": {
+      "message": "prendre"
+   },
+   "rateUs": {
+      "message": "Évaluez nous"
+   },
+   "selectedColor": {
+      "message": "Couleur sélectionnée"
+   }
+}

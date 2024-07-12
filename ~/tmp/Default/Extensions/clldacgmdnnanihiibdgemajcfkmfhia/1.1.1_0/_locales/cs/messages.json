@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "HEX, RGB Color Picker, Adched Eyedropper, Najděte barevný kód na jakékoli stránce"
+   },
+   "appTitle": {
+      "message": "Color Picker for Chrome ™"
+   },
+   "feedback": {
+      "message": "Zpětná vazba"
+   },
+   "pick": {
+      "message": "výběr"
+   },
+   "rateUs": {
+      "message": "Ohodnoťte nás"
+   },
+   "selectedColor": {
+      "message": "Vybraná barva"
+   }
+}

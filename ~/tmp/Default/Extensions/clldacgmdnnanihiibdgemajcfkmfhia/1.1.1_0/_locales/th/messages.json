@@ -1,0 +1,20 @@
+{
+   "appDesc": {
+      "message": "Hex, RGB Color Picker, Advanched eyedropper, ค้นหารหัสสีในหน้าใดก็ได้"
+   },
+   "appTitle": {
+      "message": "ตัวเลือกสีสำหรับ Chrome ™"
+   },
+   "feedback": {
+      "message": "ข้อเสนอแนะ"
+   },
+   "pick": {
+      "message": "เลือก"
+   },
+   "rateUs": {
+      "message": "ให้คะแนนเรา"
+   },
+   "selectedColor": {
+      "message": "สีที่เลือก"
+   }
+}
