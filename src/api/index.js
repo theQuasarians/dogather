@@ -5,21 +5,21 @@ const API = axios.create({
   withCredentials: true,
 })
 
-API.interceptors.request.use(
-  (config) => {
-    const token = document.cookie.replace(
-      /(?:(?:^|.*;\s*)token\s*=\s*([^;]*).*$)|^.*$/,
-      "$1"
-    )
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`
-    }
-    return config
-  },
-  (error) => {
-    return Promise.reject(error)
-  }
-)
+// API.interceptors.request.use(
+//   (config) => {
+//     const token = document.cookie.replace(
+//       /(?:(?:^|.*;\s*)token\s*=\s*([^;]*).*$)|^.*$/,
+//       "$1"
+//     )
+//     if (token) {
+//       config.headers.Authorization = `Bearer ${token}`
+//     }
+//     return config
+//   },
+//   (error) => {
+//     return Promise.reject(error)
+//   }
+// )
 
 export const signInCall = (data) => {
   try {

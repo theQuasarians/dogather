@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
-import "./NavBar.css";
+import { useEffect, useState } from "react"
+import "./NavBar.css"
 
 /* fix color on click */
 
 function NavBar() {
   /* React state that will show or hide the mobile menu */
-  const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
+  const [toggleMobileMenu, setToggleMobileMenu] = useState(false)
 
   /* Array that has the page links */
   const pageLinks = [
@@ -26,17 +26,16 @@ function NavBar() {
       name: "register",
       id: 5,
     },
-  ];
+  ]
 
   /* Remove content if browser width goes beyond mobile */
   useEffect(() => {
-    window.addEventListener('resize',() => {
-      if(document.body.clientWidth >= '770') {
+    window.addEventListener("resize", () => {
+      if (document.body.clientWidth >= "770") {
         setToggleMobileMenu(false)
-      } 
+      }
     })
   }, [])
-
 
   return (
     <>
@@ -52,7 +51,7 @@ function NavBar() {
         {/* Buttons get created thanks to array prototype.map */}
         <div className="pages-links">
           {pageLinks.map((element) => (
-            <NavbarLinks name={element.name} key={element.id} />
+            <NavbarLink name={element.name} key={element.id} />
           ))}
         </div>
         {/* Content of the mobile menu */}
@@ -63,29 +62,28 @@ function NavBar() {
                 toggleMobileMenu
                   ? "../src/assets/navbarAssets/toggleMenuArrows.svg"
                   : "../src/assets/navbarAssets/mobileMenu.svg"
-                 
               }
               alt=""
             />
           </button>
         </div>
       </div>
-        <div style={{display: toggleMobileMenu ? 'block' : 'none'}} className="mobile-menu-wrapper">
-          <div className="pages-links">
-           {pageLinks.map((element) => (
-            <NavbarLinks name={element.name} key={element.id} />
+      <div
+        style={{ display: toggleMobileMenu ? "block" : "none" }}
+        className="mobile-menu-wrapper"
+      >
+        <div className="pages-links">
+          {pageLinks.map((element) => (
+            <NavbarLink name={element.name} key={element.id} />
           ))}
-          </div>
         </div>
+      </div>
     </>
-  );
+  )
 }
 
-export default NavBar;
-
-
 //Component that renders the NavbarLinks
-function NavbarLinks(element) {
+function NavbarLink(element) {
   return (
     <>
       <a
@@ -95,8 +93,15 @@ function NavbarLinks(element) {
       >
         {element.name}
         <img src="../src/assets/navbarAssets/arrowLink.svg" alt="arrowLink" />
-        <img src={`../src/assets/navbarAssets/${element.name.replace(' ','')}.svg`} alt="mobileIcon" />
+        <img
+          src={`../src/assets/navbarAssets/${element.name.replace(
+            " ",
+            ""
+          )}.svg`}
+          alt="mobileIcon"
+        />
       </a>
     </>
-  );
+  )
 }
+export default NavBar

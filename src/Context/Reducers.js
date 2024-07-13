@@ -15,19 +15,25 @@ import {
 export const authReducer = (state, action) => {
   switch (action.type) {
     case AUTH_LOGIN_REQUEST:
-      return { ...state, loading: true, error: null }
+      return { ...state, auth: { loading: true, error: null } }
     case AUTH_LOGIN_SUCCESS:
+      localStorage.setItem("user", JSON.stringify(action.payload.user))
       return {
         ...state,
-        isAuthenticated: true,
-        token: action.payload.token,
-        user: action.payload.user,
-        loading: false,
+        auth: {
+          isAuthenticated: true,
+          token: action.payload.token,
+          user: action.payload.user,
+          loading: false,
+        },
       }
     case AUTH_LOGIN_FAILURE:
-      return { ...state, loading: false, error: action.payload }
+      return { ...state, auth: { loading: false, error: action.payload } }
     case AUTH_LOGOUT:
-      return { ...state, isAuthenticated: false, token: null, user: null }
+      return {
+        ...state,
+        auth: { isAuthenticated: false, token: null, user: null },
+      }
     default:
       return state
   }
@@ -36,17 +42,19 @@ export const authReducer = (state, action) => {
 export const postReducer = (state, action) => {
   switch (action.type) {
     case FETCH_POSTS_REQUEST:
-      return { ...state, loading: true, error: null }
+      return { ...state, post: { loading: true, error: null } }
     case FETCH_POSTS_SUCCESS:
-      return { ...state, posts: action.payload, loading: false }
+      return { ...state, post: { posts: action.payload, loading: false } }
     case FETCH_POSTS_FAILURE:
       return { ...state, loading: false, error: action.payload }
     case ADD_POST:
-      return { ...state, posts: [...state.posts, action.payload] }
+      return { ...state, post: { posts: [...state.posts, action.payload] } }
     case DELETE_POST:
       return {
         ...state,
-        posts: state.posts.filter((post) => post.id !== action.payload),
+        post: {
+          posts: state.posts.filter((post) => post.id !== action.payload),
+        },
       }
     default:
       return state

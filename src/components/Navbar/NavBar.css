@@ -1,159 +1,157 @@
 /* Navbar wrapper */
-.wrapper{ 
-    display: flex;
-    align-items: center;
-    padding: 1.78em 4.44em 0 4.44em;
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 1.78em 4.44em 0 4.44em;
 }
 /* Navbar content and button gets the font-family and size applied */
-.wrapper, .register-btn button{
-    font-family: var(--ff-base);
-    font-size: 1em;
+.wrapper,
+.register-btn button {
+  font-family: var(--ff-base);
+  font-size: 1em;
 }
 
-.logo a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-weight: bold;
+.logo a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
 }
-.logo  a  img{
-    margin-left: 0.23em;
-    width: 1.34em;
+.logo a img {
+  margin-left: 0.23em;
+  width: 1.34em;
 }
 /* Pages links contains about us, features and contact values */
-.pages-links{
-    margin-left: 10%;
-    display: flex;
-    align-items: center;
-    gap: 2.22em;
-    width: 100%;
+.pages-links {
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  gap: 2.22em;
+  width: 100%;
 }
-.pages-links a{
-    text-decoration: none;
-    color: black;
+.pages-links a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
-.pages-links a img:first-of-type{
-    margin-left: 0.28em;
+.pages-links a img:first-of-type {
+  margin-left: 0.28em;
 }
-.pages-links #login-link{
-    margin-left: auto;
+.pages-links #login-link {
+  margin-left: auto;
 }
 
-.pages-links #register-link{
-    background-color: var(--clr-accent);
-    padding: 0.66rem 1.77rem;
-    color: var(--clr-white);
-    border-radius: 0.27em;
+.pages-links #register-link {
+  background-color: var(--clr-accent);
+  padding: 0.66rem 1.77rem;
+  color: var(--clr-white);
+  border-radius: 0.27em;
 }
-.pages-links #register-link img:first-of-type{
-    display: none;
+.pages-links #register-link img:first-of-type {
+  display: none;
 }
 
 /* hide mobile-menu on page load */
-.mobile-menu{
-    display: none;
+.mobile-menu {
+  display: none;
 }
 /* This contains the login and register buttons */
 
-
-
 /* Tablet */
 @media (width <= 960px) {
-    .wrapper{
-        font-size: 0.88em;
-        padding: 1.78em 2.67em 0 1.78em;
-    }
-    
-    .pages-links #register-link{
-        padding: 0.44em 2em;
-    }
-    
+  .wrapper {
+    font-size: 0.88em;
+    padding: 1.78em 2.67em 0 1.78em;
+  }
+
+  .pages-links #register-link {
+    padding: 0.44em 2em;
+  }
 }
 
 /* Mobile */
 @media (width <= 770px) {
-    /* Mobile menu button */
-    .mobile-menu button{
-        border: none;
-        background: transparent;
-    }
-    /* wrapper of the mobile menu */
-    .mobile-menu-wrapper{
-        font-family: var(--ff-base);
-    }
-    .wrapper{
-        display: flex;
-        justify-content: space-between;
-        padding: 1.12em 1em 1.71em 0.89em;
-    }
-    .register-login a{
-        gap: 0.28em;
-    }
-    .pages-links a {
-        width: 100%;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: start;
-        gap: 0.28em;
-    }
-    .register-login #login-link img{
-        margin-left: 0em;
-    }
-    .wrapper .register-login, .pages-links{
-        display: none;
-    }
-    /* hide first-of-type image to only show icons */
-    .pages-links img:first-of-type, .register-login img:first-of-type{
-        display: none;
-    }
-    .mobile-menu-wrapper .pages-links{
-        display: flex;
-        flex-direction: column;
-        gap: 1.71em;
-        padding-top: 1.71em;
-        border-top: solid var(--clr-grey);
-        border-bottom: solid var(--clr-grey);
-        margin-left: 0;
-        padding-bottom: 2.28em;
-        align-items: start;
-    }
-    .mobile-menu-wrapper .pages-links a{
-        flex-wrap: wrap;
-        margin-left: 2.14em;
-        padding: 0;
-       width: auto;
-    }
-    .mobile-menu{
-        display: block;
-    }
-    .pages-links #register-link{
-        padding: 0 0 0 0em;
-        background-color: transparent;
-        color: var(--clr-text);
-    }
-    .pages-links #login-link{
-      margin-top: 2em;
-      margin-left: 2.14em;
-    }
-    /* Render border before #Login link making a div not needed */
-    .pages-links #login-link::after{
-        content: '';
-        border-top: solid var(--clr-grey);
-        position: absolute;
-        margin-top: -2em;
-        margin-left: -2.14em;
-        width: 100%;
-    }
-}   
-    
+  /* Mobile menu button */
+  .mobile-menu button {
+    border: none;
+    background: transparent;
+  }
+  /* wrapper of the mobile menu */
+  .mobile-menu-wrapper {
+    font-family: var(--ff-base);
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.12em 1em 1.71em 0.89em;
+  }
+  .register-login a {
+    gap: 0.28em;
+  }
+  .pages-links a {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 0.28em;
+  }
+  .register-login #login-link img {
+    margin-left: 0em;
+  }
+  .wrapper .register-login,
+  .pages-links {
+    display: none;
+  }
+  /* hide first-of-type image to only show icons */
+  .pages-links img:first-of-type,
+  .register-login img:first-of-type {
+    display: none;
+  }
+  .mobile-menu-wrapper .pages-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.71em;
+    padding-top: 1.71em;
+    border-top: solid var(--clr-grey);
+    border-bottom: solid var(--clr-grey);
+    margin-left: 0;
+    padding-bottom: 2.28em;
+    align-items: start;
+  }
+  .mobile-menu-wrapper .pages-links a {
+    flex-wrap: wrap;
+    margin-left: 2.14em;
+    padding: 0;
+    width: auto;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .pages-links #register-link {
+    padding: 0 0 0 0em;
+    background-color: transparent;
+    color: var(--clr-text);
+  }
+  .pages-links #login-link {
+    margin-top: 2em;
+    margin-left: 2.14em;
+  }
+  /* Render border before #Login link making a div not needed */
+  .pages-links #login-link::after {
+    content: "";
+    border-top: solid var(--clr-grey);
+    position: absolute;
+    margin-top: -2em;
+    margin-left: -2.14em;
+    width: 100%;
+  }
+}
 
 /* If width is higher than Tablet mobile content won't be showed */
 @media (width >= 770px) {
-    .mobile-menu-wrapper, .pages-links img:last-of-type, .register-login img:last-of-type{
-        display: none;
-    }
+  .mobile-menu-wrapper,
+  .pages-links img:last-of-type,
+  .register-login img:last-of-type {
+    display: none;
+  }
 }
-
-
-
-

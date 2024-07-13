@@ -11,6 +11,7 @@ import {
   DELETE_POST,
 } from "./constants"
 
+import Cookies from "js-cookie"
 import { signInCall } from "../api/index"
 // auth actions
 //login action
@@ -20,14 +21,14 @@ export const authLoginRequest = async (data, dispatch) => {
 
     const res = await signInCall(data)
     console.log(res)
-    const setCookieHeader = res?.headers["set-cookie"]
-    console.log(setCookieHeader)
+
     if (res.status === 200) {
       //when user logged successfully we provide user details and token in payload
-      console.log(res.cookie)
+      const token = Cookies.get("token")
+      console.log("token : ", token)
       dispatch({
         type: AUTH_LOGIN_SUCCESS,
-        payload: { user: res.data, token: "" },
+        payload: { user: res.data, token: token },
       })
     } else {
       dispatch({ type: AUTH_LOGIN_FAILURE, payload: "Authentication failed!" })
@@ -41,6 +42,7 @@ export const authLoginRequest = async (data, dispatch) => {
 export const authLogout = async (dispatch) => {
   try {
     // TODO : call logout api here and check the status code
+    Cookies.remove("token")
     dispatch({ type: AUTH_LOGOUT })
   } catch (error) {
     console.log(error.message)

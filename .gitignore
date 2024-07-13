@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 server/
+"~"/tmp
 dist
 dist-ssr
 *.local

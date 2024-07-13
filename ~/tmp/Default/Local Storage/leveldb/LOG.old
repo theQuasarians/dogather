@@ -1,5 +1,0 @@
-2024/07/10-21:17:32.999 4 Creating DB /home/boualam/Desktop/community-projects/auth_dogather/~/tmp/Default/Local Storage/leveldb since it was missing.
-2024/07/10-21:17:33.047 4 Reusing MANIFEST /home/boualam/Desktop/community-projects/auth_dogather/~/tmp/Default/Local Storage/leveldb/MANIFEST-000001
-2024/07/10-21:20:47.671 6 Level-0 table #5: started
-2024/07/10-21:20:47.702 6 Level-0 table #5: 178670 bytes OK
-2024/07/10-21:20:47.722 6 Delete type=0 #3
